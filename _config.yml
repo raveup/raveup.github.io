@@ -5,7 +5,7 @@ excerpt_separator: "\n\n"
 relative_permalinks: false
 exclude: [ ]
 
-url: ''
+url: 
 
 name: Rave-Up
 title: Rave-Up records
