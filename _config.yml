@@ -5,7 +5,7 @@ excerpt_separator: "\n\n"
 relative_permalinks: false
 exclude: [ ]
 
-url:
+url: 'raveup.github.io'
 
 name: Rave-Up
 title: Rave-Up records
