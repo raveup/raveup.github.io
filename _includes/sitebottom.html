@@ -2,11 +2,11 @@
 
   <!-- LOAD SITE SCRIPTS -->
   {% if site.script %}
-    {% for script in site.script %}<script src="{{ site.url }}{{ site.baseurl }}/assets/{{ script }}"></script>
+    {% for script in site.script %}<script src="{{ site.url }}/assets/{{ script }}"></script>
     {% endfor %}{% endif %}
   <!-- LOAD PAGE SCRIPTS -->
   {% if page.script %}
-    {% for script in page.script %}<script src="{{ site.url }}{{ site.baseurl }}/assets/{{ script }}"></script>
+    {% for script in page.script %}<script src="{{ site.url }}/assets/{{ script }}"></script>
     {% endfor %}{% endif %}
   </main>
 </body>
