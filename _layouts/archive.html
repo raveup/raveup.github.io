@@ -1,0 +1,23 @@
+---
+---
+
+{% include sitetop.html %}
+
+{% for labels in site.data.labels %}
+  {% if labels.code == page.category %}
+<section class="news">
+{% include topbar.html name=labels.name description=labels.description %}
+<!-- NEWS -->
+{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% for post in rev reversed %}{% if post.tags contains 'new' or post.focus != null %}{% include item.html %}{% endif %}{% endfor %}</section>
+
+<!-- STOCK -->
+{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags.size == 0 and post.focus == null %}{% if fst == false %}{% assign fst = true %}<section class="stock">
+{% comment %}{% include topbar.html name="still in stock" %}{% endcomment %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% if fst %}</section>{% endif %}
+
+<!-- SOLDOUT -->
+{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags contains 'soldout' %}{% if fst == false %}
+<section class="soldout">
+{% include topbar.html name="soldout" description=labels.name%}{% assign fst =  true %}{% endif %}{% include itemsoldout.html %}{% endif %}{% endfor %}</section>
+
+{% endif %}{% endfor %}
+{% include sitebottom.html %}

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+{% assign outslogan = "new vinyl releases from you scum!" %}{% assign outdate = "Out DECEMBER 1<small>st</small> 2014!" %}
+
+<!-- FOCUS - Header in post -->
+{% assign fst = false %}{% for post in site.posts %}{% if post.focus %}{% if fst == false %}{% assign fst = true %}<section class="focus">
+{% include topbar.html name=post.focus.name description=post.focus.description %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% if fst %}</section>{% endif %}
+
+<!-- NEWS -->
+<section class="news">
+{% comment %}{% include topbar.html name=outslogan %}{% endcomment %}
+{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags contains 'new' and post.focus == null %}{% if fst == false %}{% include topbar.html name=labels.name description=outdate %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}
+</section>
+
+<!-- STOCK - Header below -->
+<section class="stock">
+{% comment %}{% include topbar.html name="still in stock" %}{% endcomment %}{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags.size == 0 and post.focus == null %}{% if fst == false %}{% include topbar.html name=labels.name description=labels.description %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}
+</section>
+
+<!-- SOLDOUT -->
+<section class="soldout">
+{% include topbar.html name="SOLDOUT" %}
+{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% for post in rev reversed %}{% if post.tags contains 'soldout' and post.focus == null %}{% include itemsoldout.html %}{% endif %}{% endfor %}{% endfor %}
+</section>

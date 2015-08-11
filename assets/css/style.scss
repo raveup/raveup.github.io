@@ -1,0 +1,317 @@
+// COLORS
+$bg-color: black;
+$color: #f2f2f2;
+$red: #b00;
+$darkred: #600000;
+$grey: #bbb;
+$silver: #808080;
+$darkgrey: #222;
+$deepdarkgrey: #1f1f1f; /* pagination aside */
+$acid-green: #32d400;
+$acid-blue: #00f;
+$grad1: $bg-color;
+$grad2: $red;
+
+// LAYOUT
+$width-main: 85%;
+$image-width: 15em; /* was 30% */
+$aside-image-width: 20%;
+$margin-mini: 1.5em;
+
+// FONTS
+$font-main: 'Inconsolata', monospace;
+$font-titles: 'Oswald', sans-serif;
+$font-rock1000: 'Montserrat', sans-serif;
+$font-line-height: 1.3em;
+$fontsize: 16px;
+$fontsize-menu: 1.5em;
+$fontsize-header-h1: 3em;
+$fontsize-header-h2: 1.6em;
+$fontsize-article-h2: 2em;
+$fontsize-article-h3: 1.5em;
+$fontsize-article-slogan: 1.3em;
+
+// SHADOWS
+$shadow-menu: 2px 2px 5px rgba(0, 0, 0, .6);
+$shadow-headers: 3px 3px 6px rgba(0, 0, 0, .7);
+$shadow-cover: 0px 0px 1px 1px rgba(128, 129, 128, .6);
+
+// MIXINS
+@mixin clearfix() {
+ &:after, &:before {
+   display: table;
+   line-height: 0;
+   content: "";
+   clear: both;
+ }
+}
+@mixin gradient-horizontal($start-color: $bg-color, $mid-color: $red, $end-color: $bg-color, $start-percent: 0%, $mid-percent: 50%, $end-percent: 100%) {
+ background-image: -webkit-linear-gradient(left, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+ background-image: -o-linear-gradient(left, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Opera 12
+ background-image: linear-gradient(to right, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+ background-repeat: repeat-x;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', midColorstr='#{ie-hex-str($mid-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+}
+@keyframes bottomflat {
+	50% {background-image: linear-gradient($bg-color, $red, $bg-color);}
+}
+
+// MAIN
+html {
+  overflow-y: scroll;
+}
+body {
+  background-color: $bg-color;
+  color: $color;
+  font-family: $font-main;
+  font-size: $fontsize;
+  // PAGES
+  &.default section.soldout {
+    display: none;
+  }
+  &.series header {
+    text-align: center;
+  }
+  &.layer {
+    cursor: pointer;
+  }
+}
+
+/* LINKS */
+a {
+  // text-decoration: none;
+  // border-bottom: 1px solid $red;
+  &:link, &:visited {
+    color: $red;
+  }
+  &:hover {
+    color: $color;
+    // border-color: $color;
+  }
+  &:active {
+    color: $bg-color;
+    // border-color: $bg-color;
+  }
+}
+
+// TYPOGRAPHY
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-titles;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+// MAIN MENU
+header nav ul {
+    font-size: $fontsize-menu;
+    list-style: none;
+    margin: 0px;
+    padding: 20px 0px;
+    & li {
+      display:inline-block;
+      padding: 10px 30px;
+      text-shadow: $shadow-menu;
+      text-transform: uppercase;
+    }
+    & li.active {
+      background: $red;
+    }
+}
+
+// LAYOUT
+main {
+  max-width: $width-main;
+  margin: 0 auto;
+}
+article, section > header {
+  margin: $margin-mini 0;
+  padding-bottom: $margin-mini;
+  // border-bottom: 1px solid $darkgrey;
+  @include clearfix;
+}
+// Article description
+article > div.pagination {
+  margin-top: 6em;
+  @include clearfix;
+}
+// New pagination with ASIDE
+aside {
+  display: inline-block;
+  width: 46%;
+  background-color: $darkgrey;
+  @include clearfix;
+  // border-radius: 30% / 100% 0 0 100%;
+  /* ARROW */
+  background-image: url('/assets/images/arrow-left.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  img {
+    width: $aside-image-width;
+    margin: .5em;
+    float: right;
+  }
+  h4 {
+    margin: 10px 0px 5px 0px;
+  }
+  p {
+    margin: 0;
+  }
+  &.left {
+    text-align: right;
+  }
+  &.right {
+    float: right;
+    background-image: url('/assets/images/arrow-right.png');
+    background-position: right top;
+    // border-radius: 30% / 0 100% 100% 0;
+    & img {
+      float: left;
+    }
+  }
+}
+
+// HEADERS
+
+// MAIN HEADER
+main > header {
+  margin-top: 2em;
+  text-align: center;
+  & > img {
+    height: 10em;
+  }
+}
+// SECTION HEADERS
+section > header {
+  text-align: center;
+  & h1 {
+    color: $acid-green;
+    // border-bottom: 1px solid rgba(170,0,0,.3);
+    // border-top: 1px solid rgba(170,0,0,.3);
+    // @include gradient-horizontal;
+    // background-image: linear-gradient($bg-color, $darkred, $bg-color);
+    // animation: pulse 10s infinite alternate;
+    // text-shadow: $shadow-headers;
+    line-height: 1.3em;
+    font-size: $fontsize-header-h1;
+  }
+  & h2 {
+    font-size: $fontsize-header-h2;
+    color: $acid-blue;
+    font-family: $font-main;
+    font-weight: 100;
+    margin: .2em 0;
+  }
+  & h3 {
+    font-size: $fontsize-article-h2;
+    color: $acid-blue;
+    font-family: $font-main;
+    font-weight: 100;
+  }
+}
+// ARTICLE HEADERS
+article header {
+  font-size: 140%;
+  & h2 {
+    font-size: $fontsize-article-h2;
+    margin: 0;
+    .grey {
+      & a:link, & a:visited {
+        color: $silver;
+      }
+      & a:hover {
+        color: $color;
+      }
+    }
+  }
+  & h3 {
+    font-family: $font-main;
+    font-weight: 100;
+    font-size: $fontsize-article-h3;
+    color: $grey;
+    &.green {
+      color: $acid-green;
+    }
+  }
+  p {
+    margin: 0;
+    color: $silver;
+  }
+}
+article header + p {
+  font-size: $fontsize-article-slogan;
+}
+article div p {
+  line-height: $font-line-height;
+}
+
+// SOLDOUT
+section.soldout {
+  text-align: center;
+  margin-bottom: 3em;
+  & > div {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    header {
+      display: none;
+    }
+    figure img {
+      margin: 0;
+      width: 10em;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  section {
+    @include gradient-horizontal($bg-color, $darkgrey);
+    @include clearfix;
+    padding: 3em 3em 0 3em;
+  }
+  h3 {
+    font-family: $font-main;
+    color: $grey;
+    font-weight: 100;
+  }
+  nav {
+    // float: left;
+  }
+  p {
+    text-align: center;
+    padding: 2em;
+  }
+}
+
+// IMAGES
+figure {
+  & img {
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: $image-width;
+    margin-right: $margin-mini;
+    margin-bottom: $margin-mini;
+    box-shadow: $shadow-cover;
+    &.mega {
+      position: absolute;
+      z-index: 200;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 800px;
+    }
+  }
+}
+
+// Search Page
+body.search main section:first-of-type {
+  text-align: center;
+}
+input {
+  padding: .3em;
+}
+.results {
+  min-height: 300px;
+}

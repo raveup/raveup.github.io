@@ -1,0 +1,12 @@
+<aside class="left">
+  {% if page.next.image %}<img src="/assets/covers/{{ page.next.category }}/{{ page.next.image }}.jpg" title=="{{ page.next.title | upcase }} – {{ page.next.item | upcase }}">{% endif %}
+  {% if page.next %}<header><h4><a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" >{{ page.next.title | upcase }}</a></h4>
+    <p>{{ page.next.item | upcase }}</p></header>
+    <p>{{ page.next.category | upcase }} #{{ page.next.volume }} ({{ page.next.support | upcase }})</p>{% endif %}
+</aside>
+<aside class="right">
+  {% if page.previous.image %}<img src="/assets/covers/{{ page.previous.category }}/{{ page.previous.image }}.jpg" title=="{{ page.previous.title | upcase }} – {{ page.previous.item | upcase }}">{% endif %}
+  {% if page.previous %}<header><h4><a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" >{{ page.previous.title | upcase }}</a></h4>
+    <p>{{ page.previous.item | upcase }}</p></header>
+    <p>{{ page.previous.category | upcase }} #{{ page.previous.volume }} ({{ page.previous.support | upcase }})</p>{% endif %}
+</aside>

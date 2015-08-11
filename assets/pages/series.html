@@ -1,0 +1,13 @@
+---
+layout: series
+title: Series
+permalink: /series/
+---
+
+<section>
+{% include topbar.html name='RAVE-UP SERIES' description='our full catalogue' %}{% for labels in site.data.labels %}{% assign countInstock = site.posts | where: "category", labels.code %}{% assign countSoldout = site.posts | where: "category", labels.code | where: "tag", "soldout" %}<article>
+  <header>
+    <h2{% if (countInstock.size == countSoldout.size) %} class="grey"{% endif %}><a href="{{ site.url }}{{ site.baseurl }}/{{ labels.code }}/" title="{{ labels.name | upcase }}">{{ labels.name | upcase }}</a></h2>
+    <h3>{{ labels.description | upcase }}</h3>{{ countInstock.size | minus: countSoldout.size }} In stock / {{ countSoldout.size }} Soldout</header>
+</article>{% endfor %}
+</section>

@@ -1,0 +1,207 @@
+/* pagination aside */
+/* was 30% */
+@keyframes bottomflat {
+  50% {
+    background-image: linear-gradient(black, #b00, black); } }
+html {
+  overflow-y: scroll; }
+
+body {
+  background-color: black;
+  color: #f2f2f2;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px; }
+  body.default section.soldout {
+    display: none; }
+  body.series header {
+    text-align: center; }
+  body.layer {
+    cursor: pointer; }
+
+/* LINKS */
+a:link, a:visited {
+  color: #b00; }
+a:hover {
+  color: #f2f2f2; }
+a:active {
+  color: black; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin: 0; }
+
+header nav ul {
+  font-size: 1.5em;
+  list-style: none;
+  margin: 0px;
+  padding: 20px 0px; }
+  header nav ul li {
+    display: inline-block;
+    padding: 10px 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase; }
+  header nav ul li.active {
+    background: #b00; }
+
+main {
+  max-width: 85%;
+  margin: 0 auto; }
+
+article, section > header {
+  margin: 1.5em 0;
+  padding-bottom: 1.5em; }
+  article:after, article:before, section > header:after, section > header:before {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both; }
+
+article > div.pagination {
+  margin-top: 6em; }
+  article > div.pagination:after, article > div.pagination:before {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both; }
+
+aside {
+  display: inline-block;
+  width: 46%;
+  background-color: #222;
+  /* ARROW */
+  background-image: url("/assets/images/arrow-left.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  aside:after, aside:before {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both; }
+  aside img {
+    width: 20%;
+    margin: .5em;
+    float: right; }
+  aside h4 {
+    margin: 10px 0px 5px 0px; }
+  aside p {
+    margin: 0; }
+  aside.left {
+    text-align: right; }
+  aside.right {
+    float: right;
+    background-image: url("/assets/images/arrow-right.png");
+    background-position: right top; }
+    aside.right img {
+      float: left; }
+
+main > header {
+  margin-top: 2em;
+  text-align: center; }
+  main > header > img {
+    height: 10em; }
+
+section > header {
+  text-align: center; }
+  section > header h1 {
+    color: #32d400;
+    line-height: 1.3em;
+    font-size: 3em; }
+  section > header h2 {
+    font-size: 1.6em;
+    color: #00f;
+    font-family: "Inconsolata", monospace;
+    font-weight: 100;
+    margin: .2em 0; }
+  section > header h3 {
+    font-size: 2em;
+    color: #00f;
+    font-family: "Inconsolata", monospace;
+    font-weight: 100; }
+
+article header {
+  font-size: 140%; }
+  article header h2 {
+    font-size: 2em;
+    margin: 0; }
+    article header h2 .grey a:link, article header h2 .grey a:visited {
+      color: #808080; }
+    article header h2 .grey a:hover {
+      color: #f2f2f2; }
+  article header h3 {
+    font-family: "Inconsolata", monospace;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #bbb; }
+    article header h3.green {
+      color: #32d400; }
+  article header p {
+    margin: 0;
+    color: #808080; }
+
+article header + p {
+  font-size: 1.3em; }
+
+article div p {
+  line-height: 1.3em; }
+
+section.soldout {
+  text-align: center;
+  margin-bottom: 3em; }
+  section.soldout > div {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+    section.soldout > div header {
+      display: none; }
+    section.soldout > div figure img {
+      margin: 0;
+      width: 10em; }
+
+footer section {
+  background-image: -webkit-linear-gradient(left, black 0%, #222 50%, black 100%);
+  background-image: -o-linear-gradient(left, black 0%, #222 50%, black 100%);
+  background-image: linear-gradient(to right, black 0%, #222 50%, black 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF000000', midColorstr='#FF222222', endColorstr='#FF000000', GradientType=1);
+  padding: 3em 3em 0 3em; }
+  footer section:after, footer section:before {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both; }
+footer h3 {
+  font-family: "Inconsolata", monospace;
+  color: #bbb;
+  font-weight: 100; }
+footer p {
+  text-align: center;
+  padding: 2em; }
+
+figure img {
+  cursor: pointer;
+  display: block;
+  float: left;
+  width: 15em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0px 0px 1px 1px rgba(128, 129, 128, 0.6); }
+  figure img.mega {
+    position: absolute;
+    z-index: 200;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 800px; }
+
+body.search main section:first-of-type {
+  text-align: center; }
+
+input {
+  padding: .3em; }
+
+.results {
+  min-height: 300px; }
+
+/*# sourceMappingURL=style.css.map */

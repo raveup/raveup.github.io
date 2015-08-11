@@ -1,0 +1,22 @@
+---
+---
+
+{% include sitetop.html %}{% assign currentCategory = site.data.labels | where: "code", page.category %}
+<article>
+  {% if page.image %}<figure>
+    <img src="/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}">
+  </figure>{% endif %}
+  <header>{% if page.tags contains 'soldout' %}<h3 class="green">SOLDOUT</h3>{% endif %}
+    <!-- <time datetime="{{ page.date }} 2009-10-22" pubdate>{{ page.date | date: '%B %Y' }}</time> -->
+    <h2>{{ page.title | upcase }}</h2>
+    <h3>{{ page.item | upcase }}</h3>
+    <p><a href="/{{ page.category }}" title="{{ currentCategory[0].name | upcase }}">{{ currentCategory[0].name | upcase }}</a> #{{ page.volume }} ({{ page.support | upcase }})</p>
+    {% if page.metadata %}<p>{{ page.metadata | join: ' / ' %}}</p>{% endif %}</header>
+  {{ page.excerpt }}
+  <div>{{ content | replace: page.excerpt, '' }}</div>
+
+  <!-- PAGINATION -->
+  <div class="pagination">{% include pagination.html %}</div>
+
+</article>
+{% include sitebottom.html %}
