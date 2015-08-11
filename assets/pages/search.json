@@ -9,7 +9,7 @@ permalink: /search.json
                 "title"     : "{{ post.title | upcase }}",
                 "item"      : "{{ post.item | upcase }}",
                 "excerpt"   : "{{ post.excerpt | strip_newlines | strip_html | escape }}",
-                "category"  : "{{ post.category | upcase }}",
+                "category"  : "{{ post.category }}",
                 "url"       : "{{ post.url }}",
                 "volume"    : "{{ post.volume }}",
                 "support"   : "{{ post.support | upcase | escape }}",
