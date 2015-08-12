@@ -8,8 +8,9 @@ permalink: /search.json
             {
                 "title"     : "{{ post.title | upcase }}",
                 "item"      : "{{ post.item | upcase }}",
-                "excerpt"   : "{{ post.excerpt | strip_newlines | strip_html | escape }}",
+                "excerpt"   : "{{ post.excerpt | strip_newlines }}",
                 "category"  : "{{ post.category }}",
+                "uppercase" : "{{ post.category | upcase }}",
                 "url"       : "{{ post.url }}",
                 "volume"    : "{{ post.volume }}",
                 "support"   : "{{ post.support | upcase | escape }}",
