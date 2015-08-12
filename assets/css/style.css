@@ -195,13 +195,15 @@ figure img {
     top: 0;
     width: 800px; }
 
-body.search main section:first-child {
+body.search main section:first-of-type {
   text-align: center; }
+body.search main footer section {
+  text-align: left; }
 
 input {
   padding: .3em; }
 
-.results {
+.results, section.notfound {
   min-height: 300px; }
 
 /*# sourceMappingURL=style.css.map */
