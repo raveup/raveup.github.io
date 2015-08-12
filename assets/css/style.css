@@ -203,7 +203,7 @@ body.search main footer section:first-of-type {
 input {
   padding: .3em; }
 
-.results, section.notfound {
+.results, section.notfound, section.about {
   min-height: 300px; }
 
 /*# sourceMappingURL=style.css.map */
