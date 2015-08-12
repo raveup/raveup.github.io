@@ -307,10 +307,10 @@ figure {
 
 // Search Page
 body.search main {
-  section:first-of-type {
+  & section:first-of-type {
     text-align: center;
   }
-  footer section {
+  & footer section {
     text-align: left;
   }
 }
