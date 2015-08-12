@@ -306,8 +306,13 @@ figure {
 }
 
 // Search Page
-body.search main section:first-child {
-  text-align: center;
+body.search main {
+  section:first-of-type {
+    text-align: center;
+  }
+  footer section {
+    text-align: left;
+  }
 }
 input {
   padding: .3em;
