@@ -195,7 +195,7 @@ figure img {
     top: 0;
     width: 800px; }
 
-body.search main section:first-of-type {
+body.search main section:first-child {
   text-align: center; }
 
 input {
