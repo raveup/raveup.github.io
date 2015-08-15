@@ -3,9 +3,9 @@ baseurl:
 permalink: /:categories/:title
 excerpt_separator: "\n\n"
 relative_permalinks: false
-exclude: [ ]
+exclude: [ php ]
 
-url: 
+url:
 
 name: Rave-Up
 title: Rave-Up records
