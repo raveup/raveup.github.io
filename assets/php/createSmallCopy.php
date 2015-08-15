@@ -462,12 +462,6 @@ function letsgo($h,$d){
       if(is_file($d.$file)){
         // echo "f $file\n";
         if(true){
-          if(file_exists($d.str_replace(".jpg","s.jpg",$file))){
-            unlink($d.str_replace(".jpg","s.jpg",$file));
-          }
-          if(file_exists($d.str_replace(".jpg","ss.jpg",$file))){
-            unlink($d.str_replace(".jpg","ss.jpg",$file));
-          }
           $quality = 100;
           echo filesize($d.$file)."\n";
           $image = new ImageResize($d.$file);
@@ -476,11 +470,15 @@ function letsgo($h,$d){
             $quality = 75;
           }
           $image->quality_jpg = $quality;
-          $image->save($d.str_replace(".jpg","s.jpg",$file));
+          if(!file_exists($d.str_replace(".jpg","s.jpg",$file))){
+            if(!file_exists($d.str_replace(".jpg","ss.jpg",$file))){
+              $image->save($d.str_replace(".jpg","s.jpg",$file));
+              echo "$file\n";
+            }
+          }
           // $img = imagecreatefromjpeg($d.$file);
           // $out = imagejpeg($img,null,50);
           // file_put_contents($d.str_replace(".jpg","s.jpg",$file), imagejpeg($img,null,50));
-          echo "$file\n";
         }
       }
     }
