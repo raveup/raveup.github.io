@@ -72,9 +72,6 @@ body {
   &.series header {
     text-align: center;
   }
-  &.layer {
-    cursor: pointer;
-  }
 }
 
 /* LINKS */
@@ -286,7 +283,6 @@ footer {
 // IMAGES
 figure {
   & img {
-    cursor: pointer;
     display: block;
     float: left;
     width: $image-width;

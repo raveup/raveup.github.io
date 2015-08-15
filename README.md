@@ -3,6 +3,7 @@
 ### bash
   - `jekyll serve --baseurl ''`
   - http://0.0.0.0:4000 or http://localhost:4000
+  - sass --watch assets/css/style.scss
 
 ### theme
 - http://prev.freshface.net/file/rw/wp/category/topics/blog-23/

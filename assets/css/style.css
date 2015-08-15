@@ -15,8 +15,6 @@ body {
     display: none; }
   body.series header {
     text-align: center; }
-  body.layer {
-    cursor: pointer; }
 
 /* LINKS */
 a:link, a:visited {
@@ -179,7 +177,6 @@ footer p {
   padding: 2em; }
 
 figure img {
-  cursor: pointer;
   display: block;
   float: left;
   width: 15em;

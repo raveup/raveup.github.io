@@ -26,7 +26,7 @@ $(function() {
   }
 
   // Image zoom on Posts
-  $('body.post article > figure > img').click(function(e){
+  $('body.post article > figure > img').css('cursor', 'pointer').click(function(e){
     var ele = $(e.target);
     ele.toggleClass('mega');
     // $('body').toggleClass('layer');
