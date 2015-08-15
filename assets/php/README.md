@@ -2,6 +2,7 @@
 
 - `php 5.4.30`
 - Execute in terminal with `php filename.php`
+- PHP image class: [eventviva/php-image-resize](https://github.com/eventviva/php-image-resize)
 
 ### Files
 
