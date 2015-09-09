@@ -1,0 +1,11 @@
+- menu: [
+  'home',
+  'series',
+  'search',
+  'about'
+]
+
+- meta: [
+  'feed',
+  'repository'
+]
