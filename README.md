@@ -2,8 +2,9 @@
 
 ### bash
   - `jekyll serve --baseurl ''`
+  - `jekyll serve --drafts`
   - http://0.0.0.0:4000 or http://localhost:4000
-  - sass --watch assets/css/style.scss
+  - `sass --watch assets/css/style.scss`
 
 ### theme
 - http://prev.freshface.net/file/rw/wp/category/topics/blog-23/
@@ -119,6 +120,18 @@ error assets/css/style.scss (Line 4: Invalid CSS after "$bg-color: black": expec
 `{{ newArray[0].name }}`
 `{{ 'bar' | prepend:'foo' }}
 {{ 'foo' | append:'bar' }}`
+
+Check "in stock" in `series.html`
+
+```liquid
+{% assign cat = labels.code %}
+{% assign rev = site.categories[cat] | sort: 'volume' %}
+{% for post in rev reversed %}
+  {% if post.tags contains 'new' or post.focus != null %}
+    {% include item.html %}
+  {% endif %}
+{% endfor %}
+```
 
 ### md5
 
