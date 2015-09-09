@@ -1,5 +1,7 @@
+---
+---
 // COLORS
-$bg-color: black;
+$bg-color: #1a1a1a;
 $color: #f2f2f2;
 $red: #b00;
 $darkred: #600000;
@@ -16,7 +18,7 @@ $grad2: $red;
 $width-main: 85%;
 $image-width: 15em; /* was 30% */
 $aside-image-width: 20%;
-$margin-mini: 1.5em;
+$margin-mini: 1em;
 
 // FONTS
 $font-main: 'Inconsolata', monospace;
@@ -62,6 +64,7 @@ html {
 }
 body {
   background-color: $bg-color;
+  border-top: 5px solid $red;
   color: $color;
   font-family: $font-main;
   font-size: $fontsize;
@@ -72,6 +75,14 @@ body {
   &.series header {
     text-align: center;
   }
+}
+// SECTIONS
+
+section {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
 }
 
 /* LINKS */
@@ -108,7 +119,6 @@ header nav ul {
       display:inline-block;
       padding: 10px 30px;
       text-shadow: $shadow-menu;
-      text-transform: uppercase;
     }
     & li.active {
       background: $red;
@@ -131,38 +141,43 @@ article > div.pagination {
   margin-top: 6em;
   @include clearfix;
 }
-// New pagination with ASIDE
+// ASIDES: Pagination + footer meta links
+
 aside {
   display: inline-block;
   width: 46%;
-  background-color: $darkgrey;
   @include clearfix;
-  // border-radius: 30% / 100% 0 0 100%;
-  /* ARROW */
-  background-image: url('/assets/images/arrow-left.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  img {
-    width: $aside-image-width;
-    margin: .5em;
+  &.meta {
     float: right;
   }
-  h4 {
-    margin: 10px 0px 5px 0px;
-  }
-  p {
-    margin: 0;
-  }
-  &.left {
-    text-align: right;
-  }
-  &.right {
-    float: right;
-    background-image: url('/assets/images/arrow-right.png');
-    background-position: right top;
-    // border-radius: 30% / 0 100% 100% 0;
-    & img {
-      float: left;
+  &:not(.meta) {
+    background-color: $darkgrey;
+    /* ARROW */
+    background-image: url('/assets/images/arrow-left.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    img {
+      width: $aside-image-width;
+      margin: .5em;
+      float: right;
+    }
+    h4 {
+      margin: 10px 0px 5px 0px;
+    }
+    p {
+      margin: 0;
+    }
+    &.left {
+      text-align: right;
+    }
+    &.right {
+      float: right;
+      background-image: url('/assets/images/arrow-right.png');
+      background-position: right top;
+      // border-radius: 30% / 0 100% 100% 0;
+      & img {
+        float: left;
+      }
     }
   }
 }
@@ -244,7 +259,7 @@ article div p {
 // SOLDOUT
 section.soldout {
   text-align: center;
-  margin-bottom: 3em;
+  padding-bottom: 3em;
   & > div {
     display: inline-block;
     margin: 0;
@@ -262,9 +277,11 @@ section.soldout {
 // FOOTER
 footer {
   section {
-    @include gradient-horizontal($bg-color, $darkgrey);
+    // @include gradient-horizontal($bg-color, $darkgrey);
+    background: $bg-color;
     @include clearfix;
-    padding: 3em 3em 0 3em;
+    // padding: 3em 3em 0 3em;
+    margin-bottom: 0;
   }
   h3 {
     font-family: $font-main;
@@ -303,15 +320,16 @@ figure {
 
 // Search Page
 body.search main {
-  & section:first-of-type {
-    text-align: center;
-  }
-  & footer section:first-of-type {
-    text-align: left;
-  }
+  // & section:first-of-type {
+  //   text-align: center;
+  // }
+  // & footer section:first-of-type {
+  //   text-align: left;
+  // }
 }
 input {
   padding: .3em;
+  margin: 1em;
 }
 .results, section.notfound, section.about {
   min-height: 300px;
