@@ -2,7 +2,7 @@
 ---
 
 {% include sitetop.html %}{% assign currentCategory = site.data.labels | where: "code", page.category %}
-<article>
+<section><article>
   {% if page.image %}<figure>
     <img src="/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}">
   </figure>{% endif %}
@@ -18,5 +18,5 @@
   <!-- PAGINATION -->
   <div class="pagination">{% include pagination.html %}</div>
 
-</article>
+</article></section>
 {% include sitebottom.html %}
