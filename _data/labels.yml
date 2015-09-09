@@ -2,10 +2,6 @@
   code: rur
   description: Obscure nuggets from the golden age of Punk Rock!
 
-- name: RAVE-UP BOOKS
-  code: books
-  description: Brand new books throwing light on obscure and rare music!
-
 - name: SYNTHETIC SHADOWS RECORDS
   code: ss
   description: Early post Punk minimal synth worldwide!
@@ -13,6 +9,10 @@
 - name: EUROPEAN PUNK SERIE
   code: eps
   description: European punk slabs from the vaults!
+
+- name: RAVE-UP BOOKS
+  code: books
+  description: Brand new books casting light on obscure and rare music!
 
 - name: BACKSTREET RECORDS
   code: bac
@@ -37,6 +37,10 @@
 - name: RAVE UP RECORDS ITALIAN
   code: ruri
   description: Obscure bands from the italian punk scene!
+
+- name: REVERENDO MOON RECORDS
+  code: rmr
+  description: wash away your sins and be blessed by some music!
 
 - name: RAVE UP RECORDS X
   code: rurx
