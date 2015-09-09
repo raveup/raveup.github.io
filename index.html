@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: home
 permalink: /
 ---
 {% assign outslogan = "new vinyl releases from you scum!" %}{% assign outdate = "Out DECEMBER 1<small>st</small> 2014!" %}
@@ -10,10 +10,9 @@ permalink: /
 {% include topbar.html name=post.focus.name description=post.focus.description %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% if fst %}</section>{% endif %}
 
 <!-- NEWS -->
-<section class="news">
+<!-- <section class="news"> -->
 {% comment %}{% include topbar.html name=outslogan %}{% endcomment %}
-{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags contains 'new' and post.focus == null %}{% if fst == false %}{% include topbar.html name=labels.name description=outdate %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}
-</section>
+{% assign sct = false %}{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags contains 'new' and post.focus == null %}{% if fst == false %}{% if sct == false %}<section class="news">{% assign sct = true %}{% endif %}{% include topbar.html name=labels.name %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}{% if sct %}</section>{% endif %}
 
 <!-- STOCK - Header below -->
 <section class="stock">
