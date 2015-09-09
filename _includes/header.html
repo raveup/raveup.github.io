@@ -3,10 +3,8 @@
   <img src="/assets/images/logo.svg" alt="Rave Up records LOGO">
   <nav>
     <ul>
-      <li><a href="{{ site.url }}/">Home</a></li>
-      <li><a href="{{ site.url }}/series/">Series</a></li>
-      <li><a href="{{ site.url }}/search/">Search</a></li>
-      <li><a href="{{ site.url }}/about/">About Us</a></li>
+      {% for data in site.data.menu %}{% for item in data.menu %}{% for page in site.pages %}{% if page.title == item %}<li><a href="{{ site.url }}{{ page.permalink }}">{{ item | upcase }}</a></li>
+      {% endif %}{% endfor %}{% endfor %}{% endfor %}
     </ul>
   </nav>
 </header>
