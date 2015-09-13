@@ -1,7 +1,7 @@
 <article>
   {% assign currentCategory = site.data.labels | where: "code", post.category %}
   {% if post.image %}<figure>
-    <img src="/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}">
+    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
   </figure>{% endif %}
   <header>
     <h2>
