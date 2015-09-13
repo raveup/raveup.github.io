@@ -10,6 +10,18 @@
   code: eps
   description: European punk slabs from the vaults!
 
+- name: RAVE UP RECORDS ITALIAN
+  code: ruri
+  description: Obscure bands from the italian punk scene!
+
+- name: REVERENDO MOON RECORDS
+  code: rmr
+  description: Wash away your sins and be blessed by some music!
+
+- name: RAVE UP RECORDS X
+  code: rurx
+  description: Side label for crazy experiments!
+
 - name: RAVE-UP BOOKS
   code: books
   description: Brand new books casting light on obscure and rare music!
@@ -33,18 +45,6 @@
 - name: MINDLESS RECORDS
   code: min
   description: Reprints of obscure US Hardcore bands from the vaults!
-
-- name: RAVE UP RECORDS ITALIAN
-  code: ruri
-  description: Obscure bands from the italian punk scene!
-
-- name: REVERENDO MOON RECORDS
-  code: rmr
-  description: Wash away your sins and be blessed by some music!
-
-- name: RAVE UP RECORDS X
-  code: rurx
-  description: Side label for crazy experiments!
 
 - name: SHELL SHOCK ROCK
   code: ssr
