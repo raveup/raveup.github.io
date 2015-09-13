@@ -1,12 +1,12 @@
 ---
 layout: post
 title: v/a
-item: when the time run out (minnesota vs michigan)
+item: kick your mama's ass
 support: lp
 category: rmr
 tag: soldout
-volume: 2
-image: 8eb437a83acc8787bbbd2b40c147d4ba
+volume: 3
+image: b2d81c506a764a961276d5f200aca5e1
 ---
 
 Minnesota and Michigan had two of the most prolific rock'n'roll scenes during the 60's, and these are not longer losts.
