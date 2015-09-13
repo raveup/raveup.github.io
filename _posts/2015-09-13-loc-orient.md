@@ -1,7 +1,7 @@
 ---
 layout: post
 title: luc orient
-item: luc orient
+item: s/t
 tag: new
 support: lp
 category: ss

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: holiday inn
-item: the destruction we assure with each other
+item: s/t
 tag: new
 support: 7"
 category: rurx
