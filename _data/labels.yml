@@ -22,13 +22,9 @@
   code: rurx
   description: Side label for crazy experiments!
 
-- name: RAVE-UP BOOKS
-  code: books
-  description: Brand new books casting light on obscure and rare music!
-
 - name: BACKSTREET RECORDS
   code: bac
-  description: Reprints of obscure US Hardcore bands from the vaults!
+  description: Reprints of obscure Powerpop bands from the vaults!
 
 - name: AMERICAN LOST PUNK ROCK GEMS
   code: gems
@@ -37,6 +33,10 @@
 - name: RAVE UP UK
   code: ruk
   description: 7-inches gems from the UK-punk best!
+
+- name: RAVE-UP BOOKS
+  code: books
+  description: Brand new books casting light on obscure and rare music!
 
 - name: AMERICAN 70'S HIGH ENERGY ROCK'N'ROLL
   code: aher
