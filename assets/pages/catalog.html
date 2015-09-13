@@ -1,11 +1,11 @@
 ---
-layout: series
-title: series
-permalink: /series/
+layout: catalog
+title: catalog
+permalink: /catalog/
 ---
 
 <section>
-{% include topbar.html name='RAVE-UP SERIES' description='our full catalogue' %}{% for labels in site.data.labels %}{% assign countAll = site.posts | where: "category", labels.code %}{% assign countSoldout = site.posts | where: "category", labels.code | where: "tag", "soldout" %}<article>
+{% include topbar.html name='RAVE-UP SERIES' description='our full catalog' %}{% for labels in site.data.labels %}{% assign countAll = site.posts | where: "category", labels.code %}{% assign countSoldout = site.posts | where: "category", labels.code | where: "tag", "soldout" %}<article>
   <header>
     <h2{% if (countAll.size == countSoldout.size) %} class="grey"{% endif %}><a href="{{ site.url }}{{ site.baseurl }}/{{ labels.code }}/" title="{{ labels.name | upcase }}">{{ labels.name | upcase }}</a></h2>
     <h3>{{ labels.description | upcase }}</h3>
