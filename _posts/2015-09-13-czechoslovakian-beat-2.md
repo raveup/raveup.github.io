@@ -5,7 +5,7 @@ item: czechoslovakian beat (65-71) vol 2
 tag: new
 support: lp
 category: rmr
-volume: 8
+volume: 13
 image: 5f84e1159eaf75b0eb690b16a0030759
 #focus:
 #  name: october 2015 news!
