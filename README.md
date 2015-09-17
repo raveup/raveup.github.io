@@ -1,3 +1,4 @@
+
 ## Jekyll rendering notes
 
 ### bash
@@ -14,7 +15,8 @@
   - https://mediacru.sh/
 
 ### sass
-```bash
+
+```shell
 $gem install sass
 Fetching: sass-3.4.16.gem (100%)
 Successfully installed sass-3.4.16
@@ -118,8 +120,8 @@ error assets/css/style.scss (Line 4: Invalid CSS after "$bg-color: black": expec
 
 `{% assign myArray = "one|two|three" | split: "|" %}`
 `{{ newArray[0].name }}`
-`{{ 'bar' | prepend:'foo' }}
-{{ 'foo' | append:'bar' }}`
+`{{ "bar" | prepend:"foo" }}
+{{ "foo" | append:"bar" }}`
 
 Check "in stock" in `series.html`
 
@@ -141,3 +143,21 @@ Check "in stock" in `series.html`
 ### StackOverflow
 
 - http://stackoverflow.com/a/24745825
+
+### PayPal
+
+- [paypal/JavaScriptButtons](https://github.com/paypal/JavaScriptButtons)
+- [Instant Payment Notification (IPN) simulator](https://developer.paypal.com/webapps/developer/applications/ipn_simulator)
+
+#### Add To Cart
+
+Add To Cart buttons let users add multiple items to their PayPal cart.
+
+```javascript
+<script async src="paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
+    data-button="cart"
+    data-type="form"
+    data-name="Product in your cart"
+    data-amount="1.00"
+></script>
+```
