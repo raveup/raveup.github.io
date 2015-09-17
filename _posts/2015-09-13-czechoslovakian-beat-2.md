@@ -1,7 +1,7 @@
 ---
 layout: post
 title: v/a
-item: czechoslovakian beat (65-71) vol 2
+item: czechoslovakian beat (68-71) vol 2
 tag: new
 support: lp
 category: rmr
