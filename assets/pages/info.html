@@ -1,0 +1,21 @@
+---
+layout: default
+title: info
+permalink: /info/
+---
+<section>
+{% assign formats = site.posts | sort: "category" | reverse | group_by: "support" %}
+{% for format in formats %}
+  <article>
+    <header>
+      <h3>{{format.name}}</h3>
+    </header>
+    {% assign ambito = format.items %}
+    <ul class="center">
+    {% for post in ambito %}
+      {% include itemcatalog.html %}
+    {% endfor %}
+    </ul>
+  </article>
+{% endfor %}
+</section>

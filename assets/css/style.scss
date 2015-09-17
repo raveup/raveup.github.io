@@ -72,7 +72,7 @@ body {
   &.default section.soldout {
     display: none;
   }
-  &.catalog header {
+  &.catalog header, &.info header {
     text-align: center;
   }
 }
