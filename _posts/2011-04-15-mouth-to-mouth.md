@@ -2,7 +2,7 @@
 layout: post
 title: mouth to mouth
 item: gallery of dolls
-support: 7&#34;
+support: 7"
 category: ruk
 tag: soldout
 volume: 2

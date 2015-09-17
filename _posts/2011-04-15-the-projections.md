@@ -2,7 +2,7 @@
 layout: post
 title: the projections
 item: detroit punk rock history repeats itself
-support: 7 inches
+support: 7"
 category: gems
 volume: 5
 image: QUKDMtZAxWJY

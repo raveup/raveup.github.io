@@ -2,7 +2,7 @@
 layout: post
 title: task force
 item: fresh air
-support: 7&#34;
+support: 7"
 category: ruk
 volume: 3
 image: mwQHJH5RBLmY
