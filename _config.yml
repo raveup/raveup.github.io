@@ -12,7 +12,8 @@ title: Rave-Up records
 description: 'Obscure nuggets from the golden age of ROCK n ROLL'
 
 sass:
-  sass_dir: assets/css
+  sass_dir: _sass
+  style: :compressed
 
 script: [
   'js/jquery-1.10.1.min.js',
