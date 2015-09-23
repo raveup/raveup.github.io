@@ -1,6 +1,14 @@
 
 ## Jekyll rendering notes
 
+```bash
+jekyll -v
+jekyll 2.4.0
+gem update jekyll
+jekyll -v
+jekyll 2.5.3
+```
+
 ### bash
   - `jekyll serve --baseurl ''`
   - `jekyll serve --drafts`
