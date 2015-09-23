@@ -2,6 +2,7 @@
   {% if page.next.image %}<img src="/assets/covers/{{ page.next.category }}/{{ page.next.image }}.jpg" title=="{{ page.next.title | upcase }} – {{ page.next.item | upcase }}">{% endif %}
   {% if page.next %}<header><h4><a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" >{{ page.next.title | upcase }}</a></h4>
     <p>{{ page.next.item | upcase }}</p></header>
+    {% assign postvolume = page.next %}{% include volume.html %}
     <p>{{ page.next.category | upcase }} #{{ page.next.volume }} ({{ page.next.support | upcase }})</p>{% endif %}
 </aside>
 <aside class="right">
