@@ -1,11 +1,11 @@
-- format: lp
+- support: lp
   price: 12
   wholesale: 8
 
-- format: 7"
+- support: 7"
   price: 6
   wholesale: 4
 
-- format: dlp
+- support: dlp
   price: 20
-  wholesale: 
+  wholesale:
