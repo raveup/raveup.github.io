@@ -8,6 +8,6 @@
       <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title | upcase }}</a>
     </h2>
     <h3>{{ post.item | upcase }}</h3>
-    <p>{% include volume.html %}{% comment %}{{ currentCategory[0].code | upcase }} #{{ post.volume }}{% endcomment %} ({{ post.support | upcase }})</p>
+    <p>{{ currentCategory[0].code | upcase }} #{{ post.volume }} ({{ post.support | upcase }})</p>
   </header>
   {{ post.excerpt }}</article>
