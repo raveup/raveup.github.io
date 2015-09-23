@@ -3,7 +3,7 @@ layout: post
 title: chester vomit
 item: stunk rocker
 support: ep
-category: gems
+category: rug
 tag: soldout
 volume: 4
 image: 804D8V6TTgSh

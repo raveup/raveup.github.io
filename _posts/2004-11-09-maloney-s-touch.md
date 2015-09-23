@@ -3,7 +3,7 @@ layout: post
 title: maloney's touch
 item: don't kill us!
 support: 7"
-category: gems
+category: rug
 tag: soldout
 volume: 2
 image: TPpOgu8z7SEV

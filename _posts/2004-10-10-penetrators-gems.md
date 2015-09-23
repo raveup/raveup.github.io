@@ -3,7 +3,7 @@ layout: post
 title: penetrators
 item: watch out for the penetrators
 support: 7"
-category: gems
+category: rug
 tag: soldout
 volume: 3
 image: DADUcUJaVk8O

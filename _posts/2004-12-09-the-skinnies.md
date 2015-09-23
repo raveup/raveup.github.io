@@ -3,7 +3,7 @@ layout: post
 title: the skinnies
 item: out of order
 support: 7"
-category: gems
+category: rug
 tag: soldout
 volume: 1
 image: YZ28diI0hJAD
