@@ -1,4 +1,5 @@
 ---
+script: []
 ---
 
 {% include sitetop.html %}{% assign currentCategory = site.data.labels | where: "code", page.category %}
@@ -13,8 +14,7 @@
     <p><a href="/{{ page.category }}" title="{{ currentCategory[0].name | upcase }}">{{ currentCategory[0].name | upcase }}</a> #{{ page.volume }} ({{ page.support | upcase }})</p>
     {% if page.metadata %}<p>{{ page.metadata | join: ' / ' %}}</p>{% endif %}</header>
   {{ page.excerpt }}
-  <div>{{ content | replace: page.excerpt, '' }}</div>
-
+  <div>{{ content | replace: page.excerpt, '' }}{% comment %}{% include buy.html %}{% endcomment %}</div>
 </article>
 <!-- PAGINATION -->
 <div class="pagination">{% include pagination.html %}</div>
