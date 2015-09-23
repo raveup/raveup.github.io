@@ -1,0 +1,28 @@
+<aside class="buy">
+  {% for format in site.data.prices %}{% if format.support == page.support %}{% if format.price %}{{ page.support | upcase }} € <span id="price">{{ format.price }}</span>,00{% endif %}{% if format.wholesale %} – WHOLESALE € <span id="wholesale">{{ format.wholesale }}</span>,00{% endif %}
+  <br><br>
+  QUANTITY: <span id="quantity">0</span>
+  <button type="button" name="add" id="add">+</button>
+  <button type="button" name="sub" id="sub">-</button>
+  <br><br>
+  SHIPPING
+  <select name="zone" id="zone">
+    <option value="" disabled selected>Select shipping zone</option>
+    <option value="1">Europe and Mediterranean</option>
+    <option value="2">Africa, Asia, America</option>
+    <option value="3">Oceania</option>
+  </select>
+  <br><br>
+  TOTAL: € <span id="total">0</span>
+  <br><br>
+  <script async src="{{ site.url }}/assets/js/paypal-button.min.js?merchant=raveup@tiscali.it"
+      data-button="cart"
+      data-type="form"
+      data-quantity="0"
+      data-shipping="0"
+      data-name="{{ page.title }} - {{ page.item }}"
+      data-amount="{{ format.price }}"
+      data-currency="eur"
+  ></script>
+  {% endif %}{% endfor %}
+</aside>
