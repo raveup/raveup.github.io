@@ -7,6 +7,9 @@ exclude: [ php ]
 
 url:
 
+gems:
+  - jekyll-feed
+
 name: Rave-Up
 title: Rave-Up records
 description: 'Obscure nuggets from the golden age of ROCK n ROLL'
