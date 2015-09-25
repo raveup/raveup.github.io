@@ -1,12 +1,10 @@
-- menu: [
-  'home',
-  'catalog',
-  'search',
-  'about'
-]
+- menu:
+  - 'home'
+  - 'catalog'
+  - 'search'
+  - 'about'
 
-- meta: [
-  'feed',
-  'repository',
-  'info'
-]
+# - meta:
+#   - 'feed'
+#   - 'repository'
+#   - 'info'
