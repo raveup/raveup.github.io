@@ -6,7 +6,7 @@ tag: new
 support: lp
 category: rmr
 volume: 13
-image: 5f84e1159eaf75b0eb690b16a0030759
+image: e17a129f98c813a4e1f0ae2eda570c6d
 #focus:
 #  name: october 2015 news!
 #  description: OUT october 10<sup>th</sup> 2015
