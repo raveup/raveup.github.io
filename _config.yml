@@ -9,6 +9,7 @@ url:
 
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 
 name: Rave-Up
 title: Rave-Up records

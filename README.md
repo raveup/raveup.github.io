@@ -9,6 +9,11 @@ jekyll -v
 jekyll 2.5.3
 ```
 
+- gems
+
+`gem install 'jekyll-sitemap'`
+`gem install 'jekyll-feed'`
+
 ### bash
   - `jekyll serve --baseurl ''`
   - `jekyll serve --drafts`
