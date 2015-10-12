@@ -3,7 +3,6 @@ layout: default
 title: home
 permalink: /
 ---
-{% assign outdate = "Out OCTOBER 27 2015!" %}
 
 <!-- FOCUS - Header in post -->
 {% assign fst = false %}{% for post in site.posts %}{% if post.focus %}{% if fst == false %}{% assign fst = true %}<section class="focus">
@@ -12,7 +11,11 @@ permalink: /
 <!-- NEWS -->
 <!-- <section class="news"> -->
 {% comment %}{% include topbar.html name=outslogan %}{% endcomment %}
-{% assign sct = false %}{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags contains 'new' and post.focus == null %}{% if fst == false %}{% if sct == false %}<section class="news">{% assign sct = true %}{% endif %}{% include topbar.html name=labels.name description=outdate %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}{% if sct %}</section>{% endif %}
+{% assign sct = false %}{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags contains 'new' and post.focus == null %}{% if fst == false %}{% if sct == false %}<section class="news">{% assign sct = true %}{% endif %}
+
+  {% if post.outdate != null %}{% assign out = post.outdate %}{% else %}{% assign out = site.outdate %}{% endif %}
+
+  {% include topbar.html name=labels.name description=out %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}{% if sct %}</section>{% endif %}
 
 <!-- STOCK - Header below -->
 <section class="stock">

@@ -164,6 +164,9 @@ blockquote {
 // Series list
 ul.center {
   margin-left: 20%;
+  & li span.green {
+    color: $acid-green;
+  }
 }
 
 // ASIDES: Pagination + footer meta links + BUY
@@ -304,6 +307,7 @@ section.soldout {
     figure img {
       margin: 0;
       width: 10em;
+      height: auto;
     }
   }
 }

@@ -15,6 +15,10 @@ name: Rave-Up
 title: Rave-Up records
 description: Obscure nuggets from the golden age of ROCK n ROLL
 
+# OUTDATE General for posts tagged `new`
+# override in post with `outdate: ...`
+outdate: Out OCTOBER 27 2015!
+
 sass:
   sass_dir: _sass
   style: :compressed
