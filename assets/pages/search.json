@@ -3,19 +3,19 @@ permalink: /search.json
 ---
 
 [
-    {% for post in site.posts %}
-        {% if post.layout == 'post' %}
-            {
-                "title"     : "{{ post.title | upcase }}",
-                "item"      : "{{ post.item | upcase }}",
-                "excerpt"   : "{{ post.excerpt | strip_newlines | strip_html | escape }}",
-                "category"  : "{{ post.category }}",
-                "uppercase" : "{{ post.category | upcase }}",
-                "url"       : "{{ post.url }}",
-                "volume"    : "{{ post.volume }}",
-                "support"   : "{{ post.support | upcase | escape }}",
-                "image"     : "{{ post.image }}"
-            } {% if forloop.last %}{% else %},{% endif %}
-        {% endif %}
-    {% endfor %}
+  {% for post in site.posts %}
+    {% if post.layout == 'post' %}
+      {
+        "title"     : "{{ post.title | upcase }}",
+        "item"      : "{{ post.item | upcase }}",
+        "excerpt"   : "{{ post.excerpt | strip_newlines | strip_html | escape }}",
+        "category"  : "{{ post.category }}",
+        "uppercase" : "{{ post.category | upcase }}",
+        "url"       : "{{ post.url }}",
+        "volume"    : "{{ post.volume }}",
+        "support"   : "{{ post.support | upcase | escape }}",
+        "image"     : "{{ post.image }}s"
+      } {% if forloop.last %}{% else %},{% endif %}
+    {% endif %}
+  {% endfor %}
 ]

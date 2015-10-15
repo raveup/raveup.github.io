@@ -1,4 +1,10 @@
 
+## Templates
+
+- [lgc.it](http://www.lgc.it/it/stampa/multimedia-cd-dvd-vinile/custodie-dischi-vinile)
+
+- Color: try `#CC3700`
+
 ## Jekyll rendering notes
 
 ```bash
