@@ -5,7 +5,7 @@ script: []
 {% include sitetop.html %}{% assign currentCategory = site.data.labels | where: "code", page.category %}
 <section><article>
   {% if page.image %}<figure>
-    <img src="/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}">
+    <img src="/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}" class="{{ page.category }}">
   </figure>{% endif %}
   <header>{% if page.tags contains 'soldout' %}<h3 class="green">SOLDOUT</h3>{% endif %}
     {% if page.tags contains 'new' %}{% if page.outdate != null %}{% assign out = page.outdate %}{% else %}{% assign out = site.outdate %}{% endif %}<h3 class="green">{{ out }}</h3>{% endif %}
