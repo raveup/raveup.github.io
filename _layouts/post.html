@@ -15,7 +15,17 @@ script: []
     <p><a href="/{{ page.category }}" title="{{ currentCategory[0].name | upcase }}">{{ currentCategory[0].name | upcase }}</a> #{{ page.volume }} ({{ page.support | upcase }})</p>
     {% if page.metadata %}<p>{{ page.metadata | join: ' / ' %}}</p>{% endif %}</header>
   {{ page.excerpt }}
-  <div>{{ content | replace: page.excerpt, '' }}{% comment %}{% include buy.html %}{% endcomment %}</div>
+  <div>{{ content | replace: page.excerpt, '' }}{% comment %}{% include buy.html %}{% endcomment %}
+    {% if page.video %}
+    <!-- was width="320" height="240"  -->
+    <video width="100%" controls poster="/assets/video/{{ page.video }}.jpg">
+      <source src="/assets/video/{{ page.video }}.ogv" type="video/ogg">
+      <source src="/assets/video/{{ page.video }}.mp4" type="video/mp4">
+      <source src="/assets/video/{{ page.video }}.webm" type="video/webm">
+      Your browser does not support the HTML video tag.
+    </video>
+    {% endif %}
+  </div>
 </article>
 <!-- PAGINATION -->
 <div class="pagination">{% include pagination.html %}</div>
