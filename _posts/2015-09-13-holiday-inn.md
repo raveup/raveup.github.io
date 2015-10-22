@@ -7,6 +7,7 @@ support: 7"
 category: rurx
 volume: 3
 image: c2e3a692a7719792b487f081202399a3
+video: holiday-inn
 #focus:
 #  name: ALIENI – TOY BOY – 7"
 #  description: OUT DECEMBER 1<sup>st</sup> 2014!
