@@ -341,7 +341,7 @@ figure {
     display: block;
     float: left;
     width: $image-width;
-    height: $image-width;
+    height: auto;
     margin-right: $margin-mini;
     margin-bottom: $margin-mini;
     box-shadow: $shadow-cover;
