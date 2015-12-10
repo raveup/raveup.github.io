@@ -6,6 +6,7 @@ support: lp
 category: rur
 volume: 75
 image: rdgPu-6FpxHS
+tag: soldout
 ---
 
 Vast Majority was a teenage punk band (16, 17 years old) formed in early 1979 in Houston, Texas.

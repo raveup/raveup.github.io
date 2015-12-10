@@ -6,6 +6,7 @@ support: lp
 category: ss
 volume: 12
 image: vNiBKTWey2zR
+tag: soldout
 ---
 
 Founded in 1983 in the North-East town of Verona, after the split of the punk band Eva Brown, by the collaboration between Mauro Marchesi (keyboards and electronics) and Joyello Triolo (vocals and guitar).
