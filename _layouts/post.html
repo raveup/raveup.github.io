@@ -25,6 +25,11 @@ script: []
       Your browser does not support the HTML video tag.
     </video>
     {% endif %}
+    {% if page.youtube %}
+    <div class="youtubecontainer">
+      <iframe src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen class="youtubevideo"></iframe>
+    </div>
+    {% endif %}
   </div>
 </article>
 <!-- PAGINATION -->

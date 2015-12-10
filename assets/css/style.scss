@@ -150,7 +150,7 @@ div.pagination {
 
 // Post description in column
 body.post article div {
-  margin-left: 16em;
+  // margin-left: 16em;
 }
 
 // Blockquote
@@ -163,7 +163,7 @@ blockquote {
 
 // Series list
 ul.center {
-  margin-left: 20%;
+  // margin-left: 20%;
   & li span.green {
     color: $acid-green;
   }
@@ -376,4 +376,20 @@ input {
 }
 .results, section.notfound, section.about {
   min-height: 300px;
+}
+
+// YOUTUBE
+
+.youtubecontainer {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.youtubevideo {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
