@@ -2,7 +2,7 @@
 layout: post
 title: luc orient
 item: s/t
-tag: new
+tag:
 support: lp
 category: ss
 volume: 19

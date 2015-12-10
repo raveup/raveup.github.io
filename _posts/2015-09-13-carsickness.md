@@ -2,7 +2,7 @@
 layout: post
 title: carsickness
 item: 1979-1982
-tag: new
+tag:
 support: lp
 category: rur
 volume: 78

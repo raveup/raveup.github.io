@@ -6,7 +6,6 @@ tag: new
 support: book
 category: books
 volume: 4
-outdate: OUT NOVEMBER 15 2015!
 image: 944c7aee9a351a00d078920f0a8343e3
 metadata: [ "223 pagine", "prezzo di copertina 18 euro" ]
 #focus:
