@@ -6,7 +6,7 @@ tag: new
 support: lp
 category: rmr
 volume: 13
-outdate: 
+outdate: 1 MARCH 2016
 image: e17a129f98c813a4e1f0ae2eda570c6d
 #focus:
 #  name: october 2015 news!
