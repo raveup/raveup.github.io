@@ -3,6 +3,7 @@ layout: post
 title: the allies / the saucers
 item: east bay punks-from the streets of berkeley 1978-81
 support: lp
+tag: soldout
 category: rur
 volume: 62
 image: R-SuoqDmr1f2
