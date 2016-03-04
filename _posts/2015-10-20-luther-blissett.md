@@ -2,7 +2,7 @@
 layout: post
 title: luther blissett
 item: il luther blissett project a roma. 1995-1999
-tag: new
+tag:
 support: book
 category: books
 volume: 4
