@@ -86,6 +86,13 @@ section {
   margin-bottom: 30px;
 }
 
+section.blog article {
+  text-align:center;
+  & header h2 {
+    color: $acid-blue;
+  }
+}
+
 /* LINKS */
 a {
   // text-decoration: none;
@@ -155,10 +162,11 @@ body.post article div {
 
 // Blockquote
 blockquote {
-  border-left: 5px solid $darkgrey;
+  border-left: 5px solid $red;
   margin-left: 0;
   padding-left: 1em;
   font-style: italic;
+  color: $acid-green;
 }
 
 // Series list

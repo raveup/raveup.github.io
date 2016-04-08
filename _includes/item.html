@@ -4,6 +4,7 @@
     <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}" class="{{ currentCategory[0].code }}"></a>
   </figure>{% endif %}
   <header>
+    {% if post.tags contains 'new' %}<h3 class="green">NEW!</h3>{% endif %}
     <h2>
       <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title | upcase }}</a>
     </h2>

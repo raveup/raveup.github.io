@@ -20,7 +20,7 @@ $(function() {
 
   // Get md5 for Post (image filename)
   if ($( 'body').hasClass('post')){
-    var string = $('article > header > h2').html() + $('article > header > h3').html();
+    var string = $('article > header > h2').html() + $('article > header h3.title').html();
     var hash = md5(string);
     console.log(string,hash);
   }
