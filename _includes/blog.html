@@ -1,0 +1,8 @@
+<article>
+  <header>
+    <h2>
+      {{ blog.title | upcase }}
+    </h2>
+    <h3>{{ blog.excerpt }}</h3>
+  </header>
+  {{ blog.content | replace: blog.excerpt, '' }}</article>

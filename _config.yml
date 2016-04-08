@@ -18,7 +18,15 @@ description: Obscure nuggets from the golden age of ROCK n ROLL
 
 # OUTDATE General for posts tagged `new`
 # override in post with `outdate: ...`
-outdate: OUT NOW!
+outdate: OUT MAY 15TH 2016!
+
+# BLOG and announcements
+collections:
+  blog:
+    output: false
+
+# Announcements to show
+announcements: 2
 
 sass:
   sass_dir: _sass
