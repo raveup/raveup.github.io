@@ -294,7 +294,8 @@ article header {
     color: $silver;
   }
 }
-article header + p {
+article header + p,
+ul {
   font-size: $fontsize-article-slogan;
 }
 article div p {
