@@ -19,4 +19,4 @@ The band played gigs at 'The Island' and 'Joe Star's Omni' with great bands as, 
  Raw, Young, Pissed Off but FUN!
 THE DEGENERATES are back in town!
 
-> FIRST 200 COPIES IN ORANGE VINYL!
+> FIRST 200 COPIES IN <span class="orange">ORANGE</span> VINYL!
