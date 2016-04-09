@@ -14,6 +14,10 @@ $acid-blue: #00f;
 $grad1: $bg-color;
 $grad2: $red;
 
+.orange { color: orange; }
+.pink { color: pink; }
+.red { color: red; }
+
 // LAYOUT
 $width-main: 85%;
 $image-width: 15em; /* was 30% */
@@ -86,10 +90,13 @@ section {
   margin-bottom: 30px;
 }
 
-section.blog article {
-  text-align:center;
-  & header h2 {
-    color: $acid-blue;
+section.blog {
+  background: repeating-linear-gradient( -45deg, #000, #000 20px, #00041B 20px, #00041B 40px );
+  article {
+    text-align:center;
+    & header h2 {
+      color: $acid-blue;
+    }
   }
 }
 
@@ -156,17 +163,21 @@ div.pagination {
 }
 
 // Post description in column
-body.post article div {
-  // margin-left: 16em;
+body.post article {
+  font-size: 1.2em;
 }
 
 // Blockquote
 blockquote {
-  border-left: 5px solid $red;
-  margin-left: 0;
-  padding-left: 1em;
-  font-style: italic;
-  color: $acid-green;
+  // border-left: 5px solid $red;
+  // margin-left: 0;
+  // padding-left: 1em;
+  // font-style: italic;
+  // color: $acid-green;
+  font-size: larger;
+  background: #1A1A1A;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 // Series list
@@ -242,14 +253,14 @@ section > header {
   text-align: center;
   & h1 {
     color: $acid-green;
+    line-height: 1.3em;
+    font-size: $fontsize-header-h1;
     // border-bottom: 1px solid rgba(170,0,0,.3);
     // border-top: 1px solid rgba(170,0,0,.3);
     // @include gradient-horizontal;
     // background-image: linear-gradient($bg-color, $darkred, $bg-color);
     // animation: pulse 10s infinite alternate;
     // text-shadow: $shadow-headers;
-    line-height: 1.3em;
-    font-size: $fontsize-header-h1;
   }
   & h2 {
     font-size: $fontsize-header-h2;
@@ -387,13 +398,33 @@ input {
   min-height: 300px;
 }
 
+// VIDEO
+.videotitle {
+  background-color: $acid-blue;
+  padding: .5em 1em;
+  font-weight: 100;
+  text-transform: none;
+}
+
+.videocontainer {
+  border: 5px solid $acid-blue;
+}
+
 // YOUTUBE
+.youtubetitle {
+  background-color: $red;
+  padding: .5em 1em;
+  font-weight: 100;
+  text-transform: none;
+}
 
 .youtubecontainer {
   position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
+
+  border: 5px solid $red;
 }
 .youtubevideo {
   position: absolute;
