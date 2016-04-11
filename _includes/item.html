@@ -1,14 +1,14 @@
+{% assign currentCategory = site.data.labels | where: "code", post.category %}
 <article>
-  {% assign currentCategory = site.data.labels | where: "code", post.category %}
   {% if post.image %}<figure>
-    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}" class="{{ currentCategory[0].code }}"></a>
+    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
   </figure>{% endif %}
-  <header>
+  <header class="{{ currentCategory[0].code }}">
     {% if post.tags contains 'new' %}<h3 class="green">NEW!</h3>{% endif %}
     <h2>
-      <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title | upcase }}</a>
+      <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title }}</a>
     </h2>
     <h3>{{ post.item | upcase }}</h3>
-    <p>{{ currentCategory[0].code | upcase }} #{{ post.volume }} ({{ post.support | upcase }})</p>
+    <p>{{ currentCategory[0].code | upcase }} #{% if post.volume < 10 %}0{% endif %}{{ post.volume }} ({{ post.support | upcase }})</p>
   </header>
   {{ post.excerpt }}</article>

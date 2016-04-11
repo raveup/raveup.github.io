@@ -2,9 +2,7 @@
   <!-- <h1>Rave-Up records</h1> -->
   <img src="/assets/images/logo.svg" alt="Rave Up records LOGO">
   <nav>
-    <ul>
-      {% for data in site.data.menu %}{% for item in data.menu %}{% for page in site.pages %}{% if page.title == item %}<li><a href="{{ site.url }}{{ page.permalink }}">{{ item | upcase }}</a></li>
-      {% endif %}{% endfor %}{% endfor %}{% endfor %}
-    </ul>
+    {% for data in site.data.menu %}{% for item in data.menu %}{% for page in site.pages %}{% if page.title == item %}<a href="{{ site.url }}{{ page.permalink }}">{{ item | upcase }}</a>
+    {% endif %}{% endfor %}{% endfor %}{% endfor %}
   </nav>
 </header>

@@ -3,7 +3,7 @@
         var settings = $.extend({
             jsonFile            : '/search.json',
             // template            : '<li><a href="/raveup/{url}" title="{desc}">{title}</a><br><small>{item}</small></li>',
-            template            : '<article><figure><img src="/assets/covers/{category}/{image}.jpg" title="{title} – {item}"></figure><header><h2><a href="{url}" title="{title} – {item}">{title}</a></h2><h3>{item}</h3><p>{uppercase} #{volume} ({support})</p></header>{excerpt}</article>',
+            template            : '<article><figure><img src="/assets/covers/{category}/{image}.jpg" title="{title} – {item}"></figure><header class="{category}"><h2><a href="{url}" title="{title} – {item}">{title}</a></h2><h3>{item}</h3><p>{uppercase} #{volume} ({support})</p></header><p>{excerpt}</p></article>',
             searchResults       : '.results',
             searchResultsTitle  : '',
             limit               : '10',

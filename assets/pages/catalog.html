@@ -5,18 +5,19 @@ permalink: /catalog/
 ---
 
 <section>
-{% include topbar.html name='RAVE-UP SERIES' description='our full catalog' %}{% for labels in site.data.labels %}{% assign countAll = site.posts | where: "category", labels.code %}{% assign countSoldout = site.posts | where: "category", labels.code | where: "tag", "soldout" %}<article>
+{% include topbar.html name='RAVE-UP SERIES' description='our full in-stock catalog' class="grey" %}{% for labels in site.data.labels %}{% assign countAll = site.posts | where: "category", labels.code %}{% assign countSoldout = site.posts | where: "category", labels.code | where: "tag", "soldout" %}<article>
   <header>
-    <h2{% if (countAll.size == countSoldout.size) %} class="grey"{% endif %}><a href="{{ site.url }}{{ site.baseurl }}/{{ labels.code }}/" title="{{ labels.name | upcase }}">{{ labels.name | upcase }}</a></h2>
+    <h2 class="{{ labels.code }} {% if (countAll.size == countSoldout.size) %}grey{% endif %}"><a href="{{ site.url }}{{ site.baseurl }}/{{ labels.code }}/" title="{{ labels.name | upcase }}">{{ labels.name | upcase }}</a></h2>
     <h3>{{ labels.description | upcase }}</h3>
     {% comment %}{{ countAll.size | minus: countSoldout.size }} In stock / {{ countSoldout.size }} Soldout{% endcomment %}</header>
     {% assign mezzo = countAll.size | minus: countSoldout.size | divided_by: 2 %}{% assign rev = site.categories[labels.code] | sort: 'volume' %}
-    <ul class="center">
-      {% for post in rev reversed %}
-        {% unless post.tag == 'soldout' %}
-          {% include itemcatalog.html %}
-        {% endunless %}
-      {% endfor %}
-    </ul>
+  </header>
+  <ul class="center {{ labels.code }}">
+    {% for post in rev reversed %}
+      {% unless post.tag == 'soldout' %}
+        {% include itemcatalog.html %}
+      {% endunless %}
+    {% endfor %}
+  </ul>
 </article>{% endfor %}
 </section>

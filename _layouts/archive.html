@@ -7,7 +7,7 @@
 {% assign cat = labels.code %}
 
 <!-- STOCK -->
-{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% unless post.tags contains 'soldout' %}{% if fst == false %}{% assign fst = true %}<section class="stock">{% include topbar.html name=labels.name description=labels.description %}
+{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% unless post.tags contains 'soldout' %}{% if fst == false %}{% assign fst = true %}<section class="stock">{% include topbar.html name=labels.name description=labels.description class=cat%}
 {% comment %}{% include topbar.html name="still in stock" %}{% endcomment %}{% endif %}{% include item.html %}{% endunless %}{% endfor %}{% if fst %}</section>{% endif %}
 
 <!-- SOLDOUT -->

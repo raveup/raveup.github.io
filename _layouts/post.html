@@ -1,37 +1,47 @@
 ---
-script: []
 ---
 
 {% include sitetop.html %}{% assign currentCategory = site.data.labels | where: "code", page.category %}
-<section><article>
+<section>
+  {% include topbar.html name = page.title description = page.item class = page.category %}
+  <article>
   {% if page.image %}<figure>
     <img src="/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}" class="{{ page.category }}">
   </figure>{% endif %}
-  <header>{% if page.tags contains 'soldout' %}<h3 class="green">SOLDOUT</h3>{% endif %}
-    {% if page.tags contains 'new' %}{% if page.outdate != null %}{% assign out = page.outdate %}{% else %}{% assign out = site.outdate %}{% endif %}<h3 class="green">{{ out }}</h3>{% endif %}
+  <header class="{{ page.category }}">
+      <span class="grey">STATUS:</span> {% if page.tags contains 'soldout' %}SOLDOUT{% elsif page.tags contains 'new' %}{% if page.outdate != null %}{% assign out = page.outdate %}{% else %}{% assign out = site.outdate %}{% endif %}{{ out }}{% else %}IN STOCK{% endif %}
     <!-- <time datetime="{{ page.date }} 2009-10-22" pubdate>{{ page.date | date: '%B %Y' }}</time> -->
-    <h2>{{ page.title | upcase }}</h2>
-    <h3 class="title">{{ page.item | upcase }}</h3>
-    <p><a href="/{{ page.category }}" title="{{ currentCategory[0].name | upcase }}">{{ currentCategory[0].name | upcase }}</a> #{{ page.volume }} ({{ page.support | upcase }})</p>
+      <br>
+      <span class="grey">LABEL:</span> <a href="/{{ page.category }}" title="{{ currentCategory[0].name | upcase }}">{{ currentCategory[0].name | upcase }}</a>
+      <br>
+      <span class="grey">VOLUME:</span> {{ page.volume }}
+      <br>
+      <span class="grey">SUPPORT:</span> {{ page.support | upcase }}
     {% if page.metadata %}<p>{{ page.metadata | join: ' / ' %}}</p>{% endif %}</header>
   {{ page.excerpt }}
   <div>{{ content | replace: page.excerpt, '' }}{% comment %}{% include buy.html %}{% endcomment %}
-    {% if page.video %}
-    <!-- was width="320" height="240"  -->
-    <h2 class="videotitle">Video</h2>
-    <video class="videocontainer" controls poster="/assets/video/{{ page.video }}.jpg">
-      <source src="/assets/video/{{ page.video }}.ogg" type="video/ogg">
-      <source src="/assets/video/{{ page.video }}.mp4" type="video/mp4">
-      <source src="/assets/video/{{ page.video }}.webm" type="video/webm">
-      Your browser does not support the HTML video tag.
-    </video>
-    {% endif %}
-    {% if page.youtube %}
-    <h2 class="youtubetitle">YouTube</h2>
-    <div class="youtubecontainer">
-      <iframe src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen class="youtubevideo"></iframe>
+  </div>
+
+  {% if page.video %}
+    <div class="video">
+      <h2>Video</h2>
+      <video controls poster="/assets/video/{{ page.video }}.jpg">
+        <source src="/assets/video/{{ page.video }}.ogg" type="video/ogg">
+        <source src="/assets/video/{{ page.video }}.mp4" type="video/mp4">
+        <source src="/assets/video/{{ page.video }}.webm" type="video/webm">
+        Your browser does not support the HTML video tag.
+      </video>
     </div>
-    {% endif %}
+  {% endif %}
+
+  {% if page.youtube %}
+    <div class="video">
+    <h2>YouTube</h2>
+    <div>
+      <iframe src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  {% endif %}
+
   </div>
 </article>
 <!-- PAGINATION -->

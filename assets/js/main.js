@@ -8,10 +8,10 @@ $(function() {
 
   // Link active class on menu
   var perm = $('#pagepermalink').attr('href');
-  var listItems = $("header nav ul li");
+  var listItems = $("header nav a");
   listItems.each( function (index,e) {
-    var url = $("a",e).attr('href');
-    var text = $("a",e).text();
+    var url = $(e).attr('href');
+    var text = $(e).text();
     if ( url == perm ) {
       $(e).addClass('active');
       $(e).html( text );
@@ -19,8 +19,8 @@ $(function() {
   });
 
   // Get md5 for Post (image filename)
-  if ($( 'body').hasClass('post')){
-    var string = $('article > header > h2').html() + $('article > header h3.title').html();
+  if ($('body').hasClass('post')){
+    var string = $('section > header > h1').html() + $('section > header h3').html();
     var hash = md5(string);
     console.log(string,hash);
   }

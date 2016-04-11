@@ -1,3 +1,4 @@
+  </main>
   {% include footer.html %}
 
   <!-- LOAD SITE SCRIPTS -->
@@ -8,6 +9,5 @@
   {% if page.script %}
     {% for script in page.script %}<script src="{{ site.url }}/assets/{{ script }}"></script>
     {% endfor %}{% endif %}
-  </main>
 </body>
 </html>

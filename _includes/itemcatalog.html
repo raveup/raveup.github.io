@@ -1,3 +1,3 @@
 <li>
-  {{ post.category | upcase }} #{{ post.volume }} <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title | upcase }} – {{ post.item | upcase }}</a> {% if post.tags contains 'new' %}{% if post.outdate != null %}{% assign out = page.outdate %}{% else %}{% assign out = site.outdate %}{% endif %}<span class="green">NEW!</span>{% endif %}
+  {% include volume_small.html vol = post.volume cat = post.category %} <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title | upcase }} – {{ post.item | upcase }}</a> {% if post.tags contains 'new' %}{% if post.outdate != null %}{% assign out = page.outdate %}{% else %}{% assign out = site.outdate %}{% endif %}<span class="green">NEW!</span>{% endif %}
 </li>
