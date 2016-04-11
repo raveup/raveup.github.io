@@ -1,3 +1,6 @@
+## volume
+
+`{% include volume.html vol = post.volume cat = post.category %}`
 
 ## Templates
 
