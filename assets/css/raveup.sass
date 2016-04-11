@@ -1,0 +1,289 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$border-vertical: 5px
+$border-horizontal: 5px
+$increase-sat: 30%
+$grey03: #505050
+$greydark: #151515
+$page-width: 70em
+
+$dark-red: #b00
+$rur: $dark-red
+$acid-blue: #00f
+$ss: $acid-blue
+$forest-green: #009A18
+$eps: $forest-green
+$orange: orange
+$rug: $orange
+$grey80: #808080
+$blog: $grey80
+$yellow: #FFEB3B
+$ruri: $yellow
+$violet: violet
+$rurx: $violet
+
+// APPLY http://chriskempson.github.io/base16/#default
+{% for label in site.data.labels %}
+
+section > header.{{ label.code }} h1
+  border-bottom: $border-horizontal solid #{{ label.color }}
+
+article header.{{ label.code }}
+  border-left: $border-vertical solid #{{ label.color }}
+  h2 a,
+  a
+    color: #{{ label.color }}
+
+article header h2.{{ label.code }} a,
+article ul.{{ label.code }} li a,
+ul li a.{{ label.code }}
+  color: #{{ label.color }}
+
+{% endfor %}
+
+section > header h1
+  text-transform: uppercase
+  border-bottom: $border-horizontal solid $grey03
+section > article > header h2.grey a
+  color: $grey03
+
+body
+  border-top: 10px solid $greydark
+  font-family: "Inconsolata", monospace
+  font-size: 1.2em
+  background-color: black
+  color: white
+  & > header
+    text-align: center
+    img
+      padding: 2em
+      height: 10em
+    nav
+      background: $greydark
+      font-size: 1.5em
+      a
+        display: inline-block
+        color: white
+        padding: .5em .8em
+        &.active
+          background: $grey03
+          color: white
+
+@mixin clearfix()
+  &:after, &:before
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
+a
+  color: $dark-red
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+main
+  margin: 1em auto 5em auto
+  max-width: $page-width
+  padding: 0 3em
+
+div.pagination
+  margin-top: 5em
+  @include clearfix
+
+h1,
+h2
+  font-family: "Oswald", sans-serif
+
+figure
+  margin: 0
+
+body.post section article img.mega
+  position: absolute
+  z-index: 200
+  margin: auto
+  left: 0
+  right: 0
+  top: 0
+  width: 800px
+  height: auto
+
+section
+  & > header
+    text-align: center
+    margin: 3em 0
+  h3
+    margin: .2em 0 .2em
+    font-size: 1.5em
+    font-family: "Inconsolata",monospace
+    font-weight: 100
+  h1
+    font-size: 3em
+    margin: 0
+    color: whitesmoke
+  article
+    margin: 1em 2em
+    border-radius: 6px
+    @include clearfix
+    img
+      box-shadow: 0px 0px 1px 1px rgba(128,128,128,0.6)
+      float: left
+      width: 13em
+      height: auto
+      margin-right: 1.2em
+    header
+      padding: .5em 1em
+      h2
+        text-transform: uppercase
+        font-size: 2.5em
+        line-height: 1em
+        margin: 0
+        font-weight: normal
+      .green
+        display: none
+      p
+        margin: 0
+        color: #808080
+  &.news article
+    padding: 1.5em 2em 1.5em 1.2em
+    background-color: $greydark
+  &.blog article
+    padding: 1.5em 2em 1.5em 1.2em
+    background-color: $greydark
+    header
+      border-left: $border-vertical solid $blog
+  &.stock article
+    padding: .5em 2em .5em 1.2em
+
+body.catalog
+  section article header
+    text-align: center
+    padding: 3em 0 2em 0
+
+body.search article header
+  margin-left: 13em + 1.2em
+
+body.post
+  section article
+    padding: .5em 2em .5em 1.2em
+    div:first-of-type,
+    > p,
+    header
+      margin-left: 22em + 1.2em
+    img
+      width: 22em
+    div.video
+      @include clearfix
+      h2
+        width: 14em
+        padding: 0
+        margin: 2em 0 0 .3em
+        font-weight: 100
+        text-transform: none
+      video
+        border: 5px solid #00f
+        width: 22em
+        height: 14em
+      div
+        margin-left: 0
+        position: relative
+        padding-bottom: 14em
+        height: 0
+        iframe
+          border: 2px solid #b00
+          position: absolute
+          top: 0
+          left: 0
+          width: 22em
+          height: 14em
+
+ul
+  list-style-type: square
+
+span.grey
+  color: $grey80
+
+footer
+  background-color: $greydark
+  padding: 2em 0 .5em 3em
+  section
+    margin: 0 auto
+    max-width: $page-width
+    padding: 0 3em
+  h3
+    text-transform: uppercase
+    font-family: "Inconsolata", monospace
+    color: $grey80
+    font-weight: 100
+  p
+    @include clearfix
+    text-align: center
+    margin: 2em
+
+input
+  padding: .3em
+  margin: 1em
+
+blockquote
+  font-size: larger
+  background: #1A1A1A
+  display: inline-block
+  padding: 0 20px
+
+// VINYL COLORS
+.orange
+  color: orange
+.pink
+  color: pink
+.red
+  color: red
+
+// ASIDE
+aside
+  display: inline-block
+  width: 46%
+  @include clearfix
+  &.meta
+    float: right
+  &:not(.meta):not(.buy)
+    background-color: $greydark
+    /* ARROW */
+    background-image: url('/assets/images/arrow-left.png')
+    background-repeat: no-repeat
+    background-size: contain
+    img
+      width: 20%
+      margin: .5em
+      float: right
+    h4
+      margin: 10px 0px 5px 0px
+    p
+      margin: 0
+    &.left
+      text-align: right
+    &.right
+      float: right
+      background-image: url('/assets/images/arrow-right.png')
+      background-position: right top
+      // border-radius: 30% / 0 100% 100% 0;
+      & img
+        float: left
+
+// SOLDOUT
+section.soldout
+  text-align: center
+  padding-bottom: 3em
+  & > div
+    display: inline-block
+    margin: 0
+    padding: 0
+    header
+      display: none
+    figure img
+      margin: 0
+      width: 10em
+      height: auto
