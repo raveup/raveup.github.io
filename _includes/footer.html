@@ -20,7 +20,7 @@
     <h3>Rave-Up series</h3>
     <nav>
       <ul>
-        {% for labels in site.data.labels %}<li><a href="{{ site.url }}{{ site.baseurl }}/{{ labels.code }}/">{{ labels.name }}</a></li>
+        {% for labels in site.data.labels %}<li><a class="{{ labels.code }}" href="{{ site.url }}{{ site.baseurl }}/{{ labels.code }}/">{{ labels.name }}</a></li>
         {% endfor %}</ul>
     </nav>
     <p><strong>RAVE UP RECORDS</strong> &ndash; PIERPAOLO DE IULIS, via Galeazzo Alessi 229 &ndash; 00176 Roma, ITALY &ndash; <a href="mailto:&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;">&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;</a></p>
