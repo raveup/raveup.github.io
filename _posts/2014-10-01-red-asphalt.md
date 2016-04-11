@@ -1,7 +1,7 @@
 ---
 layout: post
 title: red asphalt
-item: red asphalt
+item: s/t
 support: lp
 category: ss
 volume: 18

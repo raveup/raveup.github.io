@@ -1,7 +1,7 @@
 ---
 layout: post
 title: liquid eyes
-item: liquid eyes
+item: s/t
 support: lp
 category: ss
 volume: 17

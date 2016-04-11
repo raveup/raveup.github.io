@@ -1,7 +1,7 @@
 ---
 layout: post
 title: the daughters
-item: the daughters
+item: s/t
 support: lp
 category: rur
 volume: 76

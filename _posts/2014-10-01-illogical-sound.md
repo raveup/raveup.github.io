@@ -1,7 +1,7 @@
 ---
 layout: post
 title: illogical sound
-item: illogical sound
+item: s/t
 support: lp
 category: ss
 volume: 16

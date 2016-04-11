@@ -1,7 +1,7 @@
 ---
 layout: post
 title: aus decline
-item: aus decline
+item: s/t
 support: lp
 category: ss
 volume: 13
