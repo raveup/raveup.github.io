@@ -1,10 +1,9 @@
 {% assign currentCategory = site.data.labels | where: "code", post.category %}
-<article>
+<article{% if post.tags contains 'new' %} class="new"{% endif %}>
   {% if post.image %}<figure>
     <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
   </figure>{% endif %}
   <header class="{{ currentCategory[0].code }}">
-    {% if post.tags contains 'new' %}<h3 class="green">NEW!</h3>{% endif %}
     <h2>
       <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title }}</a>
     </h2>
