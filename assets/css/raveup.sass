@@ -41,7 +41,13 @@ article ul.{{ label.code }} li a,
 ul li a.{{ label.code }}
   color: #{{ label.color }}
 
+section.soldout.{{ label.code }} > div figure img:hover
+  border: 2px solid #{{ label.color }}
+
 {% endfor %}
+
+ul li.new
+  background-color: $greydark
 
 section > header h1
   text-transform: uppercase
@@ -159,8 +165,12 @@ section
     background-color: $greydark
     header
       border-left: $border-vertical solid $blog
-  &.stock article
-    padding: .5em 2em .5em 1.2em
+  &.stock
+    article
+      padding: .5em 2em .5em 1.2em
+      &.new
+        padding: 1.5em 2em 1.5em 1.2em
+        background-color: $greydark
 
 body.catalog
   section article header
@@ -289,7 +299,9 @@ section.soldout
     padding: 0
     header
       display: none
-    figure img
-      margin: 0
-      width: 10em
-      height: auto
+    figure
+      img
+        padding: 2px
+        border: 2px solid black
+        width: 10em
+        height: auto
