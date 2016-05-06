@@ -1,3 +1,18 @@
+## Category styles
+
+**H1 Header bottom bordered**
+
+* `body.archive section.stock header.xxx h1`
+* `body.default section header.xxx h1`
+* `body.post section header.xxx h1`
+
+```html
+<section class="stock">
+  <header class="books">
+    <h1>RAVE-UP BOOKS</h1><h3>BRAND NEW BOOKS CASTING LIGHT ON OBSCURE AND RARE MUSIC!</h3>
+  </header>
+```
+
 ## volume
 
 `{% include volume.html vol = post.volume cat = post.category %}`
