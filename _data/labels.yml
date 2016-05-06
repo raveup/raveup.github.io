@@ -62,3 +62,8 @@
   code: ssr
   description: Northern Ireland obscure gems rediscovered!
   color: D10F51
+
+- name: RAVE-UP / HELLNATION RECORDS
+  code: hn
+  description: Co-production between your fave Italian Labels!
+  color: ffeb3b
