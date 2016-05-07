@@ -1,7 +1,7 @@
 ---
 layout: post
 title: shotgun solution
-item: demo 1983
+item: 1983
 tag: new
 support: lp
 category: hn
