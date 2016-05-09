@@ -27,9 +27,9 @@ $(function() {
 
   // Image zoom on Posts
   $('body.post article > figure > img').css('cursor', 'pointer').click(function(e){
-    var ele = $(e.target);
-    ele.toggleClass('mega');
-    // $('body').toggleClass('layer');
+    // var ele = $(e.target);
+    // ele.toggleClass('mega');
+    document.getElementById('zoom').showModal();
   });
 
 });

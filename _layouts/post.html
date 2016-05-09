@@ -7,7 +7,7 @@
   <article>
   {% if page.image %}<figure>
     <img src="/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}" class="{{ page.category }}">
-  </figure>{% endif %}
+  </figure><dialog id="zoom" onclick="this.close();"><img src="/assets/covers/{{ page.category }}/{{ page.image }}.jpg"/></dialog>{% endif %}
   <header class="{{ page.category }}">
       <span class="grey">AVAILABILITY:</span> {% if page.tags contains 'soldout' %}SOLDOUT{% elsif page.tags contains 'new' %}{% if page.outdate != null %}{% assign out = page.outdate %}{% else %}{% assign out = site.outdate %}{% endif %}{{ out }}{% else %}IN STOCK{% endif %}
     <!-- <time datetime="{{ page.date }} 2009-10-22" pubdate>{{ page.date | date: '%B %Y' }}</time> -->
