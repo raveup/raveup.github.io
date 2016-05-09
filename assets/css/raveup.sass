@@ -9,6 +9,9 @@ $grey03: #505050
 $greydark: #151515
 $page-width: 70em
 
+$break-small: 500px
+$break-large: 1200px
+
 $dark-red: #b00
 $rur: $dark-red
 $acid-blue: #00f
@@ -61,7 +64,9 @@ html
 body
   border-top: 10px solid $greydark
   font-family: "Inconsolata", monospace
-  font-size: 1.2em
+  font-size: 1em
+  @media screen and (min-width: $break-large)
+    font-size: 1.2em
   background-color: black
   color: white
   & > header
@@ -98,7 +103,9 @@ a
 main
   margin: 1em auto 5em auto
   max-width: $page-width
-  padding: 0 3em
+  padding: 0
+  @media screen and (min-width: $break-small)
+    padding: 0 3em
 
 div.pagination
   margin-top: 5em
@@ -140,7 +147,9 @@ section
     @include clearfix
     img
       box-shadow: 0px 0px 1px 1px rgba(128,128,128,0.6)
-      float: left
+      float: none
+      @media screen and (min-width: $break-small)
+        float: left
       width: 13em
       height: auto
       margin-right: 1.2em
@@ -181,7 +190,9 @@ body.search,
 body.default,
 body.archive
   article header:not(.blog)
-    margin-left: 13em + 1.2em
+    margin-left: 0
+    @media screen and (min-width: $break-small)
+      margin-left: 13em + 1.2em
 
 body.post
   section article
@@ -189,9 +200,18 @@ body.post
     div:first-of-type,
     > p,
     header
-      margin-left: 22em + 1.2em
+      margin-left: 0
+      @media screen and (min-width: $break-large)
+        margin-left: 22em + 1.2em
     img
       width: 22em
+    dialog
+      background: black
+      padding: 0
+      cursor: pointer
+      img
+        width: 800px
+        margin-right: 0
     div.video
       @include clearfix
       h2
