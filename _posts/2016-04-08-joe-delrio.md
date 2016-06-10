@@ -8,9 +8,6 @@ category: ss
 volume: 21
 image: c56d5e7fb531de3fc67bd74724a39cc8
 youtube: FVFFxgbTjDM
-#focus:
-#  name: october 2015 news!
-#  description: OUT october 10<sup>th</sup> 2015
 ---
 
 Started as a singer in a punk band in 1977, The Hot Pins, Aurelio Laloni, aka Joe D'Elirio, is a sort of small legend of italian underground music. His main musical influences ranging from Velvet Underground to Kraftwerk, from the Stooges to Giorgio Moroder.  

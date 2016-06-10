@@ -21,7 +21,7 @@ permalink: /
 {% if site.announcements > 0 %}
 <section class="blog">
   {% include topbar.html name="News from rave-up records" description="coming soon" class="blog" %}
-  {% assign sorted_blog = (site.blog | sort: 'date' | reverse) %}
+  {% assign sorted_blog = (site.blog | sort: 'date' | order: 'asc') %}
   {% for blog in sorted_blog limit: site.announcements %}
   {% include blog.html %}
   {% endfor %}
