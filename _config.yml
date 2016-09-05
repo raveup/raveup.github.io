@@ -26,7 +26,7 @@ collections:
     output: false
 
 # Announcements to show
-announcements: 1
+announcements: 0
 
 sass:
   sass_dir: _sass
