@@ -17,7 +17,7 @@
       <span class="grey">VOLUME:</span> {{ page.volume }}
       <br>
       <span class="grey">SUPPORT:</span> {{ page.support | upcase }}
-    {% if page.metadata %}<p>{{ page.metadata | join: ' / ' %}}</p>{% endif %}</header>
+    {% if page.metadata %}<p>{{ page.metadata | join: ' / ' }}</p>{% endif %}</header>
   {{ page.excerpt }}
   <div>{{ content | replace: page.excerpt, '' }}{% comment %}{% include buy.html %}{% endcomment %}
   </div>
