@@ -38,6 +38,11 @@
   description: 7-inches gems from the UK-punk best!
   color: a65a5a
 
+- name: RAVE-UP / HELLNATION RECORDS
+  code: hn
+  description: Co-production between your fave Italian Labels!
+  color: ffeb3b
+
 - name: RAVE-UP BOOKS
   code: books
   description: Brand new books casting light on obscure and rare music!
@@ -62,8 +67,3 @@
   code: ssr
   description: Northern Ireland obscure gems rediscovered!
   color: D10F51
-
-- name: RAVE-UP / HELLNATION RECORDS
-  code: hn
-  description: Co-production between your fave Italian Labels!
-  color: ffeb3b
