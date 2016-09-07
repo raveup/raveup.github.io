@@ -1,4 +1,4 @@
 <!-- TOP BAR -->
 <header class="{{ include.class }}">
-  <h1>{{ include.name }}</h1>{% if include.description %}<h3>{{ include.description | upcase }}</h3>{% endif %}
+  {% if include.cap %}<h3 class="cap">{{ include.cap | upcase }}</h3>{% endif %}<h1>{{ include.name }}</h1>{% if include.description %}<h3>{{ include.description | upcase }}</h3>{% endif %}
 </header>
