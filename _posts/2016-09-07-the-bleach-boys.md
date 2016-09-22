@@ -7,6 +7,7 @@ support: lp
 category: eps
 volume: 15
 image: 7e91c9c6a4455994bab9468caa65009c
+youtube: yNoE1NmCnI0
 ---
 
 Punk Rock hadn't really hit small town England in 1976, but when it did, it hit like a neutron bomb. The Bleach Boys took their cue from the American punk scene; they blended fast guitars and relentless drums with their own unique brand of humour, creating a sound of their own.
@@ -17,4 +18,4 @@ In the following weeks after their first show in early '77, they were banned fro
 
 > 400 COPIES, FIRST 100 COPIES WILL BE IN <span class="green">GREEN</span> SLIME COLORED VINYL...  
 
-GRAB THIS JEWEL SOOOOON OR DIE!!
+GRAB THIS GEM SOOOOON OR DIE!!
