@@ -3,15 +3,15 @@
   description: Obscure nuggets from the golden age of Punk Rock!
   color: d01d1f
 
-- name: SYNTHETIC SHADOWS RECORDS
-  code: ss
-  description: Early post Punk minimal synth worldwide!
-  color: 49add6
-
 - name: EUROPEAN PUNK SERIE
   code: eps
   description: European punk slabs from the vaults!
   color: 9ecf33
+
+- name: SYNTHETIC SHADOWS RECORDS
+  code: ss
+  description: Early post Punk minimal synth worldwide!
+  color: 49add6
 
 - name: RAVE UP RECORDS ITALIAN
   code: ruri
