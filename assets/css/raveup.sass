@@ -18,7 +18,8 @@ $acid-blue: #00f
 $ss: $acid-blue
 $forest-green: #009A18
 $eps: $forest-green
-$green: $forest-green
+$green: #9ecf33
+$blue: #49add6
 $orange: orange
 $rug: $orange
 $grey80: #808080
@@ -27,28 +28,6 @@ $yellow: #FFEB3B
 $ruri: $yellow
 $violet: violet
 $rurx: $violet
-
-// APPLY http://chriskempson.github.io/base16/#default
-{% for label in site.data.labels %}
-
-section > header.{{ label.code }} h1
-  border-bottom: $border-horizontal solid #{{ label.color }}
-
-article header.{{ label.code }}
-  border-left: $border-vertical solid #{{ label.color }}
-  h2 a,
-  a
-    color: #{{ label.color }}
-
-article header h2.{{ label.code }} a,
-article ul.{{ label.code }} li a,
-ul li a.{{ label.code }}
-  color: #{{ label.color }}
-
-section.soldout.{{ label.code }} > div figure img:hover
-  border: 2px solid #{{ label.color }}
-
-{% endfor %}
 
 ul li.new
   background-color: $greydark
@@ -166,8 +145,6 @@ section
         line-height: 1em
         margin: 0
         font-weight: normal
-      .green
-        display: none
       p
         margin: 0
         color: $grey80
@@ -226,7 +203,7 @@ body.post
         font-weight: 100
         text-transform: none
       video
-        border: 5px solid #00f
+        border: 2px solid #00f
         width: 22em
         height: 14em
       div
@@ -286,6 +263,8 @@ blockquote
   color: red
 .green
   color: $green
+.blue
+  color: $blue
 
 // ASIDE
 aside
@@ -334,3 +313,30 @@ section.soldout
         border: 2px solid black
         width: 10em
         height: auto
+
+/* LABEL COLORS */
+// APPLY http://chriskempson.github.io/base16/#default
+{% for label in site.data.labels %}
+
+section > header.{{ label.code }} h1
+  border-bottom: $border-horizontal solid #{{ label.color }}
+
+article header.{{ label.code }}
+  border-left: $border-vertical solid #{{ label.color }}
+  h2 a,
+  a
+    color: #{{ label.color }}
+
+article header h2.{{ label.code }} a,
+article ul.{{ label.code }} li a,
+ul li a.{{ label.code }}
+  color: #{{ label.color }}
+
+section.soldout.{{ label.code }} > div figure img:hover
+  border: 2px solid #{{ label.color }}
+
+body.post section article div.video.{{ label.code }}
+  video,
+  div iframe
+    border-color: #{{ label.color }}
+{% endfor %}
