@@ -4,3 +4,6 @@ outdate: OUT 15th OCTOBER 2016 !
 
 # Announcements to show
 announcements: 1
+
+# Site root url
+root: http://www.raveuprecords.com

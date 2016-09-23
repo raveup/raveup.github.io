@@ -1,0 +1,114 @@
+---
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body style="margin:0;padding:0;">
+		<table border="0" cellpadding="10px" cellspacing="0" height="100%" width="100%" style="background-color:#020202;color:#f7f7f7;font-family:sans-serif;font-size:20px;padding:0 5em;">
+			<tr>
+				<td align="center" valign="top" colspan="2">{{ site.url }}
+					<a href="{{ site.data.settings.root }}"><img src="{{ site.data.settings.root }}/assets/images/rave-up-records.png" alt="Rave-up records" /></a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="background-color:#f7f7f7;color:#020202;">
+					<h1 style="text-align:center;margin:0;">NEW RELEASES!</h1>
+				</td>
+			</tr>
+			{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}
+			{% for post in rev reversed %}{% if post.tags contains 'new' and post.focus == null %}
+				{% if fst == false %}
+					{% if post.outdate != null %}{% assign out = post.outdate %}{% else %}{% assign out = site.data.settings.outdate %}{% endif %}
+					<tr>
+						<td colspan="2">
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top" colspan="2">
+							<h1 style="color:#{{ labels.color }};margin-bottom:0;">{{ labels.name }}</h1>
+							<h3 style="font-weight:100;margin-top:0;">{{ out | upcase }}</h3>
+						</td>
+					</tr>
+					{% assign fst = true %}
+				{% endif %}
+				<tr>
+					<td>
+						<img src="{{ site.data.settings.root }}/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}" width="300px">
+					</td>
+					<td valign="top">
+						<h2 style="margin:0.5em 0;">
+							<a href="{{ site.data.settings.root }}{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}" style="color:#{{ labels.color }}">{{ post.title | upcase }}</a>
+						</h2>
+						<h3 style="margin:0.5em 0;">{{ post.item | upcase }}</h3>
+						<p style="color:#808080;margin:0.5em 0;">{{ labels.code | upcase }} #{% if post.volume < 10 %}0{% endif %}{{ post.volume }} ({{ post.support | upcase }})</p>
+						{{ post.excerpt }}
+					</td>
+				</tr>
+			{% endif %}{% endfor %}{% endfor %}
+			<!-- Few in Stock -->
+			{% assign sct = false %}
+			{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}
+			{% for post in rev reversed %}{% if post.tags contains 'few' %}
+				{% if fst == false %}
+					{% if sct == false %}
+						<tr>
+							<td colspan="2">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="background-color:#f7f7f7;color:#020202;">
+								<h1 style="text-align:center;margin:0;">STILL IN STOCK, REALLY FEW COPIES LEFT!</h1>
+							</td>
+						</tr>
+					{% assign sct = true %}{% endif %}
+					<tr>
+						<tr>
+							<td colspan="2">
+								&nbsp;
+							</td>
+						</tr>
+						<td align="center" colspan="2">
+							<h1 style="color:#{{ labels.color }};margin-bottom:0;">{{ labels.name }}</h1>
+							<h3 style="font-weight:100;margin-top:0;">{{ labels.description | upcase }}</h3>
+						</td>
+					</tr>
+					{% assign fst = true %}
+				{% endif %}
+				<tr>
+					<td>
+						<img src="{{ site.data.settings.root }}/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}" width="300px">
+					</td>
+					<td valign="top">
+						<h2 style="margin:0.5em 0;">
+							<a href="{{ site.data.settings.root }}{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}" style="color:#{{ labels.color }}">{{ post.title | upcase }}</a>
+						</h2>
+						<h3 style="margin:0.5em 0;">{{ post.item | upcase }}</h3>
+						<p style="color:#808080;margin:0.5em 0;">{{ labels.code | upcase }} #{% if post.volume < 10 %}0{% endif %}{{ post.volume }} ({{ post.support | upcase }})</p>
+						{{ post.excerpt }}
+					</td>
+				</tr>
+				{% endif %}{% endfor %}{% endfor %}
+			<!-- Footer -->
+			<tr>
+				<td colspan="2">
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="background-color:#121212;">
+					<p style="text-align:center;"><strong>RAVE UP RECORDS</strong> &ndash; PIERPAOLO DE IULIS, via Galeazzo Alessi 229 &ndash; 00176 Roma, ITALY &ndash; <a style="color:#b00;" href="mailto:&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;">&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;</a></p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
