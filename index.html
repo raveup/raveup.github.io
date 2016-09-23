@@ -30,5 +30,5 @@ permalink: /
 
 <!-- STOCK - Header below -->
 <section class="stock">
-{% comment %}{% include topbar.html name="still in stock" %}{% endcomment %}{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags.size == 0 and post.focus == null %}{% if fst == false %}{% include topbar.html name=labels.name description=labels.description class=labels.code cap='In Stock' %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}
+{% comment %}{% include topbar.html name="still in stock" %}{% endcomment %}{% for labels in site.data.labels %}{% assign cat = labels.code %}{% assign rev = site.categories[cat] | sort: 'volume' %}{% assign fst = false %}{% for post in rev reversed %}{% if post.tags.size == 0 or post.tags contains 'few' %}{% if fst == false %}{% include topbar.html name=labels.name description=labels.description class=labels.code cap='In Stock' %}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}
 </section>
