@@ -179,7 +179,7 @@ body.archive
 body.post
   section article
     padding: .5em 2em .5em 1.2em
-    div:first-of-type,
+    div.text,
     > p,
     header
       margin-left: 0
@@ -194,7 +194,8 @@ body.post
       img
         width: 800px
         margin-right: 0
-    div.video
+    div.video,
+    div.audio
       @include clearfix
       h2
         width: 14em
@@ -202,9 +203,11 @@ body.post
         margin: 2em 0 0 .3em
         font-weight: 100
         text-transform: none
-      video
+      video,
+      audio
         border: 2px solid #00f
         width: 22em
+      video
         height: 14em
       div
         margin-left: 0
@@ -335,8 +338,10 @@ ul li a.{{ label.code }}
 section.soldout.{{ label.code }} > div figure img:hover
   border: 2px solid #{{ label.color }}
 
-body.post section article div.video.{{ label.code }}
+body.post section article div.video.{{ label.code }},
+body.post section article div.audio.{{ label.code }}
   video,
+  audio,
   div iframe
     border-color: #{{ label.color }}
 {% endfor %}
