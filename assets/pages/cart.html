@@ -1,0 +1,17 @@
+---
+layout: default
+title: cart
+permalink: /cart/
+script:
+  - js/buttons.js
+---
+<section>
+{% include topbar.html name='YOUR CART' description='add items and checkout with paypal' class="grey" %}
+
+<table id="cart"></table>
+<br>
+<a href="{{ site.baseurl }}/checkout/"><button type="button">Shipping & Checkout</button></a>
+<br><br>
+<a href="{{ site.baseurl }}/" onclick="history.back();"><button type="button" class="grey">Continue Shopping</button></a>
+<br><br>
+</section>

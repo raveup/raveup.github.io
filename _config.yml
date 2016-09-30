@@ -11,6 +11,7 @@ url:
 gems:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-coffeescript
 
 name: Rave-Up
 title: Rave-Up records
@@ -32,3 +33,4 @@ script:
   - js/easing.js
   - js/main.js
   - js/md5.min.js
+  - js/carello.js
