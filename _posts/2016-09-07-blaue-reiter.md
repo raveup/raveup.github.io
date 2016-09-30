@@ -7,6 +7,7 @@ support: lp
 category: ss
 volume: 22
 image: 27a4d11f71c7799c50f320cf17544b88
+mp3: blaue-reiter-1
 ---
 
 Blaue Reiter was a seminal post punk band from Alessandria, not so far from Turin. They appeared in autumn 1982 on compilation"Gathered", emerging from the anthology edited the "Rockerilla" staff, who at the time was the leading magazine for anyone interested in the new rock trends.
