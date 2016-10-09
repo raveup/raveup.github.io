@@ -7,5 +7,5 @@ stay tuned!
 - **SCARLET** EP 7"  
 - **MOLLS** double LP  
 - **SHADY LADY** double LP  
-- **TRAGICS** EP 7"  
+- **TRAGICZ** 7"  
 - **BAHNHOF** LP
