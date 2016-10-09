@@ -23,6 +23,6 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/raveup.css" type="text/css" media="screen">
 
   </head>
-<body class="{{ page.layout }}">
+<body class="{% if page.layout contains 'post' %}post{% else %}{{ page.title }}{% endif %}">
 {% include header.html %}
   <main>
