@@ -3,7 +3,7 @@ layout: post
 title: shotgun solution
 item: 1983
 tag: few
-support: EP 7 inches
+support: 7"
 category: hn
 volume: 1
 image: 7e91c9c6a4455994bab9468caa65009c
