@@ -2,7 +2,7 @@
 # override in post with `outdate: ...`
 outdate: OUT 15th OCTOBER 2016 !
 
-# Announcements to show
+# Blog Announcements to show
 announcements: 1
 
 # Site root url
