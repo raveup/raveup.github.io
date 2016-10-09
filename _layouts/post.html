@@ -18,10 +18,9 @@
       <br>
       <span class="grey">SUPPORT:</span> {{ page.support | upcase }}
     {% if page.metadata %}<p>{{ page.metadata | join: ' / ' }}</p>{% endif %}</header>
+    {% if site.data.carello.active %}{% unless page.tags contains 'soldout' %}{% include buy.html %}{% endunless %}{% endif %}
   {{ page.excerpt }}
-  <div class="text">{{ content | replace: page.excerpt, '' }}
-	  {% comment %}{% include buy.html %}{% endcomment %}
-  </div>
+  <div class="text">{{ content | replace: page.excerpt, '' }}</div>
 
   {% if page.mp3 %}
     <div class="audio {{ page.category }}">

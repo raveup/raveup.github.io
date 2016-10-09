@@ -1,12 +1,27 @@
-<div class="carello">
-  {% for format in site.data.prices %}{% if format.support == page.support %}{% if format.price %}{{ page.support | upcase }} € <span id="price">{{ format.price }}</span>,00{% endif %}{% if format.wholesale %} – WHOLESALE € <span id="wholesale">{{ format.wholesale }}</span>,00{% endif %}
-  <br><br>
-  QUANTITY: <span id="quantity">0</span>
-  <span id="number" hidden>{{ page.category }}-{{ page.volume }}</span>
-  <span id="item" hidden>{{ page.title }} - {{ page.item }}</span>
-  <button type="button" name="add" id="add">+</button>
-  <button type="button" name="sub" id="sub">-</button>
-  <br><br>
+{% for format in site.data.prices %}{% if format.support == page.support %}
+<header class="carello">
+	<h3>ORDER</h3>
+	<div hidden>
+		<span id="category">{{ page.category }}</span>
+		<span id="volume">{{ page.volume }}</span>
+		<span id="code">{{ page.category }}-{{ page.volume }}</span>
+		<span id="item">{{ page.item }}</span>
+		<span id="title">{{ page.title }}</span>
+		<span id="support">{{ page.support }}</span>
+	</div>
+	{% if format.price %}<span class="grey">PRICE:</span> €<span id="price">{{ format.price }}</span>,00
+	<br>{% endif %}
+	{% if format.wholesale %}<span class="grey">WHOLESALE:</span> € <span id="wholesale">{{ format.wholesale }}</span>,00
+	<br>{% endif %}
+	<span class="grey">QUANTITY:</span> <a href="javascript:void(0);" id="add">ADD</a>
+	<span id="quantity">0</span>
+	<a href="javascript:void(0);" id="sub">SUB</a>
+	<br>
+	<span class="grey">TOTAL:</span> €<span id="total">0</span>
+	<a href="javascript:void(0);" id="addcart">Add to Cart</a>
+</header>
+{% endif %}{% endfor %}
+
   <!-- SHIPPING
   <select name="zone" id="zone">
     <option value="" disabled selected>Select shipping zone</option>
@@ -15,11 +30,8 @@
     <option value="3">Oceania</option>
   </select>
   <br><br> -->
-  TOTAL: € <span id="total">0</span>
-  <br><br>
-  <button type="button" id="addcart">Add to Cart</button>
-  <br><br>
-  <a href="{{ site.baseurl }}/cart/"><button class="grey" type="button" id="view">View Cart</button></a>
+
+  <!-- <a href="{{ site.baseurl }}/cart/"><button class="grey" type="button" id="view">View Cart</button></a> -->
   <!-- <script async src="{{ site.url }}/assets/js/paypal-button.min.js?merchant=raveup@tiscali.it"
       data-button="cart"
       data-type="form"
@@ -29,5 +41,3 @@
       data-amount="{{ format.price }}"
       data-currency="eur"
   ></script> -->
-  {% endif %}{% endfor %}
-</div>

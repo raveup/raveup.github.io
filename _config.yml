@@ -33,4 +33,3 @@ script:
   - js/easing.js
   - js/main.js
   - js/md5.min.js
-  - js/carello.js

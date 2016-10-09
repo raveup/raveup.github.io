@@ -8,10 +8,20 @@ script:
 <section>
 {% include topbar.html name='YOUR CART' description='add items and checkout with paypal' class="grey" %}
 
-<table id="cart"></table>
-<br>
-<a href="{{ site.baseurl }}/checkout/"><button type="button">Shipping & Checkout</button></a>
+<article id="cart_list">
+</article>
+<article>
+	<h3 class="not-empty" hidden>Subtotal: €<span id="subtotal"></span></h3>
+	<h3 class="not-empty" hidden>Select shipping:
+	<select id="shipping">
+		<option value="" disabled="" selected="">Select shipping zone</option>
+		{% for country in site.data.carello.shippings %}
+		<option value="{{ country[1] }}">{{ country[0] | upcase }}</option>
+		{% endfor %}
+	</select>
+	</h3>
+	<h1 class="has-shipping" hidden>TOTAL: €<span id="total"></span></h1>
+</article>
 <br><br>
-<a href="{{ site.baseurl }}/" onclick="history.back();"><button type="button" class="grey">Continue Shopping</button></a>
-<br><br>
+<a href="{{ site.baseurl }}/">Continue Shopping</a>
 </section>

@@ -1,0 +1,17 @@
+# carello (shop, cart)
+active: false
+prices:
+    supports:
+        - support: lp
+          price: 12
+          wholesale: 8
+        - support: 7"
+          price: 6
+          wholesale: 4
+        - support: dlp
+          price: 20
+          wholesale:
+shippings:
+    italy: 7
+    europe: 12
+    usa: 18
