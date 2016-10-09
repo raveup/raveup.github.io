@@ -21,6 +21,7 @@ $eps: $forest-green
 $green: #9ecf33
 $blue: #49add6
 $orange: orange
+$deep-orange: #f70
 $rug: $orange
 $grey80: #808080
 $blog: $grey80
@@ -28,6 +29,11 @@ $yellow: #FFEB3B
 $ruri: $yellow
 $violet: violet
 $rurx: $violet
+
+// disable links
+a[disabled]
+  pointer-events: none
+  color: grey !important
 
 ul li.new
   background-color: $greydark
@@ -169,7 +175,7 @@ body.catalog
     padding: 3em 0 2em 0
 
 body.search,
-body.default,
+body.home,
 body.archive
   article header:not(.blog)
     margin-left: 0
@@ -316,6 +322,22 @@ section.soldout
         border: 2px solid black
         width: 10em
         height: auto
+
+// CARELLO
+
+#cart_list header
+  text-transform: uppercase
+  margin-bottom: 2em
+
+a.cart-link
+  color: $dark-red !important
+
+// select#shipping
+
+header.carello
+  border: 5px solid whitesmoke
+  margin-top: 1em
+  text-transform: uppercase
 
 /* LABEL COLORS */
 // APPLY http://chriskempson.github.io/base16/#default
