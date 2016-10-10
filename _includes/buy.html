@@ -5,17 +5,17 @@
 		<span id="category">{{ page.category }}</span>
 		<span id="volume">{{ page.volume }}</span>
 		<span id="code">{{ page.category }}-{{ page.volume }}</span>
-		<span id="item">{{ page.item }}</span>
-		<span id="title">{{ page.title }}</span>
+		<span id="item">{{ page.item | upcase }}</span>
+		<span id="title">{{ page.title | upcase }}</span>
 		<span id="support">{{ page.support }}</span>
 	</div>
 	{% if format.price %}<span class="grey">PRICE:</span> €<span id="price">{{ format.price }}</span>,00
 	<br>{% endif %}
 	{% if format.wholesale %}<span class="grey">WHOLESALE:</span> € <span id="wholesale">{{ format.wholesale }}</span>,00
 	<br>{% endif %}
-	<span class="grey">QUANTITY:</span> <a href="javascript:void(0);" id="add">ADD</a>
+	<span class="grey">QUANTITY:</span> <a href="javascript:void(0);" id="sub">SUB</a>
 	<span id="quantity">0</span>
-	<a href="javascript:void(0);" id="sub">SUB</a>
+	<a href="javascript:void(0);" id="add">ADD</a>
 	<br>
 	<span class="grey">TOTAL:</span> €<span id="total">0</span>
 	<a href="javascript:void(0);" id="addcart">Add to Cart</a>

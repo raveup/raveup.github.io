@@ -30,11 +30,6 @@ $ruri: $yellow
 $violet: violet
 $rurx: $violet
 
-// disable links
-a[disabled]
-  pointer-events: none
-  color: grey !important
-
 ul li.new
   background-color: $greydark
 
@@ -136,7 +131,7 @@ section
     border-radius: 6px
     @include clearfix
     img
-      box-shadow: 0px 0px 1px 1px rgba(128,128,128,0.6)
+      // box-shadow: 0px 0px 1px 1px rgba(128,128,128,0.6)
       float: none
       @media screen and (min-width: $break-small)
         float: left
@@ -323,6 +318,11 @@ section.soldout
         width: 10em
         height: auto
 
+// disable links
+a[disabled]
+  pointer-events: none
+  color: grey !important
+
 // CARELLO
 
 #cart_list header
@@ -332,7 +332,11 @@ section.soldout
 a.cart-link
   color: $dark-red !important
 
-// select#shipping
+.paypal-button-logo
+  background-color: white
+
+.paypal-button span img
+  float: none
 
 header.carello
   border: 5px solid whitesmoke
