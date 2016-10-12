@@ -21,7 +21,7 @@ layout: null
 			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 			<link>{{ post.url | prepend: site.url }}</link>
 			<category>{{ currentCategory[0].name | upcase }}</category>
-			<description><![CDATA[<img src="{{ site.url }}/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" /><strong>{{ post.excerpt | strip_html | xml_escape }}</strong>{{ post.content | replace: post.excerpt, '' | xml_escape }}]]></description>
+			<description><![CDATA[<img src="{{ site.url }}/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" /><strong>{{ post.excerpt }}</strong>{{ post.content | replace: post.excerpt, '' }}]]></description>
 		</item>
 		{% endfor %}
 	</channel>
