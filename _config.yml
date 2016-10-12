@@ -6,10 +6,9 @@ excerpt_separator: "\n\n"
 relative_permalinks: false
 exclude: [ php ]
 
-url:
+url: http://www.raveuprecords.com
 
 gems:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-coffeescript
 

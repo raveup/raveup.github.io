@@ -3,15 +3,15 @@
 
   <!-- LOAD SITE SCRIPTS -->
   {% if site.script %}
-    {% for script in site.script %}<script src="{{ site.url }}/assets/{{ script }}"></script>
+    {% for script in site.script %}<script src="/assets/{{ script }}"></script>
     {% endfor %}{% endif %}
   <!-- LOAD CARELLO -->
   {% if site.data.carello.active %}
-    <script src="{{ site.url }}/assets/js/carello.js"></script>
+    <script src="/assets/js/carello.js"></script>
     {% endif %}
   <!-- LOAD PAGE SCRIPTS -->
   {% if page.script %}
-    {% for script in page.script %}<script src="{{ site.url }}/assets/{{ script }}"></script>
+    {% for script in page.script %}<script src="/assets/{{ script }}"></script>
     {% endfor %}{% endif %}
 </body>
 </html>

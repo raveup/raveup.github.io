@@ -1,0 +1,30 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.title | xml_escape }}</title>
+		<description>{{ site.description | xml_escape }}</description>
+		<link>{{ site.url }}</link>
+		<atom:link href="{{ "/feed.xml" | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+		<generator>Jekyll v{{ jekyll.version }}</generator>
+		{% assign sorted = (site.posts | sort: 'date' | reverse ) %}
+		{% for post in sorted limit:10 %}
+		<item>
+			{% assign currentCategory = site.data.labels | where: 'code', post.category %}
+			<guid>{{ post.category | upcase }}–{{ post.volume }}</guid>
+			<category>{{ post.category }}</category>
+			<title>{{ post.title | xml_escape | upcase }} – {{ post.item | xml_escape | upcase }}</title>
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+			<link>{{ post.url | prepend: site.url }}</link>
+			<image>{{ site.url }}/assets/covers/{{ post.category }}/{{ post.image }}s.jpg</image>
+			<category>{{ currentCategory[0].name | upcase }}</category>
+			<excerpt>{{ post.excerpt | strip_html | xml_escape }}</excerpt>
+			<description>{{ post.content | replace: post.excerpt, '' | xml_escape }}</description>
+		</item>
+		{% endfor %}
+	</channel>
+</rss>

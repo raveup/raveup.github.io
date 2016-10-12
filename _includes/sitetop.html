@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | upcase }}{% if page.layout == 'archive' %}{% for labels in site.data.labels %}{% if labels.code == page.category %}{{ labels.code | upcase }}{% endif %}{% endfor %}{% endif %} | {{ site.name }}</title>
-    {% feed_meta %}
-    <meta property="og:image" content="{{ site.url }}/assets/images/record.ico">
+    <meta property="og:image" content="/assets/images/record.ico">
     <meta property="og:title" content="{{ page.title | capitalize }}{% if page.layout == 'archive' %}{% for labels in site.data.labels %}{% if labels.code == page.category %}{{ labels.name | upcase }}{% endif %}{% endfor %}{% endif %} | {{ site.name }}">
     <meta property="og:type" content="music">
-    <link href="{{ site.url }}/assets/images/record.ico" rel="icon" type="image/x-icon" />
+    <link href="/assets/images/record.ico" rel="icon" type="image/x-icon" />
 
     <!-- ############# FEEDS ############# -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="{{ site.url }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="/feed.xml" />
 
     <!-- ############# CSS ############# -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/normalize.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/ui.totop.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/assets/css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/assets/css/ui.totop.css" type="text/css" media="screen">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Inconsolata:400,700' type='text/css'>
 
     <!-- SCSS -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/raveup.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/assets/css/raveup.css" type="text/css" media="screen">
 
   </head>
 <body class="{% if page.layout contains 'post' %}post{% else %}{{ page.title }}{% endif %}">
