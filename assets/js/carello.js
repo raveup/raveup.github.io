@@ -10,6 +10,7 @@ var category = document.getElementById('category') || null;
 var addcart = document.getElementById('addcart') || null;
 var shipping = document.getElementById('shipping') || null;
 var total = document.getElementById('total') || null;
+var paga = document.getElementById('pay-button') || null;
 
 // ADD CART LINK
 if (current.length) {
@@ -45,12 +46,25 @@ if (cartList) {
 // SHIPPING EVENT
 if (shipping) {
 	shipping.addEventListener('change', function (e) {
-		var zone = shipping.value;
+		var zone = parseFloat(shipping.value);
 		var hasShipping = document.querySelectorAll('.has-shipping');
 		for (var i = 0; i < hasShipping.length; i++) {
 			hasShipping[i].removeAttribute('hidden');
 		}
-		do
+		var totalone = subtotal + zone;
+		total.innerHTML = totalone.toFixed(2);
+		var paypalButton = '<script async src="paypal-button.min.js?merchant=raveup@tiscali.it" data-button="paynow" data-upload="1" data-type="form" data-currency="EUR" data-handling_cart="' + zone + '"';
+		for (var j = 0; j < current.length; j++) {
+			var ordine = current[j];
+			var nome = ordine.title + ' – ' + ordine.item;
+			var id = ordine.category.toUpperCase() + '–' + ordine.volume;
+			var ii = j+1;
+			paypalButton += ' data-item_name_' + ii + '="' + nome + '" data-amount_' + ii + '="' + ordine.price + '" data-quantity_' + ii + '="' + ordine.quantity + '" data-item_number_' + ii + '="' + id + '"';
+		}
+		paypalButton += '></script>';
+		var bottone = document.getElementById('pay-button');
+		bottone.innerHTML = paypalButton;
+		paypal.button.process(bottone);
 	});
 }
 
@@ -98,15 +112,13 @@ if (addcart) {
 	addcart.addEventListener('click', function(e) {
 		var quantity = document.getElementById('quantity').textContent;
 		var price = document.getElementById('price').textContent;
-		var codice = document.getElementById('code').textContent;
 		var updated = [];
 		if (quantity > 0) {
-			if (quantity > 3) price = document.getElementById('wholesale').textContent;
 			var iitem = {};
-			['item', 'title', 'support', 'volume', 'category', 'price', 'quantity'].map( function (i) {
+			['item', 'title', 'support', 'volume', 'category', 'price', 'quantity', 'code'].map( function (i) {
 				iitem[i] = document.getElementById(i).textContent;
 			});
-			iitem.code = codice;
+			if (quantity > 3) iitem.price = document.getElementById('wholesale').textContent;
 			iitem.timestamp = Date.now().toString();
 			iitem.link = document.getElementById('pagepermalink').href;
 			updated.push(iitem);
@@ -129,6 +141,11 @@ if (addcart) {
 			disableLinks();
 		}
 	});
+}
+
+// PAGA EVENT
+if (paga) {
+	paga.addEventListener('click', console.log);
 }
 
 // DISABLE LINKS
