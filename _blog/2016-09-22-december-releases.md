@@ -6,5 +6,4 @@ stay tuned!
 
 - **MOLLS** double LP  
 - **SHADY LADY** double LP  
-- **TRAGICZ** 7"  
 - **BAHNHOF** LP
