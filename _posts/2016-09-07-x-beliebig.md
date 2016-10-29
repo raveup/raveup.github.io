@@ -2,7 +2,7 @@
 layout: post
 title: x-beliebig
 item: s/t
-tag: new
+tag: few
 support: lp
 category: ss
 volume: 23

@@ -2,7 +2,7 @@
 layout: post
 title: the bleach boys
 item: fur cough from the grave
-tag: new
+tag: few
 support: lp
 category: eps
 volume: 15
