@@ -2,6 +2,7 @@
 layout: post
 title: the daughters
 item: s/t
+tag: soldout
 support: lp
 category: rur
 volume: 76
