@@ -1,10 +1,9 @@
 ---
-title: december 2016 releases
+title: 2017 previews
 ---
 
 stay tuned!
 
-- **SCARLET** EP 7"  
 - **MOLLS** double LP  
 - **SHADY LADY** double LP  
 - **TRAGICZ** 7"  
