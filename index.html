@@ -8,6 +8,17 @@ permalink: /
 {% assign fst = false %}{% for post in site.posts %}{% if post.focus %}{% if fst == false %}{% assign fst = true %}<section class="focus">
 {% include topbar.html name=post.focus.name description=post.focus.description %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% if fst %}</section>{% endif %}
 
+<!-- BLOG -->
+{% if site.data.settings.announcements > 0 %}
+<section class="blog">
+  {% comment %}{% include topbar.html name="News from rave-up records" description="coming soon" class="blog" %}{% endcomment %}
+  {% assign sorted_blog = (site.blog | sort: 'date' | reverse) %}
+  {% for blog in sorted_blog limit: site.data.settings.announcements %}
+  {% include blog.html %}
+  {% endfor %}
+</section>
+{% endif %}
+
 <!-- NEWS -->
 <!-- <section class="news"> -->
 {% comment %}{% include topbar.html name=outslogan %}{% endcomment %}
@@ -16,17 +27,6 @@ permalink: /
   {% if post.outdate != null %}{% assign out = post.outdate %}{% else %}{% assign out = site.data.settings.outdate %}{% endif %}
 
   {% include topbar.html name=labels.name description=out class=labels.code cap='New Release!'%}{% assign fst = true %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% endfor %}{% if sct %}</section>{% endif %}
-
-<!-- BLOG -->
-{% if site.data.settings.announcements > 0 %}
-<section class="blog">
-  {% include topbar.html name="News from rave-up records" description="coming soon" class="blog" %}
-  {% assign sorted_blog = (site.blog | sort: 'date' | reverse) %}
-  {% for blog in sorted_blog limit: site.data.settings.announcements %}
-  {% include blog.html %}
-  {% endfor %}
-</section>
-{% endif %}
 
 <!-- FEW LEFT -->
 <section class="few">
