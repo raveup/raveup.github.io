@@ -169,10 +169,13 @@ section
         padding: 1.5em 2em 1.5em 1.2em
         background-color: $greydark
 
-body.catalog
-  section article header
-    text-align: center
-    padding: 3em 0 2em 0
+body
+  &.catalog,
+  &.info,
+  &.releases
+    section article header
+      text-align: center
+      padding: 3em 0 2em 0
 
 body.search,
 body.home,

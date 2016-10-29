@@ -1,0 +1,30 @@
+---
+layout: default
+title: releases
+permalink: /releases/
+---
+<section>
+{% include topbar.html name='RAVE-UP RELEASES' description='our full releases list' class="grey" %}
+{% assign releases = site.posts | sort: "date" | reverse | group_by: "date" %}
+{% assign datone = 0 %}
+{% for release in releases %}
+	<article>
+		<header>
+			{% assign yearnow = release.name | date: "%Y" %}
+			{% if yearnow != datone %}<h2>{{ yearnow }}</h2>{% assign datone = yearnow %}{% endif %}
+			<h3>
+				<!-- Whitespace added for readability -->
+				{% assign d = release.name | date: "%-d"  %}
+				{{ release.name | date: "%B" }}
+				{% case d %}{% when '1' or '21' or '31' %}{{ d }}<sup>st{% when '2' or '22' %}{{ d }}<sup>nd{% when '3' or '23' %}{{ d }}<sup>rd{% else %}{{ d }}<sup>th{% endcase %}</sup>
+			</h3>
+		</header>
+		{% assign ambito = release.items %}
+		<ul class="center">
+		{% for post in ambito %}
+			{% include itemcatalog.html %}
+		{% endfor %}
+		</ul>
+	</article>
+{% endfor %}
+</section>

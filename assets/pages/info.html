@@ -4,11 +4,12 @@ title: info
 permalink: /info/
 ---
 <section>
+{% include topbar.html name='RAVE-UP FORMATS' description='our full releases by format' class="grey" %}
 {% assign formats = site.posts | sort: "category" | reverse | group_by: "support" %}
 {% for format in formats %}
   <article>
     <header>
-      <h3>{{format.name}}</h3>
+      <h2>{{format.name}}</h2>
     </header>
     {% assign ambito = format.items %}
     <ul class="center">
