@@ -2,6 +2,7 @@
 layout: post
 title: red asphalt
 item: s/t
+tag: soldout
 support: lp
 category: ss
 volume: 18
