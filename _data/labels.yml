@@ -13,14 +13,14 @@
   description: Early post Punk minimal synth worldwide!
   color: 49add6
 
-- name: RAVE UP RECORDS ITALIAN
+- name: RAVE UP RECORDS ITALIAN (old punk stuff!)
   code: ruri
   description: Obscure bands from the italian punk scene!
   color: cb54b3
 
 - name: RAVE UP RECORDS X
   code: rurx
-  description: Side label for crazy experiments!
+  description: new bands with right attitude!
   color: ad4c18
 
 - name: BACKSTREET RECORDS
@@ -30,7 +30,7 @@
 
 - name: AMERICAN LOST PUNK ROCK GEMS
   code: rug
-  description: 7-inches gems from the USA-punk best!
+  description: small gems from great USA punk bands!
   color: f58022
 
 - name: RAVE UP UK
