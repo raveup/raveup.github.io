@@ -6,7 +6,7 @@ tag: new
 support: 7"
 category: rurx
 volume: 8
-image: d9c16decb9e7ea0c684b360b52d5424c
+image: d9c16decb9e7ea0c684b360b52d5424d
 outdate: OUT DECEMBER 1ST 2016 !
 ---
 
