@@ -2,7 +2,7 @@
 layout: post
 title: muddy worries
 item: the rent / summertime
-tag: new
+tag: few
 support: 7"
 category: rurx
 volume: 8

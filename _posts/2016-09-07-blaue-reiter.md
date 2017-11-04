@@ -2,7 +2,7 @@
 layout: post
 title: blaue reiter
 item: my inner thought
-tag: new
+tag: few
 support: lp
 category: ss
 volume: 22
