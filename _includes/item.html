@@ -1,7 +1,7 @@
 {% assign currentCategory = site.data.labels | where: "code", post.category %}
 <article{% if post.tags contains 'new' %} class="new"{% endif %}>
   {% if post.image %}<figure>
-    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="/assets/covers/{{ post.category }}/{{ post.image }}s.jpg" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
+    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="{% assign image_src = '/assets/covers/' | append: post.category | append: '/' | append: post.image | append: 's.jpg' %}{{ image_src | absolute_url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
   </figure>{% endif %}
   <header class="{{ currentCategory[0].code }}">
     <h2>

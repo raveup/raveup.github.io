@@ -14,12 +14,12 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS" href="/feed.xml" />
 
     <!-- ############# CSS ############# -->
-    <link rel="stylesheet" href="/assets/css/normalize.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="/assets/css/ui.totop.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/css/normalize.css' | absolute_url }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/css/ui.totop.css' | absolute_url }}" type="text/css" media="screen">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Inconsolata:400,700' type='text/css'>
 
     <!-- SCSS -->
-    <link rel="stylesheet" href="/assets/css/raveup.css?v={{ site.time | date: '%s' }}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% assign site_time = site.time | date: '%s' %}{{ '/assets/css/raveup.css?v=' | append: site_time | absolute_url }}" type="text/css" media="screen">
 
   </head>
 <body class="{% if page.layout contains 'post' %}post{% else %}{{ page.title }}{% endif %}">
