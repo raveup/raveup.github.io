@@ -33,6 +33,16 @@
   description: small gems from great USA punk bands!
   color: f58022
 
+- name: AMERICAN 70'S HIGH ENERGY ROCK'N'ROLL
+  code: aher
+  description: Seventies proto punk/glam bands from darker side!
+  color: ffeb3b
+
+- name: RAVE-UP BOOKS
+  code: books
+  description: Brand new books casting light on obscure and rare music!
+  color: ffc16a
+
 - name: RAVE UP UK
   code: ruk
   description: 7-inches gems from the UK-punk best!
@@ -43,20 +53,10 @@
   description: Co-production between your fave Italian Labels!
   color: ffeb3b
 
-- name: RAVE-UP BOOKS
-  code: books
-  description: Brand new books casting light on obscure and rare music!
-  color: ffc16a
-
 - name: REVERENDO MOON RECORDS
   code: rmr
   description: Wash away your sins and be blessed by some music!
   color: f8f2f2
-
-- name: AMERICAN 70'S HIGH ENERGY ROCK'N'ROLL
-  code: aher
-  description: Seventies proto punk/glam bands from darker side!
-  color: ffeb3b
 
 - name: MINDLESS RECORDS
   code: min
