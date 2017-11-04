@@ -19,7 +19,7 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Inconsolata:400,700' type='text/css'>
 
     <!-- SCSS -->
-    <link rel="stylesheet" href="/assets/css/raveup.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/assets/css/raveup.css?v={{ site.time | date: '%s' }}" type="text/css" media="screen">
 
   </head>
 <body class="{% if page.layout contains 'post' %}post{% else %}{{ page.title }}{% endif %}">
