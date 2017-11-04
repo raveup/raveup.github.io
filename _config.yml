@@ -6,7 +6,7 @@ excerpt_separator: "\n\n"
 relative_permalinks: false
 exclude: [ php ]
 
-url: http://www.raveuprecords.com
+url: https://www.raveuprecords.com
 
 plugins:
   - jekyll-sitemap
