@@ -8,7 +8,7 @@ exclude: [ php ]
 
 url: http://www.raveuprecords.com
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-coffeescript
 
