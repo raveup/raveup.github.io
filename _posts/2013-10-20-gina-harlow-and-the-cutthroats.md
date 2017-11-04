@@ -3,6 +3,7 @@ layout: post
 title: gina harlow and the cutthroats
 item: live at max's kansas city
 support: lp
+tag: soldout
 category: rur
 volume: 73
 image: wDx_QejWqkZh

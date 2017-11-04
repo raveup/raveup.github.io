@@ -2,7 +2,7 @@
 layout: post
 title: v/a
 item: boston bootleg vol 3
-tag:
+tag: soldout
 support: dlp
 category: rur
 volume: 79

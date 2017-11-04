@@ -2,7 +2,7 @@
 layout: post
 title: shotgun solution
 item: 1983
-tag: few
+tag: soldout
 support: 7"
 category: hn
 volume: 1
