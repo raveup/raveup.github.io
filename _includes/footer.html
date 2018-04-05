@@ -23,7 +23,10 @@
         {% for labels in site.data.labels %}<li><a class="{{ labels.code }}" href="/{{ labels.code }}/">{{ labels.name }}</a></li>
         {% endfor %}</ul>
     </nav>
-    <p><strong>RAVE UP RECORDS</strong> &ndash; PIERPAOLO DE IULIS, via Galeazzo Alessi 229 &ndash; 00176 Roma, ITALY &ndash; <a href="mailto:&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;">&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;</a></p>
+    <p><strong>RAVE UP RECORDS</strong> &ndash; PIERPAOLO DE IULIS, via Galeazzo Alessi 229 &ndash; 00176 Roma, ITALY &ndash; <a href="mailto:&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;">&#x72;&#x61;&#x76;&#x65;&#x75;&#x70;&#x40;&#x74;&#x69;&#x73;&#x63;&#x61;&#x6C;&#x69;&#x2E;&#x69;&#x74;</a>
+      <br>
+      <small style="color:grey;">Updated {{ site.time | date_to_rfc822 }}</small>
+    </p>
     <a hidden id="pagepermalink" href="{{ page.url }}">permalink</a>
   </section>
 </footer>
