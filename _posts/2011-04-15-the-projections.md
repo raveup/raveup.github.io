@@ -4,6 +4,7 @@ title: the projections
 item: detroit punk rock history repeats itself
 support: 7"
 category: rug
+tag: soldout
 volume: 5
 image: QUKDMtZAxWJY
 ---

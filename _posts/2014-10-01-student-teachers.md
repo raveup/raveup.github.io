@@ -3,6 +3,7 @@ layout: post
 title: student teachers
 item: about the student teachers
 support: lp
+tag: soldout
 category: bac
 volume: 17
 image: wBMfy-NAcfkG

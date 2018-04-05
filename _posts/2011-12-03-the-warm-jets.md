@@ -3,6 +3,7 @@ layout: post
 title: the warm jets
 item: wanna start a war
 support: lp
+tag: soldout
 category: rur
 volume: 56
 image: 5p49w0omVImh

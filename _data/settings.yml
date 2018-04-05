@@ -1,6 +1,6 @@
 # OUTDATE General for posts tagged `new`
 # override in post with `outdate: ...`
-outdate: JUST NOW !
+outdate: May First 2018 !
 
 # Blog Announcements to show
-announcements: 1
+announcements: 0

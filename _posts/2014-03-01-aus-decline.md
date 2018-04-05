@@ -4,6 +4,7 @@ title: aus decline
 item: s/t
 support: lp
 category: ss
+tag: soldout
 volume: 13
 image: SRjqjpePmUqh
 ---

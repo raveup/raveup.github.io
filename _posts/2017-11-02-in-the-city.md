@@ -2,7 +2,7 @@
 layout: post
 title: mary monday / streetpunks / da statikz
 item: in the city
-tag: new
+tag: few
 support: lp
 category: rur
 volume: 82
@@ -21,5 +21,3 @@ Former stripper Mary Monday had a life shrouded in mystery, and conflicting repo
 were penned by. The Street Punks would play shows as a separate unit (and eventually part ways), but with the blinding punk guitar screech acing up and down both sides of this classic single, this is where the planets aligned and such an epic formative sound was created, aged even better with time. The album contains their studio material and Don Lamb's Da Statiks.
 
 > Album ltd. To 300 copies only.
-
-

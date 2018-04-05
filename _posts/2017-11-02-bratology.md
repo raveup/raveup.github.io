@@ -2,7 +2,7 @@
 layout: post
 title: The Brats
 item: "Bratology: the Brats collection"
-tag: new
+tag: few
 support: lp
 category: aher
 volume: 6

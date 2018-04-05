@@ -4,6 +4,7 @@ title: illogical sound
 item: s/t
 support: lp
 category: ss
+tag: soldout
 volume: 16
 image: rsJg8dIk2zfn
 ---
