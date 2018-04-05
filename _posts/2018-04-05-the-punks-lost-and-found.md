@@ -23,3 +23,5 @@ At the turn of the millennium, a Detroit web site, MotorCityJams.com, chronicled
 Be fast, this is your last chance to grab the definitive collection of one of the most powerful proto punk bands ever!!!!
 
 LISTEN!!!!!!!!!
+
+> Wholesale price 12 euro
