@@ -8,6 +8,8 @@ exclude: [ php ]
 
 url: http://www.raveuprecords.com
 
+timezone: Europe/Rome
+
 plugins:
   - jekyll-sitemap
   - jekyll-coffeescript
