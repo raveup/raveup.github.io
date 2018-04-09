@@ -7,7 +7,7 @@ support: lp
 category: eps
 volume: 16
 outdate: MAY FIRST 2018
-image: a0ca288dd61259a116ca724c4cf7ca1b
+image: mordbuben
 youtube: ZUbquccDSjA
 #focus:
 #  name: october 2015 news!
