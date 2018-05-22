@@ -3,6 +3,7 @@ layout: post
 title: the streetkidz
 item: looking for a thrill
 support: lp
+tag: soldout
 category: rur
 volume: 65
 image: 1GXV9mj5MMuW

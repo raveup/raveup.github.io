@@ -2,6 +2,7 @@
 layout: post
 title: liquid eyes
 item: s/t
+tag: soldout
 support: lp
 category: ss
 volume: 17
