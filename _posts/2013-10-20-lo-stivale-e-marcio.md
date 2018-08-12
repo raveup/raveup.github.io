@@ -4,6 +4,7 @@ title: lo stivale è marcio
 item: STORIE ITALIANE, PUNK E NON
 support: book
 category: books
+tag: soldout
 author: CLAUDIO PESCETELLI
 price: € 28,00
 volume: 1

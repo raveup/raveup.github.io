@@ -3,6 +3,7 @@ layout: post
 title: the spectacles
 item: re-spectacled
 support: lp
+tag: soldout
 category: rur
 volume: 59
 image: r9X-FqGiORqn
