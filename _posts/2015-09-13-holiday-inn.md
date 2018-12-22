@@ -2,7 +2,7 @@
 layout: post
 title: holiday inn
 item: s/t
-tag:
+tag: soldout
 support: 7"
 category: rurx
 volume: 3
