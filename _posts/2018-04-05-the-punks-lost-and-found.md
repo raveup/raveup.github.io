@@ -2,7 +2,7 @@
 layout: post
 title: the punks
 item: lost and found 1973-1977
-tag: new
+tag: few
 support: dlp
 category: aher
 volume: 7
