@@ -36,12 +36,12 @@
 - name: AMERICAN 70'S HIGH ENERGY ROCK'N'ROLL
   code: aher
   description: Seventies proto punk/glam bands from darker side!
-  color: ffeb3b
+  color: e9d205
 
 - name: RAVE-UP BOOKS
   code: books
   description: Brand new books casting light on obscure and rare music!
-  color: ffc16a
+  color: fa9303
 
 - name: RAVE UP UK
   code: ruk
