@@ -2,7 +2,6 @@
 layout: post
 title: joe d'elirio and the exxess
 item: s/t
-tag: few
 support: lp
 category: ss
 volume: 21

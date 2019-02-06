@@ -2,7 +2,6 @@
 layout: post
 title: degenerates
 item: s/t
-tag: few
 support: lp
 category: rur
 volume: 81
