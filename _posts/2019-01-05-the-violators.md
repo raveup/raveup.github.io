@@ -20,6 +20,4 @@ Finally out on Rave Up one of the best punk rock bands ever!!!
 Four tracks ep, that includes their ultra rare "Feel Lucky Punk?!/KBD" classic 'NY Ripper/My Country" 7" plus two killer unreleased studio tracks!!!
 Formed in 1978, The Violators were a New Jersey band that was quite popular in NYC clubs such Max Kansas City and CBGB. They opened for many bands such Siouxsie and the Banshees, Stimulators, Johnny Thunders, Dead Boys and more.
 The band recorded just one single in late 1979 at Fox Studios in Rutherford NJ. Right now, over 40 years later, you have the last chance to grab this amazing milestone of the punk era!
-500 copies only
-
-> First 100 copies bloody splattered vinyl!
+500 copies only.

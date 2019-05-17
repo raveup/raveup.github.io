@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <!-- FOCUS - Header in post -->
-{% assign fst = false %}{% for post in site.posts %}{% if post.focus %}{% if fst == false %}{% assign fst = true %}<section class="focus">
+{% assign fst = false %}{% for post in site.posts %}{% if post.focus %}{% if fst == false %}{% assign fst1 = true %}<section class="focus">
 {% include topbar.html name=post.focus.name description=post.focus.description %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% if fst %}</section>{% endif %}
 
 <!-- BLOG -->
