@@ -21,6 +21,9 @@
     <!-- SCSS -->
     <link rel="stylesheet" href="{% assign site_time = site.time | date: '%s' %}{{ '/assets/css/raveup.css?v=' | append: site_time | absolute_url }}" type="text/css" media="screen">
 
+    <!-- SCRIPTS -->
+    {% include scripts.html %}
+
   </head>
 <body class="{% if page.layout contains 'post' %}post{% else %}{{ page.title }}{% endif %}">
 {% include header.html %}
