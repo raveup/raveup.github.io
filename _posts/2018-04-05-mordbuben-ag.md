@@ -2,6 +2,7 @@
 layout: post
 title: mordbuben ag
 item: unreleased and rarities
+tag: soldout
 support: lp
 category: eps
 volume: 16

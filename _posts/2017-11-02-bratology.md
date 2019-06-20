@@ -5,6 +5,7 @@ item: "Bratology: the Brats collection"
 support: lp
 category: aher
 volume: 6
+tag: soldout
 outdate: 15 NOVEMBER 2017
 image: c9f028ecdbc7fff974dd31ed1f0ca5b6
 #focus:
