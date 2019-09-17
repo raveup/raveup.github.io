@@ -4,9 +4,13 @@ title: corpse grinders
 item: grind on
 support: lp
 category: rur
-tag: soldout
+tag: new
 volume: 24
 image: JR-ANLxwk6pm
+focus:
+  name: corpse grinders
+  description: NOW IN STOCK AGAIN
+outdate: OUT SEPTEMBER 2019
 ---
 
 Another NYC rock'n'roll legend. Rick Rivets and Jimmy Criss (ex-Teenage Lust) punk rock band. Raw, powerful and amazing sound.
