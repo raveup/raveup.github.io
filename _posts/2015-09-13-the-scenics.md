@@ -2,14 +2,14 @@
 layout: post
 title: the scenics
 item: in the summer
-tag: soldout
+tag: new
 support: lp
 category: rur
 volume: 77
 image: a00292aac9a272b6a05d07c32fb88417
-#focus:
-#  name: october 2015 news!
-#  description: OUT october 10<sup>th</sup> 2015
+focus:
+  name: scenics
+  description: NOVEMBER 2019
 ---
 
 Canadian underground legends, all original studio recordings, finally out of Rave Up Records!
