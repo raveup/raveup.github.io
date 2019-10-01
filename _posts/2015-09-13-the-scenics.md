@@ -9,7 +9,7 @@ volume: 77
 image: a00292aac9a272b6a05d07c32fb88417
 focus:
   name: scenics
-  description: NOVEMBER 2019
+  description: BACK IN STOCK!
 ---
 
 Canadian underground legends, all original studio recordings, finally out of Rave Up Records!

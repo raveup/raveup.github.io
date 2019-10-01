@@ -1,6 +1,6 @@
 <div>
   {% assign currentCategory = site.data.labels | where: "code", post.category %}{% if post.image %}<figure>
-    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="{% assign image_src = '/assets/covers/' | append: post.category | append: '/' | append: post.image | append: 's.jpg' %}{{ image_src | absolute_url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
+    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }} – {{ post.volume }}"><img src="{% assign image_src = '/assets/covers/' | append: post.category | append: '/' | append: post.image | append: 's.jpg' %}{{ image_src | absolute_url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }} – {{ post.volume }}"></a>
   </figure>{% endif %}
   <header>
     <h2>
