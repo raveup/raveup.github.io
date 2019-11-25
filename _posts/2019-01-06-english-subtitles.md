@@ -18,3 +18,5 @@ From the original demo tapes that secured them a record deal with Small Wonder b
 Recorded in 2 sessions at different low budget studios during the time they were playing a residency at seminal Oxford punk venue The Oranges and Lemons.
 
 Art punk? D.I.Y punk? sinply a UK PUNK ROCK MASTERPIECE!!!!
+
+> Ltd. 400 copies - 100 copies on orange/yellow vinyl 
