@@ -13,4 +13,7 @@ focus:
 outdate: Distributed by Rave Up
 ---
 
-Distributed by Rave Up
+Big Star Rolling is proud to present, from Treviso, one of the first punk band in Italy!
+
+Born as Borstal,they changed name to No Submission and published 4 tracks in 1981 in the iconic “Challenge “compilation..
+Now we got 17 unreleased tracks from the first furious years!Ltd ed.,coloured booklet with photos and band history from the Golden age of Punk! 
