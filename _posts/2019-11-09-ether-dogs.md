@@ -9,8 +9,8 @@ volume: 85
 image: 31a7c56de25741aabc458acca406cc5d
 focus:
   name: Ether Dogs lp
-  description: OUT JANUARY 15th 2020
-outdate: OUT JANUARY 15th 2020
+  description: OUT FEBRUARY 15th 2020
+outdate: OUT FEBRUARY 15th 2020
 ---
 
 The Ether Dogs are proof that not every stone of early punk has already been turned over.
