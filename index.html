@@ -4,10 +4,6 @@ title: home
 permalink: /
 ---
 
-<!-- FOCUS - Header in post -->
-{% assign fst = false %}{% for post in site.posts %}{% if post.focus %}{% if fst == false %}{% assign fst1 = true %}<section class="focus">
-{% include topbar.html name=post.focus.name description=post.focus.description %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% if fst %}</section>{% endif %}
-
 <!-- BLOG -->
 {% if site.data.settings.announcements > 0 %}
 <section class="blog">
@@ -18,6 +14,10 @@ permalink: /
   {% endfor %}
 </section>
 {% endif %}
+
+<!-- FOCUS - Header in post -->
+{% assign fst = false %}{% for post in site.posts %}{% if post.focus %}{% if fst == false %}{% assign fst1 = true %}<section class="focus">
+{% include topbar.html name=post.focus.name description=post.focus.description %}{% endif %}{% include item.html %}{% endif %}{% endfor %}{% if fst %}</section>{% endif %}
 
 <!-- NEWS -->
 <!-- <section class="news"> -->
