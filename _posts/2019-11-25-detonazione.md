@@ -9,8 +9,8 @@ volume: 5
 image: 17c782568291afdfeda25d695484cac5
 focus:
   name: Detonazione!
-  description: OUT JANUARY 2020
-outdate: OUT JANUARY 2020
+  description: OUT NOW
+outdate: OUT NOW
 ---
 
 Il decennio 1990-1999 a Roma è stato una prolungata sequenza di detonazioni che ha contribuito a far saltare per aria definitivamente la cultura di un’epoca iniziata col dopoguerra.
