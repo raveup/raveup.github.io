@@ -2,7 +2,7 @@
 layout: post
 title: the scenics
 item: in the summer
-tag: new
+tag: soldout
 support: lp
 category: rur
 volume: 77

@@ -5,7 +5,7 @@ item: lost and found 1973-1977
 support: dlp
 category: aher
 volume: 7
-outdate: MAY FIRST 2018
+tag: soldout
 image: ef420583e829689ab006bb8570590f0b
 youtube: aY90bMtbYrs
 #focus:

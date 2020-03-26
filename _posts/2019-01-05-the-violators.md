@@ -2,7 +2,7 @@
 layout: post
 title: the violators
 item: n.y. rippers - 1979 four studio tracks
-tag: new
+tag: soldout
 support: ep
 category: rug
 volume: 7
