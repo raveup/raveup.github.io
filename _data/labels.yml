@@ -72,3 +72,8 @@
   code: bsr
   description: 70s Italian Punk Label
   color: 5862f2
+
+- name: GLASS RECORDS
+  code: gr
+  description: British independent record label
+  color: 68b2fa
