@@ -12,11 +12,20 @@ $page-width: 70em
 $break-small: 500px
 $break-large: 1200px
 
-// 2019
-$bg-w: #f5f5f5
-$fg-b: #222
-$petro: #004f51
+// 2020
+$body_bg: {{ site.data.settings.colors.body.bg | default: "#f5f5f5" }}
+$body_fg: {{ site.data.settings.colors.body.fg | default: "#222" }}
+$font_text: {{ site.data.settings.colors.font.text | default: "Inconsolata, Consolas, monaco, monospace" }}
+$font_titles: {{ site.data.settings.colors.font.titles | default: '"Oswald", sans-serif' }}
+$accent: {{ site.data.settings.colors.accent | default: "#004f51" }}
+$navigation_bg: {{ site.data.settings.colors.navigation.bg | default: "#b00" }}
+$navigation_fg: {{ site.data.settings.colors.navigation.fg | default: "White" }}
+$active_bg: {{ site.data.settings.colors.active.bg | default: "#004f51" }}
+$active_fg: {{ site.data.settings.colors.active.fg | default: "White" }}
+$white: White
+$catalog_new_bg: {{ site.data.settings.colors.catalog_new_bg | default: "White" }}
 
+// 2019
 $dark-red: #b00
 $rur: $dark-red
 $acid-blue: #00f
@@ -35,12 +44,13 @@ $ruri: $yellow
 $violet: violet
 $rurx: $violet
 
+// Catalog new item
 ul li.new
-  background-color: white
+  background-color: $catalog_new_bg
 
 section > header h1
   text-transform: uppercase
-  border-bottom: $border-horizontal solid $petro
+  border-bottom: $border-horizontal solid $accent
 section > article > header h2.grey a
   color: $grey03
 
@@ -49,15 +59,15 @@ html
 
 body
   // border-top: 10px solid $greydark
-  font-family: "Inconsolata", monospace
+  font-family: $font_text
   font-size: 1em
   @media screen and (min-width: $break-large)
     font-size: 1.2em
-  background-color: $bg-w
+  background-color: $body_bg
   // background-color: black
   // background: linear-gradient(to right, #510000,Black,#510000)
   // color: white
-  color: $fg-b
+  color: $body_fg
   & > header
     text-align: center
     // background-color: #510000
@@ -66,15 +76,15 @@ body
       // padding: 2em
       // height: 10em
     nav
-      background: #b00
+      background: $navigation_bg
       font-size: 1.5em
       a
         display: inline-block
-        color: white
+        color: $navigation_fg
         padding: .5em .8em
         &.active
-          background: $petro
-          color: white
+          background: $active_bg
+          color: $active_fg
 
 @mixin clearfix()
   &:after, &:before
@@ -106,7 +116,7 @@ div.pagination
 
 h1,
 h2
-  font-family: "Oswald", sans-serif
+  font-family: $font_titles
 
 figure
   margin: 0
@@ -135,7 +145,7 @@ section
   h1
     font-size: 3em
     margin: 0
-    color: $petro
+    color: $accent
   article
     margin: 1em 2em
     // border-radius: 6px
@@ -162,14 +172,12 @@ section
         color: $grey80
   &.news article
     padding: .5em 2em .5em 1.2em
-    background-color: $bg-w
+    background-color: $body_bg
   &.blog article
-    // padding: 1.5em 2em 1.5em 1.2em
-    // background-color: $greydark
     ul li
       color: grey
       strong
-        color: $fg-b
+        color: $body_fg
     header
       border-left: $border-vertical solid $blog
   &.stock,
@@ -232,7 +240,7 @@ body.post
         padding-bottom: 14em
         height: 0
         iframe
-          border: 2px solid #b00
+          border: 2px solid $navigation_bg
           position: absolute
           top: 0
           left: 0
@@ -256,7 +264,7 @@ footer
     max-width: $page-width
     padding: 0 3em
     p
-      color: $bg-w
+      color: $body_fg
   h3
     text-transform: uppercase
     font-family: "Inconsolata", monospace
@@ -273,8 +281,8 @@ input
 
 blockquote
   font-size: larger
-  background: $bg-w
-  color: $fg-b
+  background: $body_fg
+  color: $body_fg
   display: inline-block
   padding: 0 20px
 

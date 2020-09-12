@@ -1,6 +1,30 @@
+# Blog Announcements to show
+announcements: 0
+
+# Colors
+colors:
+  catalog_new_bg: Yellow
+  # ACCENT: Titles, Titles bottom borders, Active menù
+  accent: "#004f51"
+  # BODY
+  body:
+    # FOREGROUND: Body, Blockquote and Blog list bold ink color
+    fg: "#222"
+    # BACKGROUND: Body, Section paragraph and Blockquote background color
+    bg: "#f5f5f5"
+  # Navigation bar background and foreground
+  navigation:
+    bg: "#b00"
+    fg: "White"
+  active:
+    bg: "#004f51"
+    fg: "White"
+  # FONTS
+  font:
+    text: 'Inconsolata, Consolas, monaco, monospace'
+    titles: '"Oswald", sans-serif'
+
 # OUTDATE General for posts tagged `new`
 # override in post with `outdate: ...`
 outdate: JUST OUT!
 
-# Blog Announcements to show
-announcements: 0
