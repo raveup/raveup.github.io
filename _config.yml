@@ -12,7 +12,6 @@ timezone: Europe/Rome
 plugins:
   - jekyll-sitemap
   - jekyll-coffeescript
-  - jekyll-seo-tag
 sass:
   sass_dir: _sass
   style: compressed
@@ -22,6 +21,7 @@ script:
   - js/easing.js
   - js/main.js
   - js/md5.min.js
+  - js/buy.js
 collections:
   blog:
     output: true

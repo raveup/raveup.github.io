@@ -53,7 +53,7 @@ if (shipping) {
 		}
 		var totalone = subtotal + zone;
 		total.innerHTML = totalone.toFixed(2);
-		var paypalButton = '<script async src="paypal-button.min.js?merchant=raveup@tiscali.it" data-button="paynow" data-upload="1" data-type="form" data-currency="EUR" data-handling_cart="' + zone + '"';
+		var paypalButton = '<script async src="paypal-button.min.js?merchant=raveuprecords@gmail.com" data-button="paynow" data-upload="1" data-type="form" data-currency="EUR" data-handling_cart="' + zone + '"';
 		for (var j = 0; j < current.length; j++) {
 			var ordine = current[j];
 			var nome = ordine.title + ' – ' + ordine.item;
