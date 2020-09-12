@@ -7,9 +7,9 @@ category: bsr
 tag: soldout 
 volume: 4
 image: no-submission
-focus:
-  name: no submission
-  description: Distributed by Rave Up
+# focus:
+#   name: no submission
+#   description: Distributed by Rave Up
 outdate: Distributed by Rave Up
 ---
 

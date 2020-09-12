@@ -2,7 +2,7 @@
 layout: post
 title: the dodgers
 item: criminal game
-tag: new
+tag: few
 support: ep
 category: rurx
 volume: 9

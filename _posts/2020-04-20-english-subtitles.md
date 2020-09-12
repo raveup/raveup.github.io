@@ -5,11 +5,11 @@ item: Tannoy / Cars on Fire
 support: 7 inches
 category: gr
 volume: 7
-tag: new
+tag: few
 image: english_subtitles
-focus:
-  name: "English Subtitles: Tannoy / Cars on Fire"
-  description: Distributed by Rave Up
+# focus:
+#   name: "English Subtitles: Tannoy / Cars on Fire"
+#   description: Distributed by Rave Up
 outdate: Distributed by Rave Up
 ---
 
