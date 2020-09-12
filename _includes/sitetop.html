@@ -8,13 +8,15 @@
       {%- assign ctg = page.category -%}
       {%- assign lbl = site.data.labels | where: "code", ctg -%}
       {%- assign og_title = lbl[0].name -%}
+      {%- assign og_description = lbl[0].description -%}
     {%- endif %}
     {%- if page.layout == "post" -%}
+      {%- assign og_title = "" | split: "" | push: page.item | push: page.title | join: " - " -%}
       {%- assign og_description = page.excerpt | strip | strip_html -%}
       {%- assign og_image = '/assets/covers/' | append: page.category | append: '/' | append: page.image | append: '.jpg' -%}
     {%- endif -%}
 
-    <title>{{ og_title | default: page.title | upcase }} | {{ site.name }}</title>
+    <title>{{ og_title | default: page.title | upcase }}</title>
 
     <!-- SEO -->
     <meta property="og:image" content="{{ og_image | default: site.logo | absolute_url }}">
