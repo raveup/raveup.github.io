@@ -1,4 +1,4 @@
-# Articoli
+# Rve Up Records website
 
 Gli articoli si trovano nella cartella [_posts](https://github.com/raveup/raveup.github.io/tree/master/_posts).
 
@@ -57,7 +57,22 @@ metadata: [ "more", "info" ]
 ---
 ```
 
----
+I file immagine (copertine) vanno caricati nella cartella della corrispondente `category` (label) all'interno di [`assets/covers`](https://github.com/raveup/raveup.github.io/tree/master/assets/covers).
+
+##### Home page
+
+Ordine di visualizzazione degli articoli:
+
+1. Blog posts (se attivati in [`_data/settings.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/settings.yml))
+2. Articoli con `tag: new` oppure `focus: ...` raggruppati secondo la label (`category`)
+3. Articoli con `tag: few` senza raggruppamento per label
+4. Articoli rimanenti senza `tag`.
+
+##### Cartelle e files
+
+- Le labels (`category` nei metadata) sono nel file [`_data/labels.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/labels.yml)
+- [`_data/menu.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/menu.yml) contiene il navigation menù
+- [`_blog`](https://github.com/raveup/raveup.github.io/tree/master/_blog) contiene i blog posts. Il numero di posts visualizzati è gestito nel file [`_data/settings.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/settings.yml)
 
 ##### PayPal docs
 
