@@ -1,36 +1,29 @@
-# markdown: rdiscount
-# nope, we use kramdown (https://help.github.com/articles/updating-your-markdown-processor-to-kramdown)
+name: Rave-Up
+title: Rave-Up Records
+description: "Obscure nuggets from the golden age of ROCK'n ROLL"
+logo: /assets/images/logo2019.png
 baseurl:
 permalink: /:categories/:title
 excerpt_separator: "\n\n"
 relative_permalinks: false
 exclude: [ php ]
-
 url: https://www.raveuprecords.com
-
 timezone: Europe/Rome
-
 plugins:
   - jekyll-sitemap
   - jekyll-coffeescript
-
-name: Rave-Up
-title: Rave-Up records
-description: Obscure nuggets from the golden age of ROCK n ROLL
-
-# Collections
-# BLOG and announcements
-collections:
-  blog:
-    output: false
-
+  - jekyll-seo-tag
 sass:
   sass_dir: _sass
-  style: :compressed
-
+  style: compressed
 script:
   - js/jquery-1.10.1.min.js
   - js/jquery.ui.totop.js
   - js/easing.js
   - js/main.js
   - js/md5.min.js
+# Collections
+# BLOG and announcements
+collections:
+  blog:
+    output: false
