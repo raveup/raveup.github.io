@@ -22,8 +22,6 @@ script:
   - js/easing.js
   - js/main.js
   - js/md5.min.js
-# Collections
-# BLOG and announcements
 collections:
   blog:
-    output: false
+    output: true
