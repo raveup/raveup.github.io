@@ -16,6 +16,11 @@ colors:
   navigation:
     bg: "#b00"
     fg: "White"
+  # Footer background and foreground
+  footer:
+    bg: "Black"
+    fg: "White"
+  # Active navigation link
   active:
     bg: "#004f51"
     fg: "White"

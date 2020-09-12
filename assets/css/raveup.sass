@@ -24,6 +24,8 @@ $active_bg: {{ site.data.settings.colors.active.bg | default: "#004f51" }}
 $active_fg: {{ site.data.settings.colors.active.fg | default: "White" }}
 $white: White
 $catalog_new_bg: {{ site.data.settings.colors.catalog_new_bg | default: "White" }}
+$footer_bg: {{ site.data.settings.colors.footer.bg | default: "Black" }}
+$footer_fg: {{ site.data.settings.colors.footer.fg | default: "White" }}
 
 // 2019
 $dark-red: #b00
@@ -256,7 +258,7 @@ span.grey
   color: $grey80
 
 footer
-  background-color: black
+  background-color: $footer_bg
   border-top: 5px solid #510000
   padding: 2em 0 .5em 3em
   section
@@ -264,7 +266,7 @@ footer
     max-width: $page-width
     padding: 0 3em
     p
-      color: $body_fg
+      color: $footer_fg
   h3
     text-transform: uppercase
     font-family: "Inconsolata", monospace
