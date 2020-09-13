@@ -8,7 +8,7 @@ Gli articoli si trovano nella cartella [`_posts`](https://github.com/raveup/rave
 - Clicca sul file da modificare
 - Premi il pulsante matita in alto a destra
 - Modifica il testo
-- Per salvare, premi il pulsante `Commit changes` in basso a sinistra.
+- Per salvare, premi il pulsante `Commit changes` in basso a sinistra
 
 ### Aggiungi articolo
 
@@ -32,11 +32,13 @@ title: Nome della band
 item: Titolo dell'articolo
 # Supporto, può essere "lp", "7", "libro" eccetera
 support: lp
-# La categoria è il codice della label (vedi file "_data/labels.yml")
+# La categoria è il codice della label
+# Lista dei codici nel file "_data/labels.yml"
 category: rur
 # Numero del volume
 volume: 75
-# Nome del file immagine senza estensione caricato in "assets/covers/< category >"
+# Nome del file immagine senza estensione
+# Da caricare in "assets/covers/< category >"
 image: file_immagine
 
 # Metadati opzionali
@@ -52,14 +54,19 @@ youtube: youtube-url
 video: video-filename-senza-estensione
 # Aggiunge un audio mp3 da caricare nella cartella "assets/mp3"
 mp3: mp3-filename-senza-estensione
-# Aggiunge metadati aggiuntivi per esempio tiratura, numero di pagine, etc.
+# Aggiunge metadati aggiuntivi
+# Ad esempio tiratura, numero di pagine, etc.
 metadata: [ "more", "info" ]
 ---
+
+Qui va la prima frase dell'articolo, che verrà visualizzata in home page.
+
+Qui va il resto dell'articolo...
 ```
 
-Notare come i nomi dei file (metadati `image`, `audio` e `video`) siano da riportare senza estensione (non `filename.ext` ma solo `filename`).
+Notare come i nomi dei file (metadati `image`, `audio` e `video`) siano da riportare senza estensione: non `filename.ext` ma solo `filename`.
 
-Il file immagine o copertina `image` va caricato nella cartella della corrispondente `category` (label) all'interno di [`assets/covers`](https://github.com/raveup/raveup.github.io/tree/master/assets/covers).
+Il file immagine (copertina) `image` va caricato nella cartella della corrispondente `category` (label) all'interno di [`assets/covers`](https://github.com/raveup/raveup.github.io/tree/master/assets/covers).
 
 Ad esempio le copertine "BackStreet" nella cartella `assets/covers/bac` e quelle "Synthetic Shadows" in `assets/covers/ss`.
 
@@ -82,7 +89,7 @@ Per aggiungere una nuova label:
 
 1. Aggiungerla nel file `_data/labels.yml`
 2. Creare una pagina generale in [`assets/pages/series`](https://github.com/raveup/raveup.github.io/tree/master/assets/pages/series)
-3. Creare una cartelle per le copertine in [`assets/images/covers`](https://github.com/raveup/raveup.github.io/tree/master/assets)
+3. Creare una cartelle per le copertine in [`assets/covers`](https://github.com/raveup/raveup.github.io/tree/master/assets/covers)
 
 Ad esempio per la label "Pinco Pallino" aggiungere il file `assets/pages/series/pp.html` con il seguente contenuto:
 
@@ -111,14 +118,21 @@ File caricabili per ogni articolo, con cartella di destinazione e formati del fi
 
 |file|cartella|formato (estensione)|
 |:--|:--|:--|
-|immagine|`assets/images/covers/< label >`|`.jpg`|
+|immagine|`assets/covers/< label >`|`.jpg`|
 |audio|`assets/mp3`|`.mp3` `.ogg`|
 |video|`assets/video`|`.mp4` `.ogg` `.webm` e `.jpg` per l'immagine|
 
 ### Cartelle e files
 
-- [`_data/menu.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/menu.yml) contiene il navigation menù
+- [`_data/menu.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/menu.yml) contiene il menù di navigazione
 - [`_blog`](https://github.com/raveup/raveup.github.io/tree/master/_blog) contiene i blog posts. Il numero di posts visualizzati è gestito nel file [`_data/settings.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/settings.yml)
+- [`assets/pages`](https://github.com/raveup/raveup.github.io/tree/master/assets/pages) contiene le pagine del sito
+
+### Miscellanea
+
+- [Newsletter](https://www.raveuprecords.com/newsletter) aggiornata
+- [Feed RSS](https://www.raveuprecords.com/feed.xml)
+- [Formats info](https://www.raveuprecords.com/info/)
 
 ### PayPal docs
 
