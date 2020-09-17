@@ -6,7 +6,7 @@ support: lp
 category: rur
 volume: 88
 tag: new
-image: Gynecologists2
+image: gynecologists
 outdate: October 2020
 ---
 
