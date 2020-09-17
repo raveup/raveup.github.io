@@ -6,7 +6,7 @@ support: lp
 category: rur
 volume: 86
 tag: new
-image: nbj
+image: NBJ2
 # focus:
 #   name: "English Subtitles: Tannoy / Cars on Fire"
 #   description: Distributed by Rave Up
