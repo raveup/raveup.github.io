@@ -2,21 +2,26 @@
 
 Gli articoli si trovano nella cartella [`_posts`](https://github.com/raveup/raveup.github.io/tree/master/_posts).
 
-### Modifica articolo
+### Modificare articolo
 
-- Entra nella cartella [`_posts`](https://github.com/raveup/raveup.github.io/tree/master/_posts)
-- Clicca sul file da modificare
-- Premi il pulsante matita in alto a destra
-- Modifica il testo
-- Per salvare, premi il pulsante `Commit changes` in basso a sinistra
+1. Trovare il file da modificare  
+  - Cliccare nella cartella [`_posts`](https://github.com/raveup/raveup.github.io/tree/master/_posts) e una volta trovato il file da modificare, cliccarci sopra
+  - Oppure premere il pulsante `Go to file` (in alto al centro) e digitare il nome
+1. Premere il pulsante matita in alto a destra
+1. Modificare il testo
+1. Per salvare, premere il pulsante `Commit changes` in basso a sinistra
 
-### Aggiungi articolo
+*Attendere un minuto per la propagazione della modifica sul sito online*
 
-- Entra nella cartella [`_posts`](https://github.com/raveup/raveup.github.io/tree/master/_posts)
-- Premi su `Add file > Create new file` in alto a destra
-- Inserisci il nome del file nel formato `YYYY-MM-DD-nome-del-file.md` (ha estensione `.md` Markdown)
-- Nel campo `Edit new file` inserisci i **metadati** e il testo dell'articolo
-- Per salvare, premi il pulsante `Commit new file` in basso a sinistra.
+### Aggiungere articolo
+
+1. Entrare nella cartella [`_posts`](https://github.com/raveup/raveup.github.io/tree/master/_posts)
+1. Premere su `Add file > Create new file` in alto a destra
+1. Inserire il nome del file nel formato `YYYY-MM-DD-nome-del-file.md` (ha estensione `.md` Markdown)
+1. Nel campo `Edit new file` inserire i **metadati** e il testo dell'articolo
+1. Per salvare, premere il pulsante `Commit new file` in basso a sinistra.
+
+*Attendere un minuto per la propagazione della modifica sul sito online*
 
 ### Metadati
 
@@ -59,7 +64,7 @@ mp3: mp3-filename-senza-estensione
 metadata: [ "more", "info" ]
 ---
 
-Qui va la prima frase dell'articolo, che verrà visualizzata in home page.
+Qui va la prima frase dell'articolo (slogan), che verrà visualizzata in home page.
 
 Qui va il resto dell'articolo...
 ```
@@ -91,7 +96,16 @@ Per aggiungere una nuova label:
 2. Creare una pagina generale in [`assets/pages/series`](https://github.com/raveup/raveup.github.io/tree/master/assets/pages/series)
 3. Creare una cartelle per le copertine in [`assets/covers`](https://github.com/raveup/raveup.github.io/tree/master/assets/covers)
 
-Ad esempio per la label "Pinco Pallino" aggiungere il file `assets/pages/series/pp.html` con il seguente contenuto:
+Ad esempio per la label "Pinco Pallino" aggiungere i dati in [`_data/labels.yml`](https://github.com/raveup/raveup.github.io/blob/master/_data/labels.yml)
+
+```yml
+- name: PINCO PALLINO
+  code: pp
+  description: Pinco Pallino Punk Productions
+  color: b00
+```
+
+E aggiungere il file `assets/pages/series/pp.html` con il seguente contenuto:
 
 ```yml
 ---
