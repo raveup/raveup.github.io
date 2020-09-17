@@ -3,15 +3,32 @@ active: false
 prices:
   supports:
     - support: lp
-      price: 12
-      wholesale: 8
+      price: 15
+      wholesale: 9
+    - support: lpc
+      price: 18
+      wholesale: 12
     - support: 7"
-      price: 6
+      price: 8
       wholesale: 4
+    - support: 7"c
+      price: 10
+      wholesale: 6
     - support: dlp
       price: 20
       wholesale: 16
 shippings:
-  italy: 7
-  europe: 12
-  usa: 18
+  lp:
+    few:
+      europe: 10
+      usa/japan: 15
+      world: 20
+    many:
+      europe: 15
+      usa/japan: 30
+      world: 40
+  7":
+    few:
+      europe: 8
+      usa/japan: 10
+      world: 12
