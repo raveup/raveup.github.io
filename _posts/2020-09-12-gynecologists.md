@@ -6,7 +6,7 @@ support: lp
 category: rur
 volume: 88
 tag: new
-image: gynecologits
+image: Gynecologits2
 outdate: October 2020
 ---
 
