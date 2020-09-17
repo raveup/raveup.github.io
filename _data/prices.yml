@@ -1,11 +1,19 @@
 - support: lp
-  price: 12
-  wholesale: 8
+  price: 16
+  wholesale: 9
+
+- support: lpc
+  price: 20
+  wholesale: 12
 
 - support: 7"
-  price: 6
+  price: 8
   wholesale: 4
+
+- suppor: '7"c'
+  price: 10
+  wholesale: 6
 
 - support: dlp
   price: 20
-  wholesale:
+  wholesale: 18
