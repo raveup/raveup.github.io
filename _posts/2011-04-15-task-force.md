@@ -2,7 +2,7 @@
 layout: post
 title: task force
 item: fresh air
-tag: soldout
+tag: few
 support: 7"
 category: ruk
 volume: 3
