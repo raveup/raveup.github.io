@@ -19,4 +19,4 @@ Known for their shocking name and the anarchist anthem "Dead Porker" (included i
 
 > LIMITED EDITION TO 400 BLACK VINYLS + 50 WHITE MARBLED
 >
-> DON’T BE A PORKER, BUY IT!!!!!
+> DON'T BE A PORKER, BUY IT!!!!!
