@@ -20,3 +20,6 @@ Known for their shocking name and the anarchist anthem "Dead Porker" (included i
 > LIMITED EDITION TO 400 BLACK VINYLS + 50 WHITE MARBLED
 >
 > DON'T BE A PORKER, BUY IT!!!!!
+
+Pre-order with Paypal on raveuprecords@gmail.com
+€15 (wholesale €9) for the black vinyl and €18 (wholesale €12) for the limited colored edition + shipping fees (Europe €10, USA/Japan €15, world €20)
