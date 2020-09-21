@@ -2,7 +2,6 @@
 layout: post
 title: muddy worries
 item: the rent / summertime
-tag: soldout
 support: 7"
 category: rurx
 volume: 8
