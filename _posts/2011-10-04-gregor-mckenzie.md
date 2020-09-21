@@ -2,6 +2,7 @@
 layout: post
 title: gregor mckenzie
 item: torture that girl
+tag: soldout
 support: lp
 category: rur
 volume: 51
