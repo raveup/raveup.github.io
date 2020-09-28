@@ -2,7 +2,6 @@
 layout: post
 title: cult heroes
 item: american story
-tag: soldout
 support: lp
 category: rur
 volume: 80
