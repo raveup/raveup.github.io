@@ -2,7 +2,7 @@
 layout: post
 title: English Subtitles
 item: Tannoy / Cars on Fire
-support: 7 inches
+support: 7''
 category: gr
 volume: 7
 tag: few
