@@ -2,6 +2,7 @@
 layout: post
 title: degenerates
 item: s/t
+tag: soldout
 support: lp
 category: rur
 volume: 81
