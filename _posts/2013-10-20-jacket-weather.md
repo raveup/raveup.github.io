@@ -2,6 +2,7 @@
 layout: post
 title: jacket weather
 item: when shadows move
+tag: soldout
 support: lp
 category: ss
 volume: 9
