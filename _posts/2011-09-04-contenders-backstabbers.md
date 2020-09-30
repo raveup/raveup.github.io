@@ -2,6 +2,7 @@
 layout: post
 title: contenders/backstabbers
 item: live in the big sleazy
+tag: soldout
 support: lp
 category: rur
 volume: 11
