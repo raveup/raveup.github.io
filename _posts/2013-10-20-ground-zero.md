@@ -2,6 +2,7 @@
 layout: post
 title: ground zero
 item: ground zero
+tag: soldout
 support: lp
 category: rur
 volume: 71
