@@ -10,4 +10,5 @@ image: 8FcZFG-xhtn3
 ---
 
 The Products were a S.Diego band that played an exciting mixture of punk, r'n'r and power pop. Their fresh sound is well documentated on their only EP released in 1980. 
-Rave Up Records compiled an entire studio album which includes all their recordings. Wow!!!
+
+Rave Up compiled an entire studio album which includes all their recordings. Wow!!!
