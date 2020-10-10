@@ -2,7 +2,7 @@
 layout: post
 title: luc orient
 item: s/t
-tag: soldout
+tag: in stock
 support: lp
 category: ss
 volume: 19
@@ -14,7 +14,7 @@ image: b96b806368260384f82a9bfbeb7584bc
 
 Synthetic Shadows is proud to announce the exit of this missing masterpiece of italian new wave.
 
-Luc Orient project born in 1981 after the meeting of Alessandro Corda (former keyboard player of Revolver, one of the first punk bands in Italy), with Rrok Prennushi (guitar) and Piero Pieri (vocals).
-In 1983, produced by Gino D'Eliso, they released the rare single “Saddle Abebe” (B Side: About the Weather) dedicated to marathon runner Abebe Bikila. In 1984 Luc Orient returned to the studio with Gino D'Eliso and prepare an LP with electronic and funk suggestions. Break the contract with the record company, the album never will be released.
-The project Luc Orient interrupted in 1987.
-So, now, after 30 years, Synthetic Shadows is proud to announce the exit of this missing masterpiece of italian new wave!
+Luc Orient project was born in 1981 after the meeting bwtween Alessandro Corda (former keyboard player of Revolver, one of the first punk bands in Italy), Rrok Prennushi (guitar) and Piero Pieri (vocals).
+In 1983 they released the rare single “Saddle Abebe” (B Side: About the Weather), produced by Gino D'Eliso and dedicated to marathon runner Abebe Bikila. The following year Luc Orient returned in studio with D'Eliso and recorded an LP with electronic and funk suggestions, never released due to expiring contract with their record company. The band disbanded in 1987.
+
+Now, after 30 years, Synthetic Shadows is proud to announce the rediscovery of this missing masterpiece of Italian new wave!
