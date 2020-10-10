@@ -2,7 +2,6 @@
 layout: post
 title: luc orient
 item: s/t
-tag: in stock
 support: lp
 category: ss
 volume: 19
