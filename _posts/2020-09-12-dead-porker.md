@@ -17,7 +17,7 @@ Hailing from Fresno, CA, NBJ have been one of the best kept secrets of American 
 
 Known for their shocking name and the anarchist anthem "Dead Porker" (included in 1982 within the Alternative Tentacles cult-compilation "Not So Quiet On The Western Front", first and last release during their brief career), they featured the late great Annelle Zingarelli as one of the wildest female vocalist of Californian hardcore: a hoarse screamer hunting like Siouxsie Sioux, piercing like Poly Styrene, filthy as Lydia Lunch, poetical as Exene Cervenka. Their music, influenced by peers such as Germs and Flipper, was a blend of savage rock'n'roll and darker Black Sabbath-like doom marches. They shared the stage with kindred spirits like Black Flag, Minor Threat and Circle Jerks and were a Jello Biafra favorite. This Lp puts together the best tracks from their only demo (roughly recorded in 1983 and never released due to the tragic passing of the 22 years old Annelle), including a furious cover of Monkees’ classic "Last Train To Clarksville" and all the energy of this talented and unlucky band.
 
-> LIMITED EDITION TO 400 BLACK VINYLS + 50 WHITE MARBLED
+> LIMITED EDITION TO 400 BLACK VINYLS + 50 MARBLED
 >
 > DON'T BE A PORKER, BUY IT!!!!!
 
