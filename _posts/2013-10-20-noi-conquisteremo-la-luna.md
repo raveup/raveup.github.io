@@ -5,7 +5,7 @@ item: SCRITTI SULLA NEW WAVE ITALIANA 1980/1985
 support: book
 category: books
 author: FEDERICO GUGLIELMI
-price: € 28,00
+price: 28
 volume: 2
 image: uynLdhUat2RH
 ---

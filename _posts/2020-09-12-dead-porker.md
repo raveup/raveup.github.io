@@ -2,7 +2,7 @@
 layout: post
 title: NAZI BITCH AND THE JEWS
 item: DEAD PORKER
-support: lp
+support: [lp,lpc]
 category: rur
 volume: 86
 tag: new

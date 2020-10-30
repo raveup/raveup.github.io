@@ -5,6 +5,7 @@ item: Tannoy / Cars on Fire
 support: 7''
 category: gr
 volume: 7
+price: 10
 tag: few
 image: english_subtitles
 # focus:

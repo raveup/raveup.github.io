@@ -2,7 +2,7 @@
 layout: post
 title: THE GYNECOLOGISTS
 item: JOHN WAYNE GACY
-support: lp
+support: [lp,lpc]
 category: rur
 volume: 88
 tag: new

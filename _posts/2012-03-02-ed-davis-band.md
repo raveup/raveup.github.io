@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ed davis band
-item: keith richard&#x27;s dead
+item: keith richard's dead
 support: lp
 category: rur
 volume: 61
