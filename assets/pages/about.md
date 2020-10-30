@@ -19,5 +19,5 @@ Rave Up Records is an Italian independent label diggin' out since 1999 obscure n
 - 3-8 LPs: €15 (Europe), €30 (USA/Japan), €40 (world)
 - 7”: €8 (Europe), €10 (Usa/Japan), €12 (world)
 
-For infos contact us at [raveuprecords@gmail.com](mailto:raveuprecords@gmail.com) (Paypal accepted).
+For infos contact us at [raveup@tiscali.it](mailto:raveup@tiscali.it) (Paypal accepted).
 </section>
