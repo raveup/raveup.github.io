@@ -1,22 +1,62 @@
-# carello (shop, cart)
+# true=on, false=off
 active: false
+
+# Merchant Paypal email
+merchant: sb-vpvzq3424491@business.example.com
+
+# Currency code and symbol
+# Currency use three-character ISO-4217 codes
+currency:
+  code: EUR
+  symbol: €
+
+# Items number for wholesale prices and shipping
+wholesale:
+  price: 3
+  shipping: 6
+
+# Max item quantity
+max: 10
+
+# Prices by support
 prices:
-  supports:
-    - support: lp
-      price: 15
-      wholesale: 9
-    - support: lpc
-      price: 18
-      wholesale: 12
-    - support: 7"
-      price: 8
-      wholesale: 4
-    - support: 7"c
-      price: 10
-      wholesale: 6
-    - support: dlp
-      price: 20
-      wholesale: 16
+  lp:
+    price: 15
+    wholesale: 9
+    names: [lp]
+  lp_color:
+    names: [lpc, lp color, lp colored]
+    price: 18
+    wholesale: 12
+  7_inches:
+    names: [7 inches, seven inches, 7’’, 7”]
+    price: 8
+    wholesale: 4
+  7_inches_color:
+    names: [7 inches color, 7 inches colored, 7" color, 7' colored, 7c, 7"c]
+    price: 10
+    wholesale: 6
+  dlp:
+    names: [dlp, double lp]
+    price: 20
+    wholesale: 16
+  10_inches:
+    names: [10"]
+  12_inches:
+    names: [four track 12”, 12"]
+  ep:
+    names: [ep]
+  ep_color:
+    names: [epc, ep color, ep colored]
+  book:
+    names: [book, books]
+    price: 25
+  dvd:
+    names: [dvd, fanzine + dvd]
+    price: 15
+    wholesale: 6.50
+
+# Check if format and wholesale is needed
 shippings:
   lp:
     few:
@@ -27,7 +67,7 @@ shippings:
       europe: 15
       usa/japan: 30
       world: 40
-  7":
+  7_inches:
     few:
       europe: 8
       usa/japan: 10

@@ -278,6 +278,8 @@ footer
     margin: 2em
     a.repo
       color: $grey80
+  a:not([class])
+    color: #f42020
 
 input
   padding: .3em
@@ -403,3 +405,38 @@ body.post section article div.audio.{{ label.code }}
   div iframe
     border-color: #{{ label.color }}
 {% endfor %}
+
+//
+// LIST page
+// --------------------------------------
+section.shop
+  table
+    border-collapse: collapse
+    margin: 2rem auto
+    font-size: large
+    td, th
+      padding: .2rem 1rem
+      text-align: right
+      img
+        width: 4rem
+    thead
+      border-bottom: 2px solid $accent
+      color: $accent
+    tfoot
+      border-top: 2px solid $accent
+      color: $accent
+    &#elenco
+      margin: auto
+      td, th
+        text-align: left
+        border-bottom: 1px solid lighten($accent, 20%)
+        &[data-title='true']
+          overflow: hidden
+          max-width: 30ch
+          text-overflow: ellipsis
+          white-space: nowrap
+
+details
+  summary
+    cursor: pointer
+    display: list-item
