@@ -1,0 +1,11 @@
+{% comment %}
+Arguments: support (string or array)
+Return: string (carello support as comma separated list)
+Uses: get/support_normalized
+{% endcomment %}
+{%- if include.support.first -%}
+{%- for s in include.support -%}{% include get/support_normalized.html support=s %}{% if forloop.index > 0 and forloop.last != true %}, {% endif %}
+{%- endfor -%}
+{%- else -%}
+{% include get/support_normalized.html support=include.support %}
+{%- endif -%}

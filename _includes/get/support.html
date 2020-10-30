@@ -1,0 +1,14 @@
+{% comment %}
+Argument: item (release object)
+Return: string (carello support if item.support has a match)
+{% endcomment %}
+{%- assign original_support = include.item.support | default: "lp" | downcase -%}
+{%- assign found = 0 -%}
+{%- for sup in site.data.carello.prices -%}
+  {%- for name in sup[1].names -%}
+    {%- assign slug1 = name | slugify -%}
+    {%- assign slug2 = original_support | slugify -%}
+    {%- if slug1 == slug2 and found == 0 -%}{{sup[0]}}{%- assign found = 1 -%}{%- endif -%}
+  {%- endfor %}
+{%- endfor -%}
+{%- if found == 0 -%}not found{%- endif -%}

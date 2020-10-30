@@ -2,11 +2,13 @@
   {% if page.next.image %}<img src="{% assign image_src = '/assets/covers/' | append: page.next.category | append: '/' | append: page.next.image | append: '.jpg' %}{{ image_src | absolute_url }}" title=="{{ page.next.title | upcase }} – {{ page.next.item | upcase }}">{% endif %}
   {% if page.next %}<header><h4><a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" >{{ page.next.title | upcase }}</a></h4>
     <p>{{ page.next.item | upcase }}</p></header>
-    <p>{{ page.next.category | upcase }} #{{ page.next.volume }} ({{ page.next.support | upcase }})</p>{% endif %}
+    {%- capture support_list -%}{% include get/support_list.html support=page.next.support %}{%- endcapture -%}
+    <p>{{ page.next.category | upcase }} #{{ page.next.volume }} ({{ support_list | upcase }})</p>{% endif %}
 </aside>
 <aside class="right">
   {% if page.previous.image %}<img src="{% assign image_src = '/assets/covers/' | append: page.previous.category | append: '/' | append: page.previous.image | append: '.jpg' %}{{ image_src | absolute_url }}" title=="{{ page.previous.title | upcase }} – {{ page.previous.item | upcase }}">{% endif %}
   {% if page.previous %}<header><h4><a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" >{{ page.previous.title | upcase }}</a></h4>
     <p>{{ page.previous.item | upcase }}</p></header>
-    <p>{{ page.previous.category | upcase }} #{{ page.previous.volume }} ({{ page.previous.support | upcase }})</p>{% endif %}
+    {%- capture support_list -%}{% include get/support_list.html support=page.previous.support %}{%- endcapture -%}
+    <p>{{ page.previous.category | upcase }} #{{ page.previous.volume }} ({{ support_list | upcase }})</p>{% endif %}
 </aside>

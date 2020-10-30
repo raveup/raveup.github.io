@@ -16,7 +16,8 @@
       <br>
       <span class="grey">VOLUME:</span> {{ page.volume }}
       <br>
-      <span class="grey">SUPPORT:</span> {{ page.support | upcase }}
+      {%- capture support_list -%}{% include get/support_list.html support=page.support %}{%- endcapture -%}
+      <span class="grey">SUPPORT:</span> {{ support_list | upcase }}
     {% if page.metadata %}<p>{{ page.metadata | join: ' / ' }}</p>{% endif %}</header>
     {% if site.data.carello.active %}{% unless page.tags contains 'soldout' %}{% include buy.html %}{% endunless %}{% endif %}
   {{ page.excerpt }}

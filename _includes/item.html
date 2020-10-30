@@ -1,13 +1,14 @@
 {% assign currentCategory = site.data.labels | where: "code", post.category %}
 <article{% if post.tags contains 'new' %} class="new"{% endif %}>
   {% if post.image %}<figure>
-    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="{% assign image_src = '/assets/covers/' | append: post.category | append: '/' | append: post.image %}{{ image_src | append: 's.jpg' | absolute_url }}" alt="{{ image_src | append: '.jpg' | absolute_url }}" onerror="this.onerror=null;this.src=this.alt;" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
+    <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}"><img src="{% assign image_src = '/assets/covers/' | append: post.category | append: '/' | append: post.image %}{{ image_src | append: '.jpg' | absolute_url }}" alt="{{ image_src | append: '.jpg' | absolute_url }}" onerror="this.onerror=null;this.src=this.alt;" title="{{ post.title | upcase }} – {{ post.item | upcase }}"></a>
   </figure>{% endif %}
   <header class="{{ currentCategory[0].code }}">
     <h2>
       <a href="{{ post.url }}" title="{{ post.title | upcase }} – {{ post.item | upcase }}">{{ post.title }}</a>
     </h2>
     <h3>{{ post.item | upcase }}</h3>
-    <p>{{ currentCategory[0].code | upcase }} #{% if post.volume < 10 %}0{% endif %}{{ post.volume }} ({{ post.support | upcase }})</p>
+    {%- capture support_list -%}{% include get/support_list.html support=post.support %}{%- endcapture -%}
+    <p>{{ currentCategory[0].code | upcase }} #{% if post.volume < 10 %}0{% endif %}{{ post.volume }} ({{ support_list | upcase }})</p>
   </header>
   {{ post.excerpt }}</article>
