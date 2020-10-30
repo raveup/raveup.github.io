@@ -1,6 +1,7 @@
 name: Rave-Up
 title: Rave-Up Records
 description: "Obscure nuggets from the golden age of ROCK'n ROLL"
+repository: raveup/raveup.github.io
 logo: /assets/images/logo2019.png
 baseurl:
 permalink: /:categories/:title
