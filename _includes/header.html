@@ -1,5 +1,6 @@
 <header>
   <!-- <h1>Rave-Up records</h1> -->
+  <a href="{{ site.baseurl }}/cart" id="cart-link">CART (<span>0</span>)</a>
   <a href="/"><img src="{{ site.logo | absolute_url }}" alt="Rave Up records LOGO"></a>
   <nav>
     {% for data in site.data.menu %}{% for item in data.menu %}{% for page in site.pages %}{% if page.title == item %}<a href="{{ page.permalink }}">{{ item | upcase }}</a>

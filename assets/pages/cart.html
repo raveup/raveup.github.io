@@ -5,25 +5,12 @@ permalink: /cart/
 script:
   - js/buttons.js
 ---
-<section>
-{% include topbar.html name='YOUR CART' description='add items and checkout with paypal' class="grey" %}
+<section class="cart">
+{% include topbar.html name='YOUR CART' description='verify your order and checkout with paypal' class="grey" %}
 
-<article id="cart_list">
-</article>
-<article>
-	<h3 class="not-empty" hidden><span class="grey">Subtotal:</span> €<span id="subtotal"></span></h3>
-	<h3 class="not-empty" hidden><span class="grey">Select shipping:</span>
-	<select id="shipping">
-		<option value="" disabled="" selected="">Select shipping zone</option>
-		{% for country in site.data.carello.shippings %}
-		<option value="{{ country[1] }}">{{ country[0] | upcase }}: €{{ country[1] }},00</option>
-		{% endfor %}
-	</select>
-	</h3>
-	<h1 class="has-shipping" hidden><span class="grey">TOTAL:</span> €<span id="total"></span></h1>
-	<br>
-	<div id="pay-button"></div>
-</article>
-<br><br>
-<a href="{{ site.baseurl }}/">Continue Shopping</a>
+{% include karrello/cart.html %}
+<p id="shipping-box">
+  <a href="{{ site.baseurl }}/checkout">Shipping & Checkout</a>
+</p>
+
 </section>

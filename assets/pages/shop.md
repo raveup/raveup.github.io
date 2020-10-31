@@ -7,26 +7,6 @@ permalink: /shop/
 <section class="shop" markdown="1">
 {% include topbar.html name="Shop"%}
 
-<header>
-  <h2>SHOP CONFIG</h2>
-</header>
-<table>
-  <thead>
-    <tr>
-      <th>Support</th>
-      <th>Price</th>
-      <th>Wholesale</th>
-    </tr>
-  </thead>
-  {% for pp in site.data.carello.prices %}
-    <tr>
-      <td>{{pp[0]|upcase}}</td>
-      <td>{{pp[1].price|default:"missing"}}</td>
-      <td>{{pp[1].wholesale|default:"missing"}}</td>
-    </tr>
-  {% endfor %}
-</table>
-
 {% comment %} -------------------- TABLE -------------------- {% endcomment %}
 {% assign items = site.posts | where_exp: "item","item.tag != 'soldout'" %}
 {% comment %} -------------------- NEW -------------------- {% endcomment %}
@@ -169,6 +149,26 @@ permalink: /shop/
     <td colspan="2">Total: {{supports_items}}</td>
   </tr>
 </tfoot>
+</table>
+
+<header>
+  <h2>SHOP CONFIG</h2>
+</header>
+<table>
+  <thead>
+    <tr>
+      <th>Support</th>
+      <th>Price</th>
+      <th>Wholesale</th>
+    </tr>
+  </thead>
+  {% for pp in site.data.carello.prices %}
+    <tr>
+      <td>{{pp[0]|upcase}}</td>
+      <td>{{pp[1].price|default:"missing"}}</td>
+      <td>{{pp[1].wholesale|default:"missing"}}</td>
+    </tr>
+  {% endfor %}
 </table>
 
 </section>
