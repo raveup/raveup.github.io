@@ -1,0 +1,18 @@
+{%- if include.support.first -%}
+{% comment %} -------------------- ARRAY -------------------- {% endcomment %}
+{%- capture lista -%}{%- include get/support_list.html support=include.support -%}{%- endcapture -%}
+{%- assign lista_array = lista | split: ", " -%}
+<select name="support" id="support">
+  {% for s in lista_array %}
+    <option
+      value="{{ s }}"
+      data-few="{{site.data.carello.prices[s].price}}"
+      data-many="{{site.data.carello.prices[s].wholesale}}">{{ s|upcase }}</option>
+  {% endfor %}
+</select>
+{%- else -%}
+{% comment %} -------------------- STRING -------------------- {% endcomment %}
+{%- capture normalized -%}{%- include get/support_normalized.html support=include.support -%}{%- endcapture -%}
+<span id="support" data-few="{{site.data.carello.prices[normalized].price}}"
+data-many="{{site.data.carello.prices[normalized].wholesale}}">{{normalized|upcase}}</span>
+{%- endif -%}

@@ -1,8 +1,8 @@
 # true=on, false=off
-active: false
+active: true
 
 # Merchant Paypal email
-merchant: sb-vpvzq3424491@business.example.com
+merchant: raveup@tiscali.it
 
 # Currency code and symbol
 # Currency use three-character ISO-4217 codes
@@ -13,7 +13,7 @@ currency:
 # Items number for wholesale prices and shipping
 wholesale:
   price: 3
-  shipping: 6
+  shipping: 1000
 
 # Max item quantity
 max: 10
@@ -44,10 +44,16 @@ prices:
     names: [10"]
   12_inches:
     names: [four track 12”, 12"]
+    price: 15
+    wholesale: 9
   ep:
     names: [ep]
+    price: 8
+    wholesale: 4
   ep_color:
     names: [epc, ep color, ep colored]
+    price: 10
+    wholesale: 6
   book:
     names: [book, books]
     price: 25
@@ -58,17 +64,11 @@ prices:
 
 # Check if format and wholesale is needed
 shippings:
-  lp:
-    few:
-      europe: 10
-      usa/japan: 15
-      world: 20
-    many:
-      europe: 15
-      usa/japan: 30
-      world: 40
-  7_inches:
-    few:
-      europe: 8
-      usa/japan: 10
-      world: 12
+  europe: 10
+  usa/japan: 15
+  world: 20
+  # 7_inches:
+  #   few:
+  #     europe: 8
+  #     usa/japan: 10
+  #     world: 12

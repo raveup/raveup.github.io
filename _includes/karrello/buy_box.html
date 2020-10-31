@@ -1,0 +1,20 @@
+{%- assign karrello = site.data.carello -%}
+{%- assign support = page.support | default: "lp" -%}
+<fieldset id="buy_box">
+  <legend>BUY</legend>
+  <p>Support: {% include get/support_select.html support=support %}</p>
+  <p>Price: <span>{{ karrello.currency.symbol }} <span id="price"></span></span></p>
+  <p>Wholesale price ({{ karrello.wholesale.price | default: 3 }}+): <span>{{ karrello.currency.symbol }} <span id="wholesale"></span></span></p>
+  <p>Select quantity:
+  <select name="quantity" id="quantity">
+    {% for i in (0..10) %}
+      <option value="{{ i }}">{{ i }}</option>
+    {% endfor %}
+  </select></p>
+  <p>Subtotal: <span>{{ karrello.currency.symbol }} <span id="subtotal">0</span></span></p>
+  <p><button type="button" id="addcart">Add to Cart</button></p>
+  <span id="item" hidden>{{ page.title | upcase }} - {{ page.item | upcase }}</span>
+  <span id="link" hidden>{{ page.url | absolute_url }}</span>
+  <span id="label" hidden>{{ page.category|upcase }}</span>
+  <span hidden>Volume: <span id="volume">{{ page.volume | default: "-" }}</span></span>
+</fieldset>
