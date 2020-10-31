@@ -18,10 +18,10 @@ permalink: /shop/
     {% assign ff = 0 %}
     {% if r.support.first %}
       {% for current in r.support %}
-        {% assign slug = current | slugify %}
+        {% assign slug2 = current | downcase | slugify %}
         {% for string in o[1].names %}
           {% assign slug1 = string | slugify %}
-          {% if slug == slug1 and ff == 0 %}
+          {% if slug2 == slug1 and ff == 0 %}
             {% assign found = found | push: r %}
             {% assign ff = 1 %}
           {% endif %}
