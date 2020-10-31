@@ -150,7 +150,6 @@ if $("body").data("title") is "checkout"
       option.data "few"
     else
       option.data "many"
-    console.log shipping
     # Updated total
     $("#shipping").html shipping.toFixed 2
     total = +shipping + +$("#subtotal").text()
