@@ -327,7 +327,7 @@ section.soldout {
     figure img {
       margin: 0;
       width: 10em;
-      height: auto;
+      height: 10em;
     }
   }
 }
@@ -361,7 +361,7 @@ figure {
     display: block;
     float: left;
     width: $image-width;
-    height: auto;
+    height: $image-width;
     margin-right: $margin-mini;
     margin-bottom: $margin-mini;
     box-shadow: $shadow-cover;
