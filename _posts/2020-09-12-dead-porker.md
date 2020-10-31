@@ -7,9 +7,6 @@ category: rur
 volume: 86
 tag: new
 image: nbj
-# focus:
-#   name: "English Subtitles: Tannoy / Cars on Fire"
-#   description: Distributed by Rave Up
 outdate: October 2020
 ---
 
