@@ -26,10 +26,13 @@ $(function() {
   }
 
   // Image zoom on Posts
-  $('body.post article > figure > img').css('cursor', 'pointer').click(function(e){
+  $('body.post article > figure > img').click(function(e){
     // var ele = $(e.target);
     // ele.toggleClass('mega');
-    document.getElementById('zoom').showModal();
+    $('#zoom').attr("open", "");
   });
+  $('#zoom').click(function(e){
+    $(e.delegateTarget).removeAttr('open');
+  })
 
 });
