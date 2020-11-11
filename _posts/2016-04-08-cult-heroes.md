@@ -2,7 +2,7 @@
 layout: post
 title: cult heroes
 item: amerikan story
-support: [lp,lpc]
+support: [lp]
 category: rur
 volume: 80
 image: 109279080d796c8fc325233809ad4f1b
