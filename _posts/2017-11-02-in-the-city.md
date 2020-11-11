@@ -2,6 +2,7 @@
 layout: post
 title: mary monday / streetpunks / da statikz
 item: in the city
+tag: soldout
 support: lp
 category: rur
 volume: 82
