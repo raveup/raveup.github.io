@@ -20,13 +20,15 @@ sass:
   sass_dir: _sass
   style: compressed
 script:
-  - js/md5.min.js
-  - js/jquery.min.js
-  - js/jquery.ui.totop.js
-  - js/easing.js
-  - js/main.js
-  - js/buttons.js
-  - js/carello.js
+  fast:
+    - js/md5.min.js
+    - js/jquery.min.js
+    - js/jquery.ui.totop.js
+    - js/easing.js
+  slow:
+    - js/main.js
+    - js/buttons.js
+    - js/carello.js
 collections:
   blog:
     output: true

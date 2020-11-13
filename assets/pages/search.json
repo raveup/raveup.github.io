@@ -3,8 +3,8 @@ permalink: /search.json
 ---
 
 [
-  {% for post in site.posts %}
-    {% if post.layout == 'post' %}
+  {%- for post in site.posts -%}
+    {%- if post.layout == 'post' -%}
       {
         "title"     : "{{ post.title | upcase }}",
         "item"      : "{{ post.item | upcase }}",
@@ -15,7 +15,7 @@ permalink: /search.json
         "volume"    : "{{ post.volume }}",
         "support"   : "{{ post.support | upcase | escape }}",
         "image"     : "{{ post.image }}"
-      } {% if forloop.last %}{% else %},{% endif %}
-    {% endif %}
-  {% endfor %}
+      } {%- unless forloop.last -%},{%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
 ]
