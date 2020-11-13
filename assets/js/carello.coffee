@@ -16,7 +16,7 @@ $("#cart-link span").html cart.length
 if $("#buy_box").length
   selected_support = ""
   found = undefined
-  # Set prices
+  # Set prices on SUPPORT change
   $("#support").on "change", ->
     switch $(@).prop "tagName"
       when 'SPAN'
@@ -30,7 +30,7 @@ if $("#buy_box").length
         selected_support = $(@).val()
     $('#price').html price.toFixed 2
     $('#wholesale').html wholesale.toFixed 2
-    $('#quantity').trigger 'change'
+    # $('#quantity').trigger 'change'
     found = cart.find (order) -> order.item is $("#item").text() and order.support is selected_support.toLowerCase()
     # Populate
     if found
@@ -43,14 +43,15 @@ if $("#buy_box").length
       $("#quantity").val 0
       $("#quantity").trigger "change"
     return
-  $('#support').trigger "change"
   qt_wholesale = +{{ karrello.wholesale.price | default: 1000 }}
   # Get quantity event
   $("#quantity").on "change", ->
     qt = +$(@).val()
-    prezzo = if qt < qt_wholesale then +$("#price").html() * qt else +$('#wholesale').html() * qt
+    prezzo = if qt <= qt_wholesale then +$("#price").html() * qt else +$('#wholesale').html() * qt
     $("#subtotal").html prezzo.toFixed 2
     return
+  # Start up
+  $('#support').trigger "change"
   # Add cart event
   $("#addcart").on "click", ->
     # Get order
@@ -65,7 +66,7 @@ if $("#buy_box").length
       ordine =
         item: $("#item").text()
         timestamp: Date.now().toString()
-        price: if quantity < qt_wholesale then +$("#price").html() else +$("#wholesale").html()
+        price: if quantity <= qt_wholesale then +$("#price").html() else +$("#wholesale").html()
         quantity: quantity
         support: selected_support
         link: $("#link").text()
@@ -80,6 +81,43 @@ if $("#buy_box").length
         window.location = "{{ site.baseurl }}/cart"
         return
       , 1000
+    return
+
+if $("body").data("title") is "checkout"
+  # Select zone event
+  $("#zone").on "change", ->
+    # Check if quantity is wholesale
+    qt_total = cart.reduce ((acc, item) => +acc + +item.quantity), 0
+    option = $(@).find "option:selected"
+    shipping = if qt_total <= {{ karrello.wholesale.shipping | default: 1000 }}
+      option.data "few"
+    else
+      option.data "many"
+    # Updated total
+    $("#shipping").html shipping.toFixed 2
+    total = +shipping + +$("#subtotal").text()
+    $("#total").html total.toFixed 2
+    # Create Paypal button
+    script = "<script
+      async
+      src='{{ site.baseurl }}/assets/js/paypal-button.min.js?merchant={{ karrello.merchant }}'
+      data-button='paynow'
+      data-upload='1'
+      data-host='www.paypal.com'
+      data-return='https://www.raveuprecords.com/thankyou'
+      data-rm='1'
+      data-type='form'
+      data-currency='{{ karrello.currency.code }}'
+      data-handling_cart='#{shipping}' "
+    for order, i in cart by -1
+      k=i+1
+      script += "data-item_name_#{k}='#{order.item}'
+      data-amount_#{k}='#{order.price}'
+      data-quantity_#{k}='#{order.quantity}'
+      data-item_number_#{k}='#{order.support.toUpperCase()} #{order.label} ##{order.volume}' "
+    script += "></script>"
+    $("#paypal-button")[0].innerHTML = script
+    paypal.button.process $('#paypal-button')[0]
     return
 
 # Cart table
@@ -138,41 +176,4 @@ if $("#cart").length
     el_subtotal.html new_subtotal.toFixed 2
     # Update shipping
     $("#zone").trigger("change")
-    return
-
-if $("body").data("title") is "checkout"
-  # Select zone event
-  $("#zone").on "change", ->
-    # Check if quantity is wholesale
-    qt_total = cart.reduce ((acc, item) => +acc + +item.quantity), 0
-    option = $(@).find("option:selected")
-    shipping = if qt_total < {{ karrello.wholesale.shipping | default: 1000 }}
-      option.data "few"
-    else
-      option.data "many"
-    # Updated total
-    $("#shipping").html shipping.toFixed 2
-    total = +shipping + +$("#subtotal").text()
-    $("#total").html total.toFixed 2
-    # Create Paypal button
-    script = "<script
-      async
-      src='{{ site.baseurl }}/assets/js/paypal-button.min.js?merchant={{ karrello.merchant }}'
-      data-button='paynow'
-      data-upload='1'
-      data-host='www.paypal.com'
-      data-return='https://www.raveuprecords.com/thankyou'
-      data-rm='1'
-      data-type='form'
-      data-currency='{{ karrello.currency.code }}'
-      data-handling_cart='#{shipping}' "
-    for order, i in cart by -1
-      k=i+1
-      script += "data-item_name_#{k}='#{order.item}'
-      data-amount_#{k}='#{order.price}'
-      data-quantity_#{k}='#{order.quantity}'
-      data-item_number_#{k}='#{order.support.toUpperCase()} #{order.label} ##{order.volume}' "
-    script += "></script>"
-    $("#paypal-button")[0].innerHTML = script
-    paypal.button.process $('#paypal-button')[0]
     return

@@ -13,7 +13,7 @@ currency:
 # Items number for wholesale prices and shipping
 wholesale:
   price: 3
-  shipping: 1000
+  shipping: 3
 
 # Max item quantity
 max: 10
@@ -64,9 +64,15 @@ prices:
 
 # Check if format and wholesale is needed
 shippings:
-  europe: 10
-  usa/japan: 15
-  world: 20
+  europe:
+    few: 10
+    many: 15
+  usa/japan:
+    few: 15
+    many: 30
+  world:
+    few: 20
+    many: 40
   # 7_inches:
   #   few:
   #     europe: 8

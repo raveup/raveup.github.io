@@ -14,7 +14,8 @@ permalink: /checkout/
     {%- for zone in site.data.carello.shippings -%}
     <option
       value="{{ zone[0] }}"
-      data-few="{{ zone[1] }}">{{ zone[0] | upcase }} ({{site.data.carello.currency.symbol}} {{zone[1]}})</option>
+      data-few="{{ zone[1].few }}"
+      data-many="{{ zone[1].many }}">{{ zone[0] | upcase }}</option>
     {%- endfor -%}
   </select>
   <h3>Shipping: € <span id="shipping"></span></h3>
