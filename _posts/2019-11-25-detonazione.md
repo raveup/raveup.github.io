@@ -4,7 +4,7 @@ title: Detonazione!
 item: PERCORSI, CONNESSIONI E SPAZI ALTRI NELLA CONTROCULTURA ROMANA DEGLI ANNI NOVANTA
 support: book
 category: books
-tag: 
+tag: soldout
 volume: 5
 image: 17c782568291afdfeda25d695484cac5
 # focus:
