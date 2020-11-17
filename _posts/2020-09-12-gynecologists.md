@@ -17,6 +17,3 @@ Inspired by the everlasting violence of American society, their songs evoke a ch
 > LIMITED EDITION TO 400 BLACK VINYLS + 50 BLOODY SPLATTERED
 
 > LET'S GET HIGH WITH THEIR QUAALUDES AND BEER COCKTAIL!
-
-Pre-order with Paypal on raveup@tiscali.it!<br>
-€15 (wholesale €9) for the black vinyl and €18 (wholesale €12) for the limited colored edition + shipping fees (Europe €10, USA/Japan €15, world €20)
