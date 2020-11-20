@@ -2,6 +2,7 @@
 layout: post
 title: charlie 'ungry
 item: the chester road album
+tag: soldout
 support: lp
 category: eps
 volume: 12
