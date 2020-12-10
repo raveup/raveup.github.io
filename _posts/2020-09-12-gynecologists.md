@@ -5,7 +5,7 @@ item: JOHN WAYNE GACY
 support: [lp,lpc]
 category: rur
 volume: 88
-tag: new
+tag: few
 image: gynecologists
 outdate: October 2020
 ---
