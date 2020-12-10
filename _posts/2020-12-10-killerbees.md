@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KILLER BEES
-item: BUZZ'N TOWN
+item: BUZZ'N THE TOWN
 support: [lp]
 category: Blackout Records
 volume: BRO12
