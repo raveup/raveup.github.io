@@ -5,7 +5,7 @@ item: DEAD PORKER
 support: [lp]
 category: rur
 volume: 86
-tag: new
+tag: few
 image: nbj
 outdate: October 2020
 ---
