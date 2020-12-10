@@ -3,10 +3,10 @@ layout: post
 title: KILLER BEES
 item: BUZZ'N THE TOWN
 support: [lp]
-category: Blackout Records
-volume: BRO12
+category: bsr
+volume: 12
 tag: new
-image: killer bees
+image: killerbees
 # focus:
 #   name: killer bees
 #   description: Distributed by Rave Up
@@ -18,4 +18,3 @@ Blackout Records rediscovered 10 original studio tracks recorded between 1977 an
 > GRAB THIS JEWEL FASTER THAN YOU CAN!!!!
 
 > Black vinyl only, 400 ltd. copies
- 
