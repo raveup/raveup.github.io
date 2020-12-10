@@ -4,9 +4,10 @@ title: this perfect day
 item: no frills, just noise!
 support: lp
 category: ss
-tag: soldout
+tag: new
 volume: 15
 image: 4OP3KCrNvPL4
+outdate: December 2020
 ---
 
 This Perfect Day was a band formed in Manchester, UK around 1981 by vocalist/blues harp player John Sama Snowden and synthesiser player Mik Hayes.
