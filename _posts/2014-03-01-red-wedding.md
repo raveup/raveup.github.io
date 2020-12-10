@@ -7,6 +7,7 @@ category: ss
 tag: new
 volume: 14
 image: x2W6VknJMyO9
+outdate: December 2020
 ---
 
 Red Wedding debuted at the Brave Dog on Saturday, June 13, 1981. Fans expecting a revamped Hey Taxi (the original punk incarnation of the band) were in for a shock.
