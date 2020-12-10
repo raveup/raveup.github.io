@@ -4,7 +4,7 @@ title: red wedding
 item: anthology 1981-1985
 support: lp
 category: ss
-tag: soldout
+tag: new
 volume: 14
 image: x2W6VknJMyO9
 ---
