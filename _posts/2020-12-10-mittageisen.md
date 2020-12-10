@@ -1,7 +1,7 @@
 ---
 layout: post
-title: mittageisen
-item: hardcore
+title: MITTAGEISEN
+item: HARDCORE SESSION
 support: lp
 category: bsr
 tag: new 
