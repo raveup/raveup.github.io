@@ -7,6 +7,9 @@ category: Blackout Records
 volume: BRO12
 tag: new
 image: killer bees
+# focus:
+#   name: killer bees
+#   description: Distributed by Rave Up
 outdate: December 2020
 ---
 
