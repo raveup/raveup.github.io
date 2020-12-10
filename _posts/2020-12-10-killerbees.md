@@ -3,7 +3,7 @@ title: KILLER BEES
 item: BUZZ'N TOWN
 support: [lp]
 category: Blackout Records
-volume: 
+volume: BRO12
 tag: new
 image: killer bees
 outdate: December 2020
