@@ -3,7 +3,7 @@ layout: post
 title: KILLER BEES
 item: BUZZ'N THE TOWN
 support: [lp]
-category: bsr
+category: bor
 volume: 12
 tag: new
 image: killerbees
