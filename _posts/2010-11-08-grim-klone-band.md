@@ -5,7 +5,7 @@ item: blank space
 support: lp
 category: rur
 volume: 10
-image: sdfkmrnkskj
+image: grimklone
 ---
 
 New Jersey pycho punkers on acid! Obnoxious and insane studio and live material recorded in 1978/79.
