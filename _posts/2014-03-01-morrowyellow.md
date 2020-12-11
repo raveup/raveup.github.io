@@ -6,7 +6,7 @@ support: lp
 category: ss
 volume: 12
 image: vNiBKTWey2zR
-tag: in stock
+tag: few
 outdate: December 2020
 ---
 
