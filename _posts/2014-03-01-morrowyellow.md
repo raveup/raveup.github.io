@@ -10,6 +10,6 @@ tag: new
 outdate: December 2020
 ---
 
-Founded in 1983 in the North-East town of Verona, after the split of the punk band Eva Brown, by the collaboration between Mauro Marchesi (keyboards and electronics) and Joyello Triolo (vocals and guitar).
+Founded in 1983 in Verona by Mauro Marchesi (keyboards and electronics) and Joyello Triolo (vocals and guitar), after the split of the punk band Eva Brown.
 
-Morrowyellow debut with an electronic sound experimentation supporting the fascination for the arts and oriental music . A study that will lead to collaborations with avant-garde theater and contemporary dance until in 1985, with the entry of Turkish Max (bass and guitar), they begin to feel a certain interest in live appearances.The band recorded a great demo ("My Colours") and few other material all included in this anthology. The group disbanded in late 1988, but their great music in still alive on the traces of this wax!
+Morrowyellow blended electronic sounds with the fascination for art and oriental music. These experimentations led to collaborations with avant-garde theater and contemporary dance. In 1985, with the entry of Turkish Max (bass and guitar), they began to perform live. The band recorded a great demo ("My Colours") and a few other songs, all included in this anthology. The group disbanded in late 1988, but their great music in still alive on this wax!
