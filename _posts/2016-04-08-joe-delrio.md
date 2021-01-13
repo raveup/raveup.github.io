@@ -2,7 +2,7 @@
 layout: post
 title: joe d'elirio and the exxess
 item: s/t
-support: lp
+support: [lp,lpc]
 category: ss
 volume: 21
 image: c56d5e7fb531de3fc67bd74724a39cc8
