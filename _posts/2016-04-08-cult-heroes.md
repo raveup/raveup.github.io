@@ -2,6 +2,7 @@
 layout: post
 title: cult heroes
 item: amerikan story
+tag: soldout
 support: [lp, lpc]
 category: rur
 volume: 80
