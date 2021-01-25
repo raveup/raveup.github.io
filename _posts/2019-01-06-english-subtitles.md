@@ -2,9 +2,9 @@
 layout: post
 title: english subtitles 
 item: "Ear Piercing: The Oranges and Lemons Demos 1978/1979"
-support: [lp]
+support: [lp], [lpc]
 category: eps
-tag: soldout 
+tag: few 
 volume: 17
 image: 4e1e865b438b23c62f09c2f9b451f501
 # focus:
