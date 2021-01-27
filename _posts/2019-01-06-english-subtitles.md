@@ -1,6 +1,6 @@
 ---
 layout: post
-title: english subtitles 
+title: english subtitles (oranges and lemons demos 1978-1979)
 item: ear piercing
 support: [lp, lpc]
 category: eps
