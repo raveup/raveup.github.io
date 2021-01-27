@@ -1,7 +1,7 @@
 ---
 layout: post
-title: english subtitles (oranges and lemons demos 1978-1979)
-item: ear piercing
+title: english subtitles
+item: ear piercing (oranges and lemons demos 1978-1979)
 support: [lp, lpc]
 category: eps
 tag: few
