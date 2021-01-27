@@ -7,8 +7,7 @@ category: eps
 volume: 17
 tag: few
 image: 4e1e865b438b23c62f09c2f9b451f501
-# focus:
-#   name: english subtitles
+
 ---
 
 From the original demo tapes that in 1979 secured them a record deal with Small Wonder come 13 studio tracks by UK post punk band English Subtitles.
