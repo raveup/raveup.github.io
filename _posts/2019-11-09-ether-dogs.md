@@ -2,7 +2,7 @@
 layout: post
 title: Ether Dogs 
 item: born to kill time
-support: [lp, lpc]
+support: [lp]
 category: rur
 tag: few 
 volume: 85
