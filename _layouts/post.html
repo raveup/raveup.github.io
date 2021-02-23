@@ -6,8 +6,17 @@
   {% include topbar.html name = page.title description = page.item class = page.category %}
   <article>
   {% if page.image %}<figure>
-    <img src="{{ site_url }}/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}" class="{{ page.category }}">
-  </figure><dialog id="zoom"><img src="{{ site_url }}/assets/covers/{{ page.category }}/{{ page.image }}.jpg"/></dialog>{% endif %}
+    <a href="#" id="myBtn"><img src="{{ site_url }}/assets/covers/{{ page.category }}/{{ page.image }}.jpg" title="{{ page.title | upcase }} – {{ page.item | upcase }}" class="{{ page.category }}"></a>
+  </figure>{% endif %}
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <img src="{{ site_url }}/assets/covers/{{ page.category }}/{{ page.image }}.jpg">
+    </div>
+
+  </div>
   <header class="{{ page.category }}">
       <span class="grey">AVAILABILITY:</span> {% if page.tags contains 'soldout' %}SOLDOUT{% elsif page.tags contains 'new' %}{% if page.outdate != null %}{% assign out = page.outdate %}{% else %}{% assign out = site.data.settings.outdate %}{% endif %}{{ out }}{% elsif page.tags contains 'few' %}FEW LEFT!{% else %}IN STOCK{% endif %}
     <!-- <time datetime="{{ page.date }} 2009-10-22" pubdate>{{ page.date | date: '%B %Y' }}</time> -->
