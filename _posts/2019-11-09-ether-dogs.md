@@ -4,7 +4,7 @@ title: Ether Dogs
 item: born to kill time
 support: [lp]
 category: rur
-tag: few 
+tag: soldout 
 volume: 85
 image: 31a7c56de25741aabc458acca406cc5d
 # focus:
