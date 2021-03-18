@@ -4,7 +4,7 @@ title: no submission
 item: Lie on the Ground 1979-81
 support: lp
 category: bsr
-tag: soldout 
+tag: few 
 volume: 4
 image: no-submission
 # focus:
