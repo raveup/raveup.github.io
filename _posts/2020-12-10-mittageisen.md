@@ -4,7 +4,7 @@ title: MITTAGEISEN
 item: HARDCORE SESSION
 support: [lp, lpc]
 category: bsr
-tag: new 
+tag: few 
 volume: 5
 image: mittageisen
 # focus:
