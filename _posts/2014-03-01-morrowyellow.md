@@ -6,7 +6,6 @@ support: lp
 category: ss
 volume: 12
 image: vNiBKTWey2zR
-tag: few
 outdate: December 2020
 ---
 
