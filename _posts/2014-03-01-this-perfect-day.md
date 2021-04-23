@@ -4,7 +4,6 @@ title: this perfect day
 item: no frills, just noise!
 support: lp
 category: ss
-tag: few
 volume: 15
 image: 4OP3KCrNvPL4
 outdate: December 2020
