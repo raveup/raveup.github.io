@@ -15,7 +15,7 @@ Howlin' from Bloomington, Indiana, The Gynecologists were probably one of the mo
 Inspired by the everlasting violence of American society, their songs evoke a chilling maelstrom of depravation and amorality, while their obsession with sex and feces makes GG Allin look like a priest. The material on this anthology has never been released before on vinyl: while confirming a challenging musical creativity and the powerful vocals of frontman Tommy Afterbirth, it reveals unexpected links with American classic rock (take a listen to their cover of Grand Funk Railroad’s "We're An American Band").
 
 > LIMITED EDITION TO 400 BLACK VINYLS + 50 BLOODY SPLATTERED
-
+>
 > LET'S GET HIGH WITH THEIR QUAALUDES AND BEER COCKTAIL!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ldg11YM9FaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
