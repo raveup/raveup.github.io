@@ -17,3 +17,5 @@ Inspired by the everlasting violence of American society, their songs evoke a ch
 > LIMITED EDITION TO 400 BLACK VINYLS + 50 BLOODY SPLATTERED
 
 > LET'S GET HIGH WITH THEIR QUAALUDES AND BEER COCKTAIL!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ldg11YM9FaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
