@@ -18,3 +18,5 @@ Blackout Records rediscovered 10 original studio tracks recorded between 1977 an
 > GRAB THIS JEWEL FASTER THAN YOU CAN!!!!
 
 > Black vinyl only, 400 ltd. copies
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sYff2UfOIAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
