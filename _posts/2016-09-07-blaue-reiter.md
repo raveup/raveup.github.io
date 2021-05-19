@@ -16,4 +16,3 @@ Gemma and Boveri, together with Enrico Ferraris (already with Dusty Zebra, ensem
 
 > 450 COPIES, THE FIRST 50 ARE -OF COURSE- ON <span class="blue">BLUE</span> VINYL!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hipGLasZp7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
