@@ -15,3 +15,5 @@ The song of the band - where Marco Goggi focused on vocals and drums, Flavio Gem
 Gemma and Boveri, together with Enrico Ferraris (already with Dusty Zebra, ensemble pre Blaue Reiter) and Roberto Molded, would shortly founded the Viridanse, that were quite popular in the underground scene of the mid Eighties. Essential for every fans of Young Marble Giants, Fra Lippo Lippi, Eyeless in Gaza, Durutti Column!
 
 > 450 COPIES, THE FIRST 50 ARE -OF COURSE- ON <span class="blue">BLUE</span> VINYL!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hipGLasZp7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
