@@ -16,3 +16,5 @@ Luc Orient was formed in Trieste in 1981 by Alessandro Corda (former keyboard pl
 In 1983 they released the rare single “Gambe di Abebe” (B Side: "About the Weather"), produced by Gino D'Eliso and dedicated to marathon runner Abebe Bikila. The following year Luc Orient returned in studio with D'Eliso and recorded an LP with electronic and funk suggestions, never released due to expiring contract with their record company. The band disbanded in 1987.
 
 Now, after 30 years, Synthetic Shadows is proud to announce the rediscovery of this missing masterpiece of Italian new wave!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TNeUnBmqZSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
