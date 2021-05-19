@@ -17,3 +17,5 @@ outdate: Distributed by Rave Up
 Released in 1981 on Glass Records. YES... not a reissue, but original stock copy (including insert) recently found from band members.
 
 Both sides are pretty great and fairly polished sound, a doomy slice of malevolent goth-rock, full of foreboding and self-loathing; Karl Burns from The Fall plays drums on the track, but not many other details survive...
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r0gOcS2ug9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
