@@ -7,7 +7,7 @@ category: bor
 volume: 12
 tag: few
 image: killerbees
-mp3: killerbees
+mp3: killer-bees
 # focus:
 #   name: killer bees
 #   description: Distributed by Rave Up
