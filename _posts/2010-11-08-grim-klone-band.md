@@ -6,6 +6,7 @@ support: lp
 category: rur
 volume: 10
 image: grimklone
+mp3: grim-klone-band
 ---
 
 New Jersey pycho punkers on acid! Obnoxious and insane studio and live material recorded in 1978/79.
