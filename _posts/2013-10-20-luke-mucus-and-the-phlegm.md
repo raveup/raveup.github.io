@@ -6,6 +6,7 @@ support: lp
 category: rur
 volume: 72
 image: l4V3M9ON6M6k
+mp3: luke-mucus
 ---
 
 Inspired by the ‘77 Punk pages of Creem and Rolling Stone magazines, four suburban Detroit high school journalism classmates fashioned themselves into a band.
