@@ -6,6 +6,7 @@ support: lp
 category: rur
 volume: 61
 image: jQqZlxaz2nmX
+mp3: ed-davis-band
 ---
 
 Guitarists Mike Enright and Byron Stevens met drummer Curt Gary at the University of Cincinnati in the early 70s.
