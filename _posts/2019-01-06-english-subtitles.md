@@ -20,5 +20,3 @@ Recorded in 2 sessions at different low budget studios during the time they were
 Art punk? D.I.Y punk? Simply a UK PUNK ROCK MASTERPIECE!!!!
 
 > Ltd. 400 copies - 100 copies on orange/yellow vinyl 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x9sJhxc676E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
