@@ -8,6 +8,7 @@ volume: 7
 price: 10
 tag: few
 image: english_subtitles
+mp3: tannoy
 # focus:
 #   name: "English Subtitles: Tannoy / Cars on Fire"
 #   description: Distributed by Rave Up
