@@ -20,5 +20,3 @@ Born as Borstal, they changed name to No Submission and published 4 tracks in 19
 Now we got 17 unreleased tracks from the first furious years!
 
 Limited edition coloured booklet with photos and band history from the Golden age of Punk! 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KudkdLn9TxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
