@@ -7,6 +7,7 @@ category: bsr
 tag: few 
 volume: 5
 image: mittageisen
+mp3: mittageisen
 # focus:
 #   name: mittageisen
 #   description: Distributed by Rave Up
@@ -18,5 +19,3 @@ YES, IT'S TRUE... AN ENTIRE STUDIO SESSION RECORDED IN 1979!!! THE ITALIAN BAND 
 > Available in black or ltd. red vinyl
 >
 > Out for Big Star Rolling, exclusively distributed by Rave Up
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U4r_iEV0xds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
