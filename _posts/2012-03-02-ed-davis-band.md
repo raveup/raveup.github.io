@@ -5,6 +5,7 @@ item: keith richard's dead
 support: lp
 category: rur
 volume: 61
+tag: soldout
 image: jQqZlxaz2nmX
 mp3: ed-davis-band
 ---
