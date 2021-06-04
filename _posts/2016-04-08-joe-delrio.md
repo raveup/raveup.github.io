@@ -5,6 +5,7 @@ item: s/t
 support: [lp,lpc]
 category: ss
 volume: 21
+tag: soldout
 image: c56d5e7fb531de3fc67bd74724a39cc8
 mp3: joe-delirio
 ---
