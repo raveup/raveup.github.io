@@ -5,6 +5,7 @@ item: s/t
 support: lp
 category: ss
 volume: 19
+tag: soldout
 image: b96b806368260384f82a9bfbeb7584bc
 mp3: luc-orient
 #focus:
