@@ -5,12 +5,12 @@ item: s/t
 support: lp
 category: ss
 volume: 19
-tag: soldout
+tag: new
 image: b96b806368260384f82a9bfbeb7584bc
 mp3: luc-orient
 #focus:
-#  name: october 2015 news!
-#  description: OUT october 10<sup>th</sup> 2015
+#  name: luc orient
+#  description: out now!
 ---
 
 Luc Orient was formed in Trieste in 1981 by Alessandro Corda (former keyboard player of Revolver, one of the first punk bands in Italy), Rrok Prennushi (guitar) and Piero Pieri (vocals).
