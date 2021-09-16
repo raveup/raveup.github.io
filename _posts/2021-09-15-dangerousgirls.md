@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DANGEROUS GIRLS
-item: PRESENT
+item: PRESENT: RECORDINGS 1978-1982
 support: [lp, lpc]
 category: eps
 tag: new 
