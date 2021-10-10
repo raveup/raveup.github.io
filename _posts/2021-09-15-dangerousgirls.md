@@ -8,6 +8,7 @@ tag: new
 volume: 19
 image: dangerousgirls
 mp3: dangerous-girls
+youtube: w15L4M-rmCM
 # focus:
 #   name: dangerous girls
 outdate: out now!
