@@ -2,7 +2,7 @@
 layout: post
 title: MITTAGEISEN
 item: HARDCORE SESSION
-support: [lp, lpc]
+support: [lpc]
 category: bsr
 tag: few 
 volume: 5
