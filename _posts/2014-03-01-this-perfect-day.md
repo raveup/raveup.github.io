@@ -4,6 +4,7 @@ title: this perfect day
 item: no frills, just noise!
 support: lp
 category: ss
+tag: soldout
 volume: 15
 image: 4OP3KCrNvPL4
 mp3: this-perfect-day
