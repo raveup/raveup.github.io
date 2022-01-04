@@ -2,6 +2,7 @@
 layout: post
 title: morrowyellow
 item: "my colours: 1985-1988"
+tag: soldout
 support: lp
 category: ss
 volume: 12
