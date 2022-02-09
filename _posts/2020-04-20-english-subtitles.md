@@ -6,7 +6,7 @@ support: 7''
 category: gr
 volume: 7
 price: 10
-tag: few
+tag: soldout
 image: english_subtitles
 mp3: tannoy
 # focus:
