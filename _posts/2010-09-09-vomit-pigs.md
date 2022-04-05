@@ -7,7 +7,7 @@ category: rur
 tag: new
 volume: 13
 image: vomitpigs
-outdate: out April 15!
+outdate: April 15
 ---
 
 Another true collector's nightmare! Killer Texas punk from the vault!
