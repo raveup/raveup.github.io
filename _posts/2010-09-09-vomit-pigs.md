@@ -6,7 +6,7 @@ support: lp
 category: rur
 tag: new
 volume: 13
-image: vomit
+image: vomitpigs
 outdate: out April 15!
 ---
 
