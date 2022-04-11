@@ -8,7 +8,7 @@ tag: new
 volume: 13
 image: vomitpigs
 mp3: vomit-pigs
-outdate: 15 April 2022
+outdate: April 15
 ---
 
 A terrific collector's nightmare! Killer Texas punk from the vault!
