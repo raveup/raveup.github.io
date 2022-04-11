@@ -10,7 +10,7 @@ image: trancefusion
 mp3: trancefusion
 # focus:
 #   name: trancefusion
-outdate: April 2022
+outdate: April 15
 ---
 
 “Incredible but true!”, cioè “incredible ma vero!”. Queste le parole scritte a mano sulla costina di una cassetta Basf che conservavo in archivio da quando Chris Bianco me la affidò, ere geologiche fa: nulla di meglio per intitolare un album contenente incisioni con quarantaquattro anni sulle spalle di una band che in vita non aveva pubblicato nulla. 
