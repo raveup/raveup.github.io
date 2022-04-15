@@ -4,7 +4,7 @@ title: vomit pigs
 item: useless eaters
 support: lp
 category: rur
-tag: new
+tag: soldout
 volume: 13
 image: vomitpigs
 mp3: vomit-pigs
