@@ -5,7 +5,7 @@ item: JOHN WAYNE GACY
 support: [lp]
 category: rur
 volume: 88
-tag: few
+tag: soldout
 image: gynecologists
 mp3: gynecologists
 outdate: October 2020
