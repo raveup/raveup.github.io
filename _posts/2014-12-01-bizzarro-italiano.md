@@ -4,7 +4,7 @@ title: bizzarro italiano 1988-1999
 item: italian weird cinema from the analogic era
 support: fanzine + dvd
 category: books
-tag: soldout
+tag: few
 volume: 3
 image: ODU3NDAyNjc5
 metadata: [ "150 min.", "Limited 500 copies", "Price € 15", "Wholesale € 6,50" ]
