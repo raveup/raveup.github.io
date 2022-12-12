@@ -14,4 +14,4 @@ image: uynLdhUat2RH
 
 I testi, originariamente pubblicati in massima parte sul Mucchio Selvaggio, sono affiancati da copertine, locandine, fotografie e memorabilia rigorosamente anni '80. Circa mezzo milione di caratteri e centinaia di immagini, il tutto impreziosito da un'impaginazione vintage di grande effetto. In allegato un cd di rarità new wave italiane 79-84 assolutamente inedite.
 
-> CD SOLD OUT, SOLO LIBRO
+> CD ESAURITO, SOLO LIBRO
