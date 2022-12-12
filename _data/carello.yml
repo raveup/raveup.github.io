@@ -62,6 +62,9 @@ prices:
     names: [dvd, fanzine + dvd]
     price: 15
     wholesale: 15
+  book+cd:
+    names: [book+cd, books+cd]
+    price: 10
 
 # Check if format and wholesale is needed
 shippings:
