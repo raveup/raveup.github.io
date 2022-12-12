@@ -57,11 +57,11 @@ prices:
   book:
     names: [book, books]
     price: 22
-    wholesale: 22
+    wholesale: 15
   dvd:
     names: [dvd, fanzine + dvd]
     price: 15
-    wholesale: 6.50
+    wholesale: 8
 
 # Check if format and wholesale is needed
 shippings:
