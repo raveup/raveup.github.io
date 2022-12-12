@@ -65,6 +65,7 @@ prices:
   book+cd:
     names: [book+cd, books+cd]
     price: 10
+    wholesale: 10
 
 # Check if format and wholesale is needed
 shippings:
