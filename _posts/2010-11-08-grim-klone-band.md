@@ -5,7 +5,6 @@ item: blank space
 support: lp
 category: rur
 volume: 10
-tag: in stock
 image: grimklone
 mp3: grim-klone-band
 ---
