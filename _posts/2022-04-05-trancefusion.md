@@ -4,7 +4,6 @@ title: TRANCEFUSION
 item: INCREDIBLE BUT TRUE!
 support: [lp]
 category: ruri
-tag: few
 volume: 06
 image: trancefusion
 mp3: trancefusion
