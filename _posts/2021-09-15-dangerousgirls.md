@@ -4,7 +4,6 @@ title: DANGEROUS GIRLS
 item: PRESENT - RECORDINGS 1978-1982
 support: [lp, lpc]
 category: eps
-tag: few 
 volume: 19
 image: dangerousgirls
 mp3: dangerous-girls
