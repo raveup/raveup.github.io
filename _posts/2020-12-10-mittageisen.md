@@ -4,7 +4,6 @@ title: MITTAGEISEN
 item: HARDCORE SESSION
 support: [lpc]
 category: bsr
-tag: few 
 volume: 5
 image: mittageisen
 mp3: mittageisen
