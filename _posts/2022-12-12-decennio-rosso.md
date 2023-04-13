@@ -4,13 +4,13 @@ title: Decennio Rosso
 item: 
 support: book
 category: books
-tag: new
+tag: few
 volume: 6
 image: decenniorosso
 # focus:
 #   name: Decennio Rosso
-#   description: OUT NOW
-outdate: OUT NOW
+#   description:
+outdate:
 ---
 
 Romanzo della realtà, Decennio rosso è il primo tentativo di mostrare i cosiddetti "anni di piombo" ponendosi dal punto di vista di chi compì la scelta rivoluzionaria della lotta armata. E lo fa cercando di rispondere a quella domanda che la politica e la storia contemporanea tutt'oggi rifiutano di porsi: perché negli anni '70 migliaia di giovani hanno contestato il potere costituito fino al punto di mettere pesantemente in gioco la propria vita e imbracciare le armi? 
