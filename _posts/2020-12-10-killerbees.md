@@ -5,7 +5,6 @@ item: BUZZ'N THE TOWN
 support: [lp]
 category: bor
 volume: 12
-tag: few
 image: killerbees
 mp3: killer-bees
 # focus:
