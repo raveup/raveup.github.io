@@ -22,7 +22,7 @@ max: 10
 prices:
   lp:
     price: 15
-    wholesale: 9
+    wholesale: 10
     names: [lp]
   lp_color:
     names: [lpc, lp color, lp colored]
@@ -31,7 +31,7 @@ prices:
   7_inches:
     names: [7 inches, seven inches, 7’’, 7”]
     price: 8
-    wholesale: 4
+    wholesale: 5
   7_inches_color:
     names: [7 inches color, 7 inches colored, 7" color, 7' colored, 7c, 7"c]
     price: 10
