@@ -4,6 +4,7 @@ title: grim klone band
 item: blank space
 support: lp
 category: rur
+tag: soldout
 volume: 10
 image: grimklone
 mp3: grim-klone-band
