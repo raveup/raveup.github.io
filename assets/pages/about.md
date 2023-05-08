@@ -9,9 +9,9 @@ permalink: /about/
 Rave Up Records is an Italian independent label diggin' out since 1999 obscure nuggets from the golden age of Rock'n'Roll. Punk, new wave, power pop and glam gems are waiting to be spinned in limited vinyl reprints, only for you! 
 
 ### Prices
-- LP black vinyl: €15 (wholesale €9)
+- LP black vinyl: €15 (wholesale €10)
 - LP colored vinyl: €18 (wholesale €12)
-- 7" black vinyl: €8 (wholesale €4)
+- 7" black vinyl: €8 (wholesale €5)
 - 7" colored vinyl: €10 (wholesale €6)
 
 ### Shipping
