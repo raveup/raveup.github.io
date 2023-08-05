@@ -4,7 +4,6 @@ title: luke mucus and the phlegm
 item: s/t
 support: lp
 category: rur
-tag: instock
 volume: 72
 image: l4V3M9ON6M6k
 mp3: luke-mucus
