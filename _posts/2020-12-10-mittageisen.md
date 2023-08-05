@@ -2,7 +2,7 @@
 layout: post
 title: MITTAGEISEN
 item: HARDCORE SESSION
-support: [lpc, lpc]
+support: [lp, lpc]
 category: bsr
 volume: 5
 image: mittageisen
