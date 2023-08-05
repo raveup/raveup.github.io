@@ -5,7 +5,6 @@ item: the rent / summertime
 support: 7"
 category: rurx
 volume: 8
-tag: instock
 image: d9c16decb9e7ea0c684b360b52d5424d
 mp3: muddy-worries
 youtube: eRLJm-O7dOI
