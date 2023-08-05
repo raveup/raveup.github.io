@@ -5,7 +5,6 @@ item: ear piercing (oranges and lemons demos 1978-1979)
 support: [lp, lpc]
 category: eps
 volume: 17
-tag: instock
 image: 4e1e865b438b23c62f09c2f9b451f501
 mp3: english-subtitles
 # focus:
