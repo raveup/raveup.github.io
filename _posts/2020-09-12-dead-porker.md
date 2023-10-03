@@ -2,7 +2,7 @@
 layout: post
 title: NAZI BITCH AND THE JEWS
 item: DEAD PORKER
-tag: sold out
+tag: soldout
 support: [lp]
 category: rur
 volume: 86
