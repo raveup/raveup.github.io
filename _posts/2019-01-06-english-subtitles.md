@@ -2,6 +2,7 @@
 layout: post
 title: english subtitles
 item: ear piercing (oranges and lemons demos 1978-1979)
+tag: soldout
 support: [lp, lpc]
 category: eps
 volume: 17
