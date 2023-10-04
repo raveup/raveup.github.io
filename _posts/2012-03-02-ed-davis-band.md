@@ -2,6 +2,7 @@
 layout: post
 title: ed davis band
 item: keith richard's dead
+tag: soldout
 support: lp
 category: rur
 volume: 61
