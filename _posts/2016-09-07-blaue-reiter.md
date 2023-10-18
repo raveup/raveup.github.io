@@ -2,6 +2,7 @@
 layout: post
 title: blaue reiter
 item: my inner thought
+tag: soldout
 support: [lp]
 category: ss
 volume: 22
