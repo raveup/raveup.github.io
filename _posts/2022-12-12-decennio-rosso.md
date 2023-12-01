@@ -4,7 +4,7 @@ title: Decennio Rosso
 item: 
 support: book
 category: books
-tag: few
+tag:
 volume: 6
 image: decenniorosso
 # focus:
