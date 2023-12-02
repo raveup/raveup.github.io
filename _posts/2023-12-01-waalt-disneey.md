@@ -7,7 +7,7 @@ category: bsr
 tag: new
 volume: 6
 image: waalt
-mp3:
+mp3: waalt
 # focus:
 #   name: waal disneey
 #   description: Distributed by Rave Up
