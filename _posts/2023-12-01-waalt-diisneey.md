@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WAALT DIISNEEY
+title: THE WAALT DIISNEEY
 item: ACTION!
 support: [lp]
 category: bsr
