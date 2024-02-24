@@ -2,7 +2,7 @@
 layout: post
 title: DANGEROUS GIRLS
 item: PRESENT - RECORDINGS 1978-1982
-support: [lp, lpc]
+support: [lp]
 category: eps
 volume: 19
 image: dangerousgirls
