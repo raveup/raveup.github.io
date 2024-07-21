@@ -4,7 +4,7 @@ title: THE WAALT DIISNEEY
 item: ACTION!
 support: [lp]
 category: bsr
-tag: soldout
+tag: 
 volume: 6
 image: waalt
 mp3: waalt
