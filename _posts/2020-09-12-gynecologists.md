@@ -4,6 +4,7 @@ title: THE GYNECOLOGISTS
 item: JOHN WAYNE GACY
 support: [lp]
 category: rur
+tag: soldout
 volume: 88
 image: gynecologists
 mp3: gynecologists
