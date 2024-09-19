@@ -11,7 +11,6 @@ mp3: absurdo
 youtube: Se91_nTBY_E
 # focus: 
 #   name: absurdo
-#   description: 
 outdate: October 2024
 ---
 
