@@ -9,7 +9,7 @@ volume: 24
 image: absurdo
 mp3: absurdo
 youtube: Se91_nTBY_E
-# focus:
+# focus: new
 #   name: absurdo
 #   description: 
 outdate: October 2024
