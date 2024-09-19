@@ -3,7 +3,7 @@ layout: post
 title: ABSURDO
 item: MONDO ABSURDO
 support: [lp]
-category: SS
+category: ss
 tag: new
 volume: 24
 image: absurdo
