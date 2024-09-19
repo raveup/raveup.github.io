@@ -5,7 +5,7 @@ item: MONDO ABSURDO
 support: [lp]
 category: SS
 tag:
-volume: 6
+volume: 24
 image: absurdo
 mp3: absurdo
 youtube: Se91_nTBY_E
