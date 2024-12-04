@@ -10,7 +10,7 @@ image: intothebaobab
 mp3: intothebaobab
 # focus: 
 #   name: intothebaobab
-outdate: November 2024
+outdate: out now!
 ---
 
 L'attesissimo nuovo album con cui il commando anarcho-punk bolognese festeggia vent'anni di pensieri verdi e acidi.
