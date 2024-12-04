@@ -1,7 +1,7 @@
 ---
 layout: post
 title: INTOTHEBAOBAB
-item: 1000 MONDI POSSIBILE
+item: 1000 MONDI POSSIBILI
 support: [lp]
 category: rurx
 tag: new
