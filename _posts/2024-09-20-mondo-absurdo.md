@@ -11,7 +11,7 @@ mp3: absurdo
 youtube: Se91_nTBY_E
 # focus: 
 #   name: absurdo
-outdate: now!
+outdate: out now!
 ---
 
 "Superata una certa età, due o tre anni di differenza anagrafica con un interlocutore non fanno molta differenza. Ci si sente coetanei. Altra situazione quando di anni ne hai venti, e ti relazioni con qualcuno che ne ha diciassette. Ricordo infatti che ad inizio anni ’80, quando io e Marco, che suonavamo nei Confusional Quartet, fummo chiamati ad ascoltare la produzione musicale di una nuova band bolognese, io ebbi subito la sensazione di un passaggio generazionale. Insomma, non eravamo più “i più giovani” nella scena musicale cittadina.
