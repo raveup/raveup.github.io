@@ -4,7 +4,7 @@ title: KILLER BEES
 item: BUZZ'N THE TOWN
 support: [lp]
 category: bor
-tag: 
+tag: soldout
 volume: 12
 image: killerbees
 mp3: killer-bees
