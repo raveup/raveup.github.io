@@ -4,6 +4,7 @@ title: MITTAGEISEN
 item: HARDCORE SESSION
 support: [lp]
 category: bsr
+tag: soldout
 volume: 5
 image: mittageisen
 mp3: mittageisen
