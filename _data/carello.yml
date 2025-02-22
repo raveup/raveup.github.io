@@ -64,8 +64,8 @@ prices:
     wholesale: 15
   book+cd:
     names: [book+cd, books+cd]
-    price: 10
-    wholesale: 10
+    price: 15
+    wholesale: 15
 
 # Check if format and wholesale is needed
 shippings:
