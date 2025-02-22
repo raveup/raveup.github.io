@@ -4,7 +4,7 @@ title: ABSURDO
 item: MONDO ABSURDO
 support: [lp]
 category: ss
-tag: new
+tag: 
 volume: 24
 image: absurdo
 mp3: absurdo
