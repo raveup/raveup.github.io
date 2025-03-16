@@ -4,7 +4,7 @@ title: INTOTHEBAOBAB
 item: 1000 MONDI POSSIBILI
 support: [lp]
 category: rurx
-tag: 
+tag: soldout
 volume: 10
 image: intothebaobab
 mp3: intothebaobab
