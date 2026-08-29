@@ -4,3 +4,7 @@ _site
 .sass-cache
 .map
 docker*
+# Local development
+.vscode/
+Gemfile
+Gemfile.lock

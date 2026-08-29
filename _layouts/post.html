@@ -55,13 +55,14 @@
     </div>
   {% endif %}
 
-  {% if page.youtube %}
-    <div class="video {{ page.category }}">
-    <h2>YouTube</h2>
-    <div>
-      <iframe src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>
-    </div>
-    </div>
+  {% if page.youtube %}<div class='youtube'>
+    {% if page.youtube.first %}
+      {% for y in page.youtube %}
+        {% include youtube.html youtube=y category=page.category %}
+      {% endfor %}
+    {% else %}
+      {% include youtube.html youtube=page.youtube category=page.category %}
+    {% endif %}</div>
   {% endif %}
 
 </article>
