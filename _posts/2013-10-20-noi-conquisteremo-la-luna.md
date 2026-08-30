@@ -2,6 +2,7 @@
 layout: post
 title: NOI CONQUISTEREMO LA LUNA
 item: SCRITTI SULLA NEW WAVE ITALIANA 1980/1985
+tag: soldout
 support: book+cd
 category: books
 author: FEDERICO GUGLIELMI
