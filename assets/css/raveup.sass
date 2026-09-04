@@ -556,10 +556,7 @@ fieldset#buy_box
   max-width: 80%
 
 /* Small Screen Layout */
-@media screen and (max-width: $break-small)
-  body.post section article
-    margin: 0
-    padding: 1em
+@media screen and (max-width: $break-small
   .youtube
     flex-direction: column
   body > header nav
@@ -580,3 +577,12 @@ fieldset#buy_box
       padding: 0
   aside.meta
     float: none
+  section
+    & > header h1
+	    line-height: 1
+      padding-bottom: .1em
+    article
+      margin: 0
+      padding: 1em
+      img
+	      min-width: 100%
