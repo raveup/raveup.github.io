@@ -544,6 +544,10 @@ fieldset#buy_box
   display: flex
   justify-content: space-around
 
-body.post section article div.text,
-body.post section article #buy_box + p
-  margin-left: 23em
+@media screen and (min-width: $break-small)
+  body.post section article div.text,
+  body.post section article #buy_box + p
+    margin-left: 23em
+
+#top-logo
+  max-width: 80%
