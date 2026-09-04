@@ -540,14 +540,25 @@ fieldset#buy_box
   float: none !important
   margin: 0 !important
 
+/* 2026 AD */
 .youtube
   display: flex
   justify-content: space-around
 
+/* Big Screen Post Layout */
 @media screen and (min-width: $break-small)
   body.post section article div.text,
   body.post section article #buy_box + p
     margin-left: 23em
 
+/* Top Logo Limit */
 #top-logo
   max-width: 80%
+
+/* Small Screen Layout */
+@media screen and (max-width: $break-small)
+  body.post section article
+    margin: 0
+    padding: 1em
+  .youtube
+    flex-direction: column
