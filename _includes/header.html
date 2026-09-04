@@ -1,8 +1,8 @@
 <header>
   <!-- <h1>Rave-Up records</h1> -->
-  <a href="/"><img id='top-logo' src="{{ site.logo | absolute_url }}" alt="Rave Up records LOGO"></a>
+  <a href="/?t={{ site.time | date: '%s' }}"><img id='top-logo' src="{{ site.logo | absolute_url }}" alt="Rave Up records LOGO"></a>
   <nav>
-    {% for data in site.data.menu %}{% for item in data.menu %}{% for page in site.pages %}{% if page.title == item %}<a href="{{ page.permalink }}">{{ item | upcase }}</a>
+    {% for data in site.data.menu %}{% for item in data.menu %}{% for page in site.pages %}{% if page.title == item %}<a href="{{ page.permalink }}?t={{ site.time | date: '%s' }}">{{ item | upcase }}</a>
     {% endif %}{% endfor %}{% endfor %}{% endfor %}
     <a href="/cart/" id="cart-link">CART (<span>0</span>)</a>
   </nav>
